@@ -1,0 +1,27 @@
+.box {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eaeaea;
+}
+
+.small-container {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.container-box {
+  position: relative;
+}
+.container-box .arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -5px;
+}
+.container-box .arrow.arrow-left {
+  left: 0;
+}
+.container-box .arrow.arrow-right {
+  right: 0;
+}
