@@ -9,7 +9,6 @@ import ScrollMotionEffect from "../motion/ScrollMotionEffect";
 const HeroSection = () => {
   return (
     <div className="relative w-full h-[500px] md:h-[700px]">
-      {/* Background image */}
       <Image
         className="absolute inset-0 object-cover bg-bottom w-full h-full"
         width={1920}
