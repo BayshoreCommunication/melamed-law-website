@@ -1,4 +1,5 @@
 import CallToAction from "@/components/shared/CallToAction";
+import PageHeroSection from "@/components/shared/PageHeroSection";
 import TestimonialsHeader from "@/components/testimonials/TestimonialsHeader";
 import TestimonialsSection from "@/components/testimonials/TestimonialsSection";
 import Head from "next/head";
@@ -15,7 +16,13 @@ const page = () => {
           content={`At Carter Injury Law, you’re family. We offer open lines of communication to foster personal relationships and optimize case outcomes for our clients.`}
         />
       </Head>
-      <TestimonialsHeader />
+      <PageHeroSection
+        image={"/assets/shared/testimonials.jpg"}
+        title={"Testimonials"}
+        description={
+          "When the unexpected happens, we help individuals and businesses collect the money they deserve for their insurance claims."
+        }
+      />
       <TestimonialsSection />
       <CallToAction />
     </>

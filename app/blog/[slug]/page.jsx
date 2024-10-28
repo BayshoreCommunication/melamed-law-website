@@ -8,6 +8,7 @@ import Link from "next/link";
 import { Playfair_Display } from "next/font/google";
 import BlogHeroSection from "@/components/blog/BlogHeroSection";
 import BlogHeroSectionforDetails from "@/components/blog/BlogHeroSectionforDetails";
+import PageHeroSection from "@/components/shared/PageHeroSection";
 
 const css = `
  h1, h2, p, br, nav {
@@ -64,7 +65,13 @@ const page = async ({ params }) => {
         <meta name="description" content={blogDetails[0]?.title} />
       </Head>
       <style>{css}</style>
-      <BlogHeroSectionforDetails />
+      <PageHeroSection
+        image={"/assets/shared/blogs.jpg"}
+        title={blogDetails[0]?.title}
+        description={
+          "When the unexpected happens, we help individuals and businesses collect the money they deserve for their insurance claims."
+        }
+      />
       <SectionLayout bg="bg-white">
         <CardMotion
           whileInView={{
@@ -83,9 +90,6 @@ const page = async ({ params }) => {
             {blogDetails?.map((blogs, index) => (
               <div className="col-span-2">
                 <div className="flex items-center justify-between">
-                  <p className="text-[.9rem] md:text-[1rem] text-black text-left italic mt-4 ">
-                    {/* {blogs?.author} */}
-                  </p>
                   <p className="text-[.9rem] md:text-[1rem] text-black text-left italic mt-4 ">
                     {postDate(blogs?.createdAt)}
                   </p>

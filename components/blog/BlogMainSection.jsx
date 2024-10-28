@@ -20,24 +20,26 @@ const BlogMainSection = async () => {
   };
 
   return (
-    <div className=" mt-6 md:mt-10 lg:mt-44">
-      <SectionLayout>
+    <section className="bg-white">
+      <div className="container py-10 md:py-20">
         <div>
-          <div className="w-full lg:max-w-[60%] me-auto">
-            <h2
-              className={`text-stone-950 font-semibold text-3xl md:text-5xl mb-5 lg:mb-8  text-center lg:text-start uppercase`}
-            >
-              Recent blog post
+          <ScrollMotionEffect effect="fade-up" duration="2000">
+            <h2 className="text-stone-950 !font-semibold text-3xl md:text-5xl mb-1 md:mb-12 text-center">
+              Our Recent Blog Post
             </h2>
-          </div>
+          </ScrollMotionEffect>
           <div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8  justify-center text-center h-full">
               {blogPostData?.data
                 ?.filter((pub, no) => pub.published === true)
                 ?.map((blogs, index) => (
-                  <ScrollMotionEffect effect="fade-up" duration="2000">
+                  <ScrollMotionEffect
+                    effect="fade-up"
+                    duration="2000"
+                    key={index}
+                  >
                     <Link href={`/blog/${blogs?.slug}`} key={index}>
-                      <div className=" drop-shadow-[0px_0px_10px_rgba(0,0,0,0.3)] bg-white h-full">
+                      <div className=" bg-white shadow-md rounded-md">
                         <Image
                           width={1800}
                           height={300}
@@ -45,26 +47,23 @@ const BlogMainSection = async () => {
                           alt={blogs?.featuredImage?.altText}
                           className="bg-center bg-cover"
                         />
-
-                        <div className="p-6 flex flex-col gap-1">
-                          <div className="text-sm text-gray-500 flex items-center justify-between">
-                            <span>{blogs?.category}</span>
+                        <div className="pt-2 pb-8 px-4">
+                          <div className="text-sm text-gray-500 flex items-center mt-1">
                             <span> {postDate(blogs?.createdAt)}</span>
                           </div>
-                          <h4 className="text-base md:text-lg font-semibold text-start">
+                          <h1 className="font-semibold  text-2xl text-black text-center md:text-left mt-5 line-clamp-2">
                             {blogs?.title}
-                          </h4>
-                          <p className=" text-gray-700 text-start line-clamp-2">
-                            {/* {blogs?.body} */}
+                          </h1>
+                          <div className="text-md text-black text-center md:text-left mt-2 line-clamp-2 ">
                             {parse(blogs?.body)}
-                          </p>
-                          <div className=" text-start mt-5">
-                            <button
-                              type="submit"
-                              className="text-white bg-[#EC1D21]  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base w-full sm:w-auto px-10 py-2 text-center uppercase space-x-4 hover:scale-105  transition duration-300 "
+                          </div>
+                          <div className="mt-6 flex justify-center md:justify-start">
+                            <Link
+                              href={`/blog/${blogs?.slug}`}
+                              className="text-secondary font-normal text-lg bg-none px-4 py-2 rounded-full hover:bg-secondary hover:text-white border-2 border-secondary  "
                             >
                               Read More
-                            </button>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -74,8 +73,8 @@ const BlogMainSection = async () => {
             </div>
           </div>
         </div>
-      </SectionLayout>
-    </div>
+      </div>
+    </section>
   );
 };
 

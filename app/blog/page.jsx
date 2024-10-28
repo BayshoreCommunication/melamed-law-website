@@ -6,6 +6,7 @@ import Head from "next/head";
 import BlogHeroSection from "@/components/blog/BlogHeroSection";
 import BlogMainSection from "@/components/blog/BlogMainSection";
 import CallToAction from "@/components/shared/CallToAction";
+import PageHeroSection from "@/components/shared/PageHeroSection";
 
 const page = async () => {
   const blogPostData = await GetAllPostData();
@@ -29,7 +30,13 @@ const page = async () => {
           content={`At Carter Injury Law, you’re family. We offer open lines of communication to foster personal relationships and optimize case outcomes for our clients. `}
         />
       </Head>
-      <BlogHeroSection />
+      <PageHeroSection
+        image={"/assets/shared/blogs.jpg"}
+        title={"Blogs"}
+        description={
+          "When the unexpected happens, we help individuals and businesses collect the money they deserve for their insurance claims."
+        }
+      />
       <BlogMainSection blogPostData={blogPostData} />
       <CallToAction />
     </>

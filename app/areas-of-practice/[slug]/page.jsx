@@ -34,6 +34,8 @@ import PracticeAreaHeader from "@/components/practice-area/PracticeAreaHeader";
 import { allServiceData } from "@/config/serviceData";
 import PracticeAreaSidebarCard from "@/components/practice-area/PracticeAreaSidebarCard";
 import PracticeAreaDetailsHeader from "@/components/practice-area/PracticeAreaDetailsHeader";
+import PageHeroSection from "@/components/shared/PageHeroSection";
+import { areaspracticeData, servicesData } from "@/config/data";
 
 const css = `
   h1{
@@ -70,7 +72,7 @@ nav{
 `;
 
 const page = async ({ params }) => {
-  const servicesDetails = allServiceData?.filter(
+  const servicesDetails = servicesData?.filter(
     (service) => service.slug === params.slug
   );
 
@@ -86,18 +88,26 @@ const page = async ({ params }) => {
         <meta name="description" content="" />
       </Head>
       <style>{css}</style>
-      <PracticeAreaDetailsHeader title={servicesDetails[0]?.title} />
+
+      <PageHeroSection
+        image={"/assets/shared/practicesareapage.jpg"}
+        title={servicesDetails[0]?.title}
+        description={
+          "When the unexpected happens, we help individuals and businesses collect the money they deserve for their insurance claims."
+        }
+      />
       <div>
         <SectionLayout bg="bg-white">
           <div className="grid gap-16 gird-col-1 sm:grid-cols-3">
             {servicesDetails?.map((services, index) => (
               <div className="col-span-2">
-                <div className="mt-5 text-base">{parse(services?.details)}</div>
+                {/* <div className="mt-5 text-base">{parse(services?.details)}</div> */}
+                <div className="mt-5 text-base">{services?.description}</div>
               </div>
             ))}
 
             <div className="hidden md:block">
-              <PracticeAreaSidebarCard allServiceData={allServiceData} />
+              <PracticeAreaSidebarCard allServiceData={servicesData} />
             </div>
           </div>
         </SectionLayout>

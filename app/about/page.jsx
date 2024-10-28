@@ -1,9 +1,9 @@
-import AboutOurFirm from "@/components/about-us/AboutOurFirm";
-import TeamSection from "@/components/about-us/TeamSection";
-import HeroSection from "@/components/home/HeroSection";
-import AchievementSection from "@/components/shared/AchievementSection";
-import CallToAction from "@/components/shared/CallToAction";
-import PracticeAreasSection from "@/components/shared/PracticeAreasSection";
+import AboutDetails from "@/components/about-us/AboutDetails";
+import GoogleMapSection from "@/components/about-us/GoogleMapSection";
+import ProfessionalLawGroup from "@/components/about-us/ProfessionalLawGroup";
+import LatedAndGretest from "@/components/home/LatedAndGretest";
+import PageHeroSection from "@/components/shared/PageHeroSection";
+
 import Head from "next/head";
 
 const page = () => {
@@ -21,12 +21,17 @@ const page = () => {
           rel="stylesheet"
         />
       </Head>
-      <HeroSection />
-      <AboutOurFirm />
-      <PracticeAreasSection />
-      <AchievementSection />
-      <TeamSection />
-      <CallToAction />
+      <PageHeroSection
+        image={"/assets/shared/aboutpage.jpg"}
+        title={"About Us"}
+        description={
+          "When the unexpected happens, we help individuals and businesses collect the money they deserve for their insurance claims."
+        }
+      />
+      <ProfessionalLawGroup />
+      <AboutDetails />
+      <LatedAndGretest />
+      <GoogleMapSection />
     </>
   );
 };
