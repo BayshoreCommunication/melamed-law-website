@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import SectionLayout from "../shared/SectionLayout";
-import { AllBlogData } from "@/config/blogData";
 import Link from "next/link";
 import ScrollMotionEffect from "../motion/ScrollMotionEffect";
 import GetAllPostData from "@/lib/GetAllPostData";

@@ -6,8 +6,6 @@ import CardMotion from "@/components/motion/CardMotion";
 import Head from "next/head";
 import Link from "next/link";
 import { Playfair_Display } from "next/font/google";
-import BlogHeroSection from "@/components/blog/BlogHeroSection";
-import BlogHeroSectionforDetails from "@/components/blog/BlogHeroSectionforDetails";
 import PageHeroSection from "@/components/shared/PageHeroSection";
 
 const css = `

@@ -1,7 +1,5 @@
 "use client";
 import React, { memo } from "react";
-import SectionLayout from "../shared/SectionLayout";
-import HeaderForm from "../shared/HeaderForm";
 import Image from "next/image";
 import Link from "next/link";
 import ScrollMotionEffect from "../motion/ScrollMotionEffect";
@@ -34,7 +32,7 @@ const HeroSection = () => {
         <ScrollMotionEffect effect="fade-up" duration="2000">
           <div className="mt-12">
             <Link
-              href={"/"}
+              href={"/appointment"}
               className="text-white font-normal text-md md:text-lg bg-secondary px-8 md:px-16 py-4 rounded-full hover:bg-orange-400"
             >
               Schedule A Free Case Review

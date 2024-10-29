@@ -57,7 +57,7 @@ const MainNavbar = () => {
     () => [
       { title: "Home", slug: "/" },
       { title: "About Us", slug: "/about" },
-      { title: "About Us", slug: "/about" },
+      { title: "Practice Areas", slug: "/practice-areas" },
       { title: "Testimonials", slug: "/testimonials" },
       { title: "Blog", slug: "/blog" },
     ],
@@ -142,7 +142,7 @@ const MainNavbar = () => {
                           <Link
                             href={el?.slug}
                             // className={`flex text-slate-900 font-semibold text-lg hover:border-b-2 hover:border-solid hover:border-black ${pathname === el?.slug ? "border-b-2 border-solid border-[#0B7788] text-[#0B7788]" : ""}`}
-                            className={`flex items-center gap-x-1 cursor-pointer text-black text-base xl:text-[16px] font-medium capitalize hover:text-secondary ${pathname === el.slug || setPathSlug ? " border border-secondary rounded-full text-secondary py-1 lg:py-2 px-2 lg:px-5" : ""} `}
+                            className={`flex items-center gap-x-1 cursor-pointer text-black text-sm xl:text-[16px] font-medium capitalize hover:text-secondary ${pathname === el.slug || setPathSlug ? " border border-secondary rounded-full text-secondary py-1 lg:py-2 px-2 lg:px-5" : ""} `}
                           >
                             Practice Areas
                             <span>
@@ -181,7 +181,7 @@ const MainNavbar = () => {
                     <Link
                       key={el.slug}
                       href={`${el.slug}`}
-                      className={`cursor-pointer text-black text-base xl:text-[16px] font-medium capitalize hover:text-secondary ${pathname === el.slug ? " border border-secondary rounded-full text-secondary py-1 lg:py-2 px-2 lg:px-5" : ""} `}
+                      className={`cursor-pointer text-black text-sm xl:text-[16px] font-medium capitalize hover:text-secondary ${pathname === el.slug ? " border border-secondary rounded-full text-secondary py-1 lg:py-2 px-2 lg:px-5" : ""} `}
                     >
                       {el.title}
                     </Link>

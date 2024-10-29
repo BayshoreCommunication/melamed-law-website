@@ -1,6 +1,5 @@
 import CallToAction from "@/components/shared/CallToAction";
 import PageHeroSection from "@/components/shared/PageHeroSection";
-import TestimonialsHeader from "@/components/testimonials/TestimonialsHeader";
 import TestimonialsSection from "@/components/testimonials/TestimonialsSection";
 import Head from "next/head";
 import React from "react";

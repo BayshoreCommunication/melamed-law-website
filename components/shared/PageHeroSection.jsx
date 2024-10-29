@@ -34,7 +34,7 @@ const PageHeroSection = ({ image, title, description }) => {
           <ScrollMotionEffect {...animationProps}>
             <div className="mt-8 md:mt-12 flex justify-center">
               <Link
-                href="/"
+                href={"/appointment"}
                 className="text-white font-normal text-base md:text-lg bg-secondary px-4 md:px-16 py-4 rounded-full hover:bg-orange-400"
               >
                 Schedule A Free Case Review

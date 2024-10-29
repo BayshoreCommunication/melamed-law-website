@@ -1,12 +1,10 @@
 import React from "react";
 
 import GetAllPostData from "@/lib/GetAllPostData";
-
 import Head from "next/head";
-import BlogHeroSection from "@/components/blog/BlogHeroSection";
-import BlogMainSection from "@/components/blog/BlogMainSection";
 import CallToAction from "@/components/shared/CallToAction";
 import PageHeroSection from "@/components/shared/PageHeroSection";
+import BlogMainSection from "@/components/blog/BlogMainSection";
 
 const page = async () => {
   const blogPostData = await GetAllPostData();

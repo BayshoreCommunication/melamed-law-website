@@ -39,9 +39,9 @@ const NewsSection = async () => {
               <h2 className="text-default-500 text-lg font-bold line-clamp-2 mt-2">
                 {blog.title}
               </h2>
-              <div className="flex justify-center md:justify-start mx-auto items-center  my-2">
+              <div className="flex justify-center md:justify-start mx-auto items-center  my-4">
                 <Link
-                  href={"/"}
+                  href={`/blog/${blog.slug}`}
                   className="text-secondary font-normal text-lg bg-none px-4 py-1 rounded-full hover:bg-secondary hover:text-white border-2 border-secondary "
                 >
                   Read More

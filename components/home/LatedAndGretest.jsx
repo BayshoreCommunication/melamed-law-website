@@ -19,6 +19,7 @@ import ScrollMotionEffect from "../motion/ScrollMotionEffect";
 import { FaInstagram } from "react-icons/fa";
 import { PiPhoneCallFill } from "react-icons/pi";
 import { IoMdHome } from "react-icons/io";
+import { MdArrowOutward } from "react-icons/md";
 
 import {
   FaFacebookF,
@@ -26,13 +27,18 @@ import {
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa6";
+import { areaspracticeData } from "@/config/data";
 
 const LatedAndGretest = () => {
   const [emailForm, setEmailForm] = useState({
-    name: "",
+    firstName: "",
+    lastName: "",
     phone: "",
+    zipCode: "",
     email: "",
+    caseType: "",
     message: "",
+    flag: "",
   });
 
   const [loading, setLoading] = useState(false);
@@ -41,19 +47,36 @@ const LatedAndGretest = () => {
   const validate = (values) => {
     const errors = {};
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
-    if (!values.name) {
-      errors.name = "Name is required!";
+    if (!values.firstName) {
+      errors.firstName = "First Name is required!";
     }
+    if (!values.lastName) {
+      errors.lastName = "Last Name is required!";
+    }
+
     if (!values.email) {
       errors.email = "Email is required!";
     } else if (!regex.test(values.email)) {
       errors.email = "This is not a valid email format!";
     }
+
     if (!values.phone) {
       errors.phone = "Phone number is required!";
     }
+
+    if (!values.zipCode) {
+      errors.zipCode = "Zipcode is required!";
+    }
+    if (!values.caseType) {
+      errors.caseType = "Case Type is required!";
+    }
+
+    if (!values.flag) {
+      errors.flag = "Accept Terms & acknowledge our Privacy Policy.";
+    }
+
     if (!values.message) {
-      errors.message = "Question is required!";
+      errors.message = "Message is required!";
     }
     return errors;
   };
@@ -68,7 +91,12 @@ const LatedAndGretest = () => {
 
     // Check if there are any errors
     if (Object.keys(errors).length === 0) {
-      send("service_21srltl", "template_regri0n", emailForm, "QQbwIXKpnJegj")
+      send(
+        "service_wj7yeey",
+        "template_u74l3rr",
+        emailForm,
+        "2kczyCyop9k9pMsa-"
+      )
         .then((response) => {
           setLoading(false); // Stop loading
           Swal.fire({
@@ -77,10 +105,14 @@ const LatedAndGretest = () => {
             confirmButtonColor: "#131b2a",
           }).then(() => {
             setEmailForm({
-              name: "",
+              firstName: "",
+              lastName: "",
               phone: "",
+              zipCode: "",
               email: "",
+              caseType: "",
               message: "",
+              flag: "",
             });
           });
         })
@@ -91,10 +123,14 @@ const LatedAndGretest = () => {
             text: "Something went wrong!",
           }).then(() => {
             setEmailForm({
-              name: "",
+              firstName: "",
+              lastName: "",
               phone: "",
+              zipCode: "",
               email: "",
+              caseType: "",
               message: "",
+              flag: "",
             });
             setLoading(false); // Stop loading
           });
@@ -162,7 +198,7 @@ const LatedAndGretest = () => {
                   </h6>
                 </div>
               </div>
-              <div className="text-white flex justify-center md:justify-start gap-2 mt-8">
+              <div className="text-white flex justify-center md:justify-start gap-2 mt-8 mb-8">
                 <Link
                   href="https://www.facebook.com/CarterInjuryLaw/"
                   target="_blank"
@@ -202,27 +238,86 @@ const LatedAndGretest = () => {
             </div>
             <div className="flex flex-col col-span-1 mt-12 lg:col-span-2 md:mt-0">
               <form className="w-full" onSubmit={handleSubmit}>
-                <div class="mb-6 w-full">
-                  <input
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-md focus:ring-black focus:border-black block w-full p-2.5 py-4 placeholder:text-lg pl-5"
-                    placeholder="Your name"
-                    required
-                    type="text"
-                    name="name"
-                    value={emailForm.name}
-                    onChange={(event) => {
-                      setEmailForm({
-                        ...emailForm,
-                        name: event.target.value,
-                      });
-                    }}
-                  />
-                  <span className="text-orange-600">{formErrors.name}</span>
+                <div className="mb-5 w-full flex flex-col md:flex-row gap-5">
+                  {/* First Name */}
+                  <div className=" w-full">
+                    <input
+                      className="bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-md focus:ring-black focus:border-black block w-full p-2.5 py-2.5 placeholder:text-base pl-5"
+                      placeholder="First Name"
+                      required
+                      type="text"
+                      name="firstName"
+                      value={emailForm.firstName}
+                      onChange={(event) => {
+                        setEmailForm({
+                          ...emailForm,
+                          firstName: event.target.value,
+                        });
+                      }}
+                    />
+                    <span className="text-primary">{formErrors.firstName}</span>
+                  </div>
+                  {/* Last Name */}
+                  <div className=" w-full">
+                    <input
+                      className="bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-md focus:ring-black focus:border-black block w-full p-2.5 py-2.5 placeholder:text-base pl-5"
+                      placeholder="Last Name"
+                      required
+                      type="text"
+                      name="lastName"
+                      value={emailForm.lastName}
+                      onChange={(event) => {
+                        setEmailForm({
+                          ...emailForm,
+                          lastName: event.target.value,
+                        });
+                      }}
+                    />
+                    <span className="text-red-500">{formErrors.lastName}</span>
+                  </div>
                 </div>
-
-                <div class="mb-6">
+                <div className="mb-5 w-full flex flex-col md:flex-row gap-5">
+                  {/* Phone Number */}
+                  <div className=" w-full">
+                    <input
+                      className="bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-md focus:ring-black focus:border-black block w-full p-2.5 py-2.5 placeholder:text-base pl-5"
+                      placeholder="Phone Number"
+                      required
+                      type="text"
+                      name="phone"
+                      value={emailForm.phone}
+                      onChange={(event) => {
+                        setEmailForm({
+                          ...emailForm,
+                          phone: event.target.value,
+                        });
+                      }}
+                    />
+                    <span className="text-red-500">{formErrors.phone}</span>
+                  </div>
+                  {/* Zip Code */}
+                  <div className=" w-full">
+                    <input
+                      className="bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-md focus:ring-black focus:border-black block w-full p-2.5 py-2.5 placeholder:text-base pl-5"
+                      placeholder="Zip Code"
+                      required
+                      type="text"
+                      name="zipCode"
+                      value={emailForm.zipCode}
+                      onChange={(event) => {
+                        setEmailForm({
+                          ...emailForm,
+                          zipCode: event.target.value,
+                        });
+                      }}
+                    />
+                    <span className="text-red-500">{formErrors.zipCode}</span>
+                  </div>
+                </div>
+                {/* Email */}
+                <div className="mb-5">
                   <input
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-md focus:ring-black focus:border-black block w-full p-2.5 py-4 placeholder:text-lg pl-5"
+                    className="bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-md focus:ring-black focus:border-black block w-full p-2.5 py-2.5 placeholder:text-base pl-5"
                     placeholder="What's your email"
                     required
                     type="email"
@@ -235,53 +330,44 @@ const LatedAndGretest = () => {
                       });
                     }}
                   />
-                  <span className="text-orange-600">{formErrors.email}</span>
+                  <span className="text-red-500">{formErrors.email}</span>
                 </div>
+                {/* Case Type */}
 
-                <div class="mb-6">
-                  <input
-                    id="phone"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-md focus:ring-black focus:border-black block w-full p-2.5 py-4 placeholder:text-lg pl-5"
-                    placeholder="What's your phone"
+                <div className="mb-5">
+                  <select
+                    id="countries"
+                    className="bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-md focus:ring-black focus:border-black block w-full p-2.5 py-2.5 placeholder:text-base pl-5"
                     required
-                    type="tel"
-                    name="phone"
-                    value={emailForm.phone}
+                    type="Case Type"
+                    name="caseType"
+                    value={emailForm.caseType}
                     onChange={(event) => {
                       setEmailForm({
                         ...emailForm,
-                        phone: event.target.value,
+                        caseType: event.target.value,
                       });
                     }}
-                  />
-                  <span className="text-orange-600">{formErrors.phone}</span>
+                  >
+                    <option className="text-base" value="" disabled selected>
+                      - Case Type -
+                    </option>
+                    {areaspracticeData?.map((el, index) => (
+                      <option className="text-base" value={el?.title}>
+                        {el?.title}
+                      </option>
+                    ))}
+                  </select>
+                  <span className="text-red-500">{formErrors.caseType}</span>
                 </div>
 
-                <div class="mb-6">
-                  <input
-                    id="phone"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-md focus:ring-black focus:border-black block w-full p-2.5 py-4 placeholder:text-lg pl-5"
-                    placeholder="Office in Tampa"
-                    required
-                    type="text"
-                    name="phone"
-                    value={emailForm.phone}
-                    onChange={(event) => {
-                      setEmailForm({
-                        ...emailForm,
-                        phone: event.target.value,
-                      });
-                    }}
-                  />
-                  <span className="text-orange-600">{formErrors.phone}</span>
-                </div>
-
-                <div class="mb-6">
+                {/* Text Area */}
+                <div className="mb-5">
                   <textarea
                     rows={4}
                     id="message"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-md focus:ring-black focus:border-black block w-full p-2.5 py-4 placeholder:text-lg pl-5"
-                    placeholder="Your question....."
+                    className="bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-md focus:ring-black focus:border-black block w-full p-2.5 py-2.5 placeholder:text-base pl-5"
+                    placeholder="Please describe what happened"
                     required
                     name="message"
                     value={emailForm.message}
@@ -292,15 +378,90 @@ const LatedAndGretest = () => {
                       });
                     }}
                   />
-                  <span className="text-orange-600">{formErrors.message}</span>
+                  <span className="text-red-500">{formErrors.message}</span>
                 </div>
 
-                <p className="mt-2 mb-6  text-base md:text-lg text-center text-white md:text-left">
-                  I hereby expressly consent to receive automated communications
-                  including calls, texts, emails, and/or prerecorded messages.
-                </p>
+                <div className="mb-5">
+                  <div className="flex">
+                    <div className="flex items-center h-5">
+                      <input
+                        id="helper-checkbox"
+                        required
+                        aria-describedby="helper-checkbox-text"
+                        type="checkbox"
+                        checked={emailForm.flag} // Use checked instead of value
+                        onChange={(event) => {
+                          setEmailForm({
+                            ...emailForm,
+                            flag: event.target.checked, // Toggle true/false using checked
+                          });
+                        }}
+                        className="w-5 h-5 text-white bg-white border-gray-300 rounded"
+                      />
+                    </div>
+                    <div className="ms-2 text-base">
+                      <label
+                        htmlFor="helper-checkbox"
+                        className="font-medium text-white "
+                      >
+                        I hereby expressly consent to receive automated
+                        communications including calls, texts, emails, and/or
+                        prerecorded messages.
+                      </label>
+                      <p
+                        id="helper-checkbox-text"
+                        className="text-base font-normal text-white mt-3"
+                      >
+                        {`By submitting this form, you agree to our Terms &
+                        acknowledge our Privacy Policy.`}
+                      </p>
+                    </div>
+                  </div>
+                  <span className="text-primary mt-4 ml-6 text-center">
+                    {formErrors.flag}
+                  </span>
+                </div>
+                {loading ? (
+                  <button
+                    type="submit"
+                    className="text-white bg-secondary text-xl w-[300px] px-5 py-3 text-center rounded-full flex items-center gap-x-1 justify-center"
+                  >
+                    <div role="status">
+                      <svg
+                        aria-hidden="true"
+                        className="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-white"
+                        viewBox="0 0 100 101"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                          fill="currentColor"
+                        />
+                        <path
+                          d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                          fill="currentFill"
+                        />
+                      </svg>
+                      <span className="sr-only">Loading...</span>
+                    </div>
+                    Sending...
+                  </button>
+                ) : (
+                  <button
+                    type="submit"
+                    onClick={handleSubmit}
+                    className="text-white bg-secondary text-xl w-[300px] px-5 py-3 text-center rounded-full"
+                  >
+                    <div className=" flex items-center justify-center">
+                      <p className="">Submit Form</p>
 
-                <div className="flex justify-center md:justify-start">
+                      <MdArrowOutward className="size-5 xl:size-8" />
+                    </div>
+                  </button>
+                )}
+
+                {/* <div className="flex justify-center md:justify-start">
                   {loading ? (
                     <Button
                       isLoading
@@ -320,7 +481,7 @@ const LatedAndGretest = () => {
                       Submit
                     </Button>
                   )}
-                </div>
+                </div> */}
               </form>
             </div>
           </div>

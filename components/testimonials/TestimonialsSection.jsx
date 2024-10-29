@@ -1,7 +1,7 @@
 import React from "react";
 import SectionLayout from "../shared/SectionLayout";
-import { testimonialsData } from "../../config/testimonialsData";
 import ScrollMotionEffect from "../motion/ScrollMotionEffect";
+import { testimonialsData } from "@/config/data";
 
 const TestimonialsSection = () => {
   return (

@@ -1,6 +1,5 @@
-import AppointmentFrom from "@/components/appointment/AppointmentFrom";
-import AppointmentSection from "@/components/appointment/AppointmentSection";
-import HeroSection from "@/components/appointment/HeroSection";
+import Calendly from "@/components/appointment/Calendly";
+import PageHeroSection from "@/components/shared/PageHeroSection";
 import Head from "next/head";
 
 const page = () => {
@@ -11,9 +10,15 @@ const page = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="" />
       </Head>
-      <HeroSection />
-      <AppointmentSection />
-      <AppointmentFrom />
+      {/* <PageHeroSection
+        image={"/assets/shared/aboutpage.jpg"}
+        title={"Appointment"}
+        description={
+          "When the unexpected happens, we help individuals and businesses collect the money they deserve for their insurance claims."
+        }
+      /> */}
+
+      <Calendly />
     </>
   );
 };

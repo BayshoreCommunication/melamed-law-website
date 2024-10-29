@@ -6,6 +6,7 @@ import { send } from "emailjs-com";
 import Swal from "sweetalert2";
 import CardMotion from "../motion/CardMotion";
 import { MdArrowOutward } from "react-icons/md";
+import { areaspracticeData } from "@/config/data";
 
 const ContactSection = () => {
   const [emailForm, setEmailForm] = useState({
@@ -69,7 +70,12 @@ const ContactSection = () => {
 
     // Check if there are any errors
     if (Object.keys(errors).length === 0) {
-      send("service_du7590l", "template_9ql7ubi", emailForm, "igJ5_f7vinFq47")
+      send(
+        "service_wj7yeey",
+        "template_u74l3rr",
+        emailForm,
+        "2kczyCyop9k9pMsa-"
+      )
         .then((response) => {
           setLoading(false); // Stop loading
           Swal.fire({
@@ -151,7 +157,7 @@ const ContactSection = () => {
                 });
               }}
             />
-            <span className="text-primary">{formErrors.lastName}</span>
+            <span className="text-red-500">{formErrors.lastName}</span>
           </div>
         </div>
         <div className="mb-5 w-full flex flex-col md:flex-row gap-5">
@@ -171,7 +177,7 @@ const ContactSection = () => {
                 });
               }}
             />
-            <span className="text-primary">{formErrors.phone}</span>
+            <span className="text-red-500">{formErrors.phone}</span>
           </div>
           {/* Zip Code */}
           <div className=" w-full">
@@ -189,7 +195,7 @@ const ContactSection = () => {
                 });
               }}
             />
-            <span className="text-primary">{formErrors.zipCode}</span>
+            <span className="text-red-500">{formErrors.zipCode}</span>
           </div>
         </div>
         {/* Email */}
@@ -208,7 +214,7 @@ const ContactSection = () => {
               });
             }}
           />
-          <span className="text-primary">{formErrors.email}</span>
+          <span className="text-red-500">{formErrors.email}</span>
         </div>
         {/* Case Type */}
 
@@ -230,53 +236,13 @@ const ContactSection = () => {
             <option className="text-base" value="" disabled selected>
               - Case Type -
             </option>
-            <option className="text-base" value="auto-accidents">
-              Auto Accidents
-            </option>
-            <option className="text-base" value="personal-injury">
-              Personal Injury
-            </option>
-            <option className="text-base" value="slip-and-fall">
-              Slip and Fall
-            </option>
-            <option className="text-base" value="medical-malpractice">
-              Medical Malpractice
-            </option>
-            <option className="text-base" value="wrongful-death">
-              Wrongful Death
-            </option>
-            <option className="text-base" value="motorcycle-accidents">
-              Motorcycle Accidents
-            </option>
-            <option className="text-base" value="truck-accidents">
-              Truck Accidents
-            </option>
-            <option className="text-base" value="dog-bites">
-              Dog Bites
-            </option>
-            <option className="text-base" value="premises-liability">
-              Premises Liability
-            </option>
-            <option className="text-base" value="boating-accidents">
-              Boating Accidents
-            </option>
-            <option className="text-base" value="dui-injuries">
-              DUI Injuries
-            </option>
-            <option className="text-base" value="product-liability">
-              Product Liability
-            </option>
-            <option className="text-base" value="nursing-home-abuse">
-              Nursing Home Abuse
-            </option>
-            <option className="text-base" value="construction-accidents">
-              Construction Accidents
-            </option>
-            <option className="text-base" value="insurance-claims">
-              Insurance Claims
-            </option>
+            {areaspracticeData?.map((el, index) => (
+              <option className="text-base" value={el?.title}>
+                {el?.title}
+              </option>
+            ))}
           </select>
-          <span className="text-primary">{formErrors.caseType}</span>
+          <span className="text-red-500">{formErrors.caseType}</span>
         </div>
 
         {/* Text Area */}
@@ -296,7 +262,7 @@ const ContactSection = () => {
               });
             }}
           />
-          <span className="text-primary">{formErrors.message}</span>
+          <span className="text-red-500">{formErrors.message}</span>
         </div>
 
         <div className="mb-5">
@@ -341,9 +307,28 @@ const ContactSection = () => {
         {loading ? (
           <button
             type="submit"
-            className="text-white bg-secondary     font-medium  text-base w-full rounded  cursor-pointer px-5 py-2 xl:py-5  text-center uppercase   "
+            className="text-white bg-secondary     font-medium  text-base w-full rounded  cursor-pointer px-5 py-2 xl:py-5  text-center uppercase  flex items-center gap-x-2 justify-center "
           >
-            Sending
+            <div role="status">
+              <svg
+                aria-hidden="true"
+                className="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-white"
+                viewBox="0 0 100 101"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                  fill="currentColor"
+                />
+                <path
+                  d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                  fill="currentFill"
+                />
+              </svg>
+              <span className="sr-only">Loading...</span>
+            </div>
+            Sending...
           </button>
         ) : (
           <button
