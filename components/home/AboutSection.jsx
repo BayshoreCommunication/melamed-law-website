@@ -37,7 +37,7 @@ const AboutSection = () => {
 
               <div className="py-4 flex justify-center md:justify-start">
                 <Link
-                  href={"/"}
+                  href={"/about"}
                   className="text-white font-normal text-lg bg-secondary px-8 py-3 rounded-full hover:bg-orange-400"
                 >
                   More About Us

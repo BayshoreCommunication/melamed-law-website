@@ -88,7 +88,7 @@ const NewsSection = async () => {
           >
             <div className="flex justify-end md:visible invisible">
               <Link
-                href={"/"}
+                href={"/blog"}
                 className="text-secondary font-normal text-lg bg-none px-6 py-2 rounded-full hover:bg-secondary hover:text-white border-2 border-secondary  "
               >
                 Read All Blogs
@@ -118,7 +118,7 @@ const NewsSection = async () => {
         >
           <div className="flex justify-center md:invisible mt-12 md:mt-[-60px] visible">
             <Link
-              href={"/"}
+              href={"/blog"}
               className="text-secondary font-normal text-lg bg-none px-4 py-2 rounded-full hover:bg-secondary hover:text-white border-2 border-secondary  "
             >
               Read All Blogs

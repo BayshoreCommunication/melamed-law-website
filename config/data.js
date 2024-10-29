@@ -111,7 +111,7 @@ export const servicesData = [
 
 export const areaspracticeData = [
   {
-    url: "/assets/areaspractice/image.jpg",
+    url: "/assets/areaspractice/bad-faith-claims.jpg",
     title: "Bad Faith Claims",
     slug: "bad-faith-claims",
     shortTitle:
@@ -120,7 +120,7 @@ export const areaspracticeData = [
       "Did a sudden hail storm damage your home or property? Is the insurance company giving you the run around?",
   },
   {
-    url: "/assets/areaspractice/image.jpg",
+    url: "/assets/areaspractice/smoke-damage.jpg",
     title: "Smoke Damage",
     slug: "smoke-damage",
     shortTitle:
@@ -129,7 +129,7 @@ export const areaspracticeData = [
       "Did your home or property recently suffer damage from smoke and fire? Is your insurance refusing to pay?",
   },
   {
-    url: "/assets/areaspractice/image.jpg",
+    url: "/assets/areaspractice/vandalism-and-theft.jpg",
     title: "Vandalism And Theft",
     slug: "vandalism-and-theft",
     shortTitle:
@@ -138,7 +138,7 @@ export const areaspracticeData = [
       "Do you have a commercial large loss claim that was denied? Get a free case review today.",
   },
   {
-    url: "/assets/areaspractice/image.jpg",
+    url: "/assets/areaspractice/hurricane-damage.jpg",
     title: "Hurricane Damage",
     slug: "hurricane-damage",
     shortTitle:
@@ -147,7 +147,7 @@ export const areaspracticeData = [
       "Was your home damaged by a flood? Do you have a pipe burst in your home during a freeze? Did the insurance company deny your claim?",
   },
   {
-    url: "/assets/areaspractice/image.jpg",
+    url: "/assets/areaspractice/strom-damage.jpg",
     title: "Storm Damage",
     slug: "storm-damage",
     shortTitle:
@@ -156,7 +156,7 @@ export const areaspracticeData = [
       "Did you have a recent storm leave wind damage to your property or home? Is your claim being denied?",
   },
   {
-    url: "/assets/areaspractice/image.jpg",
+    url: "/assets/areaspractice/windstorm-damage.jpg",
     title: "Windstorm Damage",
     slug: "windstorm-damage",
     shortTitle:
@@ -165,7 +165,7 @@ export const areaspracticeData = [
       "Is your claim being denied after a hurricane damaged your property? Obtain a free case review with us today!",
   },
   {
-    url: "/assets/areaspractice/image.jpg",
+    url: "/assets/areaspractice/hail-damage.jpg",
     title: "Hail Damage",
     slug: "hail-damage",
     shortTitle:
@@ -174,7 +174,7 @@ export const areaspracticeData = [
       "Was your home damaged by a flood? Do you have a pipe burst in your home during a freeze? Did the insurance company deny your claim?",
   },
   {
-    url: "/assets/areaspractice/image.jpg",
+    url: "/assets/areaspractice/roof-damage.jpg",
     title: "Roof Damage",
     slug: "roof-damage",
     shortTitle:
@@ -183,7 +183,7 @@ export const areaspracticeData = [
       "Did you have a recent storm leave wind damage to your property or home? Is your claim being denied?",
   },
   {
-    url: "/assets/areaspractice/image.jpg",
+    url: "/assets/areaspractice/plumbing-damage.jpg",
     title: "Plumbing Damage",
     slug: "plumbing-damage",
     shortTitle:
@@ -192,7 +192,7 @@ export const areaspracticeData = [
       "Is your claim being denied after an hurricane damaged your property? Obtain a free case review with us today!",
   },
   {
-    url: "/assets/areaspractice/image.jpg",
+    url: "/assets/areaspractice/water-damage.jpg",
     title: "Water Damage",
     slug: "water-damage",
     shortTitle:
@@ -201,7 +201,7 @@ export const areaspracticeData = [
       "Was your home damaged by a flood? Do you have a pipe burst in your home during a freeze? Did the insurance company deny your claim?",
   },
   {
-    url: "/assets/areaspractice/image.jpg",
+    url: "/assets/areaspractice/fire-damage.jpg",
     title: "Fire Damage",
     slug: "fire-damage",
     shortTitle:
@@ -210,7 +210,7 @@ export const areaspracticeData = [
       "Did you have a recent storm leave wind damage to your property or home? Is your claim being denied?",
   },
   {
-    url: "/assets/areaspractice/image.jpg",
+    url: "/assets/areaspractice/mold-damage.jpg",
     title: "Mold Damage",
     slug: "mold-damage",
     shortTitle:

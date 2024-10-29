@@ -23,7 +23,7 @@ const CallToAction = () => {
           <div className="w-fit">
             <ScrollMotionEffect effect="fade-left" duration="2000">
               <Link
-                href={"/"}
+                href="tel:954-529-0695"
                 className="text-white font-normal text-lg bg-secondary px-12 py-2 rounded-full hover:bg-orange-400 w-full flex flex-col justify-center"
               >
                 <p className="text-white text-[12px]  2xl:text-md">

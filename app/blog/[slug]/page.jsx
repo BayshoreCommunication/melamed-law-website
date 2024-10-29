@@ -91,6 +91,9 @@ const page = async ({ params }) => {
               <div className="col-span-2">
                 <div className="flex items-center justify-between">
                   <p className="text-[.9rem] md:text-[1rem] text-black text-left italic mt-4 ">
+                    {blogs?.category || "Blog Post"}
+                  </p>
+                  <p className="text-[.9rem] md:text-[1rem] text-black text-left italic mt-4 ">
                     {postDate(blogs?.createdAt)}
                   </p>
                 </div>
@@ -113,7 +116,7 @@ const page = async ({ params }) => {
 
             <div className="col-span-2 sm:col-span-1 h-[100%] md:h-[1000px] overflow-y-scroll overflow-x-hidden  p-3 rounded-lg">
               <h2 className="font-medium text-4xl text-black border-b-2 border-gray-500 pb-4 mb-6">
-                Recent posts
+                Recent Cases
               </h2>
               {blogPostData?.data
                 ?.filter((pub, no) => pub.published === true)

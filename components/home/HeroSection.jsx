@@ -8,7 +8,7 @@ import ScrollMotionEffect from "../motion/ScrollMotionEffect";
 
 const HeroSection = () => {
   return (
-    <div className="relative w-full h-[500px] md:h-[700px]">
+    <div className="relative w-full h-[500px] md:h-[700px] flex items-center justify-center">
       <Image
         className="absolute inset-0 object-cover bg-bottom w-full h-full"
         width={1920}
@@ -18,9 +18,10 @@ const HeroSection = () => {
       />
 
       {/* Centered text */}
-      <div className="relative flex flex-col items-center justify-center w-full h-full">
+
+      <div className="container relative flex flex-col items-center justify-center w-full ">
         <ScrollMotionEffect effect="fade-up" duration="2000">
-          <h1 className="mt-4 md:mt-10 text-[45px] md:text-[85px] font-bold text-white text-center leading-snug md:leading-tight">
+          <h1 className="mt-4 md:mt-10 text-[40px] md:text-[85px] font-bold text-white text-center leading-snug md:leading-tight">
             Property <span className="bg-secondary px-2 py-0">Damaged</span> By
             <br /> Hurricane Helene?
           </h1>

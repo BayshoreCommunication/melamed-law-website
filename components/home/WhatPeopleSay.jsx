@@ -40,7 +40,7 @@ const WhatPeopleSay = () => {
           <ScrollMotionEffect effect="fade-up" duration="2000">
             <div className="mt-5">
               <Link
-                href={"/"}
+                href={"/testimonials"}
                 className="text-secondary font-normal text-lg bg-none px-4 py-2 rounded-full hover:bg-secondary hover:text-white border-2 border-secondary  "
               >
                 View All Reviews

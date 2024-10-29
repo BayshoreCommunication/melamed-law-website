@@ -48,7 +48,8 @@ const BlogMainSection = async () => {
                           className="bg-center bg-cover"
                         />
                         <div className="pt-2 pb-8 px-4">
-                          <div className="text-sm text-gray-500 flex items-center mt-1">
+                          <div className="text-sm text-gray-500 flex items-center mt-1 justify-between">
+                            <span> {blogs?.category || "Blog post"}</span>
                             <span> {postDate(blogs?.createdAt)}</span>
                           </div>
                           <h1 className="font-semibold  text-2xl text-black text-center md:text-left mt-5 line-clamp-2">

@@ -18,7 +18,7 @@ const AreasPractice = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 items-center justify-between gap-10 my-10">
           {areaspracticeData?.map((el, index) => (
             <ScrollMotionEffect effect="fade-up" duration="2000" key={index}>
-              <div className=" bg-white shadow-md rounded-md">
+              <div className=" bg-white !shadow-md !rounded-md border">
                 <Image
                   src={el?.url}
                   alt="Custom Icon"
@@ -35,7 +35,7 @@ const AreasPractice = () => {
                   </p>
                   <div className="mt-8">
                     <Link
-                      href={`/areas-of-practice/${el?.slug}`}
+                      href={`/practice-areas/${el?.slug}`}
                       className="text-secondary font-normal text-lg bg-none px-4 py-2 rounded-full hover:bg-secondary hover:text-white border-2 border-secondary  "
                     >
                       Read More

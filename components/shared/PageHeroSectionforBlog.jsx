@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ScrollMotionEffect from "../motion/ScrollMotionEffect";
 
-const PageHeroSection = ({ image, title, description }) => {
+const PageHeroSectionforBlog = ({ image, title, description }) => {
   const animationProps = {
     effect: "fade-up",
     duration: "2000",
@@ -18,6 +18,9 @@ const PageHeroSection = ({ image, title, description }) => {
         layout="fill"
         priority
       />
+
+      {/* Semi-transparent overlay */}
+      <div className="absolute inset-0 bg-black opacity-60"></div>
 
       <div className="relative flex flex-col items-center justify-center w-full h-full">
         <div className="container py-10 md:py-14">
@@ -47,4 +50,4 @@ const PageHeroSection = ({ image, title, description }) => {
   );
 };
 
-export default PageHeroSection;
+export default PageHeroSectionforBlog;

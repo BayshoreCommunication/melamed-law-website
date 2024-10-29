@@ -10,6 +10,16 @@ import { ImFacebook2 } from "react-icons/im";
 import { BsLinkedin } from "react-icons/bs";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaInstagramSquare } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { PiPhoneCallFill } from "react-icons/pi";
+import { IoMdHome } from "react-icons/io";
+
+import {
+  FaFacebookF,
+  FaLinkedinIn,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -37,39 +47,41 @@ const Footer = () => {
                   PLLC today to schedule an appointment.
                 </p>
 
-                <div className="flex justify-center md:justify-start gap-3 mt-4 md:mt-6 ">
+                <div className="text-white flex justify-center md:justify-start gap-3 mt-4 md:mt-6 ">
                   <Link
-                    href="https://www.facebook.com/TripLawPA"
+                    href="https://www.facebook.com/CarterInjuryLaw/"
                     target="_blank"
-                    className="hover:animate-pulse "
+                    className="inline-block p-2 rounded bg-secondary hover:bg-primary   duration-300"
                   >
-                    <ImFacebook2 className="text-secondary size-8" />
-                    <span className="sr-only">Facebook page</span>
-                  </Link>
-
-                  <Link
-                    href="https://www.instagram.com/trip_law_/"
-                    target="_blank"
-                    className="hover:animate-pulse "
-                  >
-                    <BsLinkedin className="text-secondary size-8" />
-                    <span className="sr-only">Facebook page</span>
+                    <FaFacebookF className="size-5" />
                   </Link>
                   <Link
-                    href="https://www.youtube.com/@triplawpa"
+                    href="https://www.linkedin.com/company/carter-injury-law/"
                     target="_blank"
-                    className="hover:animate-pulse"
+                    className="inline-block p-2 rounded bg-secondary hover:bg-primary   duration-300"
                   >
-                    <FaSquareXTwitter className="text-secondary size-9 mt-[-2px]" />
-                    <span className="sr-only">Youtube</span>
+                    <FaLinkedinIn className="size-5" />
                   </Link>
                   <Link
-                    href="https://www.youtube.com/@triplawpa"
+                    href="https://x.com/CarterInjuryLaw"
                     target="_blank"
-                    className="hover:animate-pulse"
+                    className="inline-block p-2 rounded bg-secondary hover:bg-primary   duration-300"
                   >
-                    <FaInstagramSquare className="text-secondary size-9 mt-[-2px]" />
-                    <span className="sr-only">Instagram</span>
+                    <FaTwitter className="size-5" />
+                  </Link>
+                  <Link
+                    href="https://www.instagram.com/carterinjurylaw/"
+                    target="_blank"
+                    className="inline-block p-2 rounded bg-secondary hover:bg-primary   duration-300"
+                  >
+                    <FaInstagram className="size-5" />
+                  </Link>
+                  <Link
+                    href="https://www.youtube.com/@CarterInjuryLaw"
+                    target="_blank"
+                    className="inline-block p-2 rounded bg-secondary hover:bg-primary duration-300"
+                  >
+                    <FaYoutube className="size-5" />
                   </Link>
                 </div>
               </div>

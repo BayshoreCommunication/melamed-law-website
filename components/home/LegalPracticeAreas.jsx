@@ -39,7 +39,7 @@ const LegalPracticeAreas = () => {
                 </p>
                 <div className="flex justify-center mx-auto items-center  mt-5">
                   <Link
-                    href={"/"}
+                    href={`/practice-areas/${el?.slug}`}
                     className="text-secondary font-normal text-lg bg-none px-4 py-2 rounded-full hover:bg-secondary hover:text-white border-2 border-secondary  "
                   >
                     Read More
@@ -52,7 +52,7 @@ const LegalPracticeAreas = () => {
         <ScrollMotionEffect effect="fade-up" duration="2000">
           <div className="flex justify-center mx-auto items-center  my-5">
             <Link
-              href={"/"}
+              href={"/practice-areas"}
               className="text-white font-normal text-lg bg-secondary px-8 py-3 rounded-full hover:bg-orange-400"
             >
               View All Practice Areas

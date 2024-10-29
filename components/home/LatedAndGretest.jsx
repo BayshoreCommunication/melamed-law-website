@@ -14,7 +14,18 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaInstagramSquare } from "react-icons/fa";
 import Link from "next/link";
 import { TiHome } from "react-icons/ti";
+import { FaHome } from "react-icons/fa";
 import ScrollMotionEffect from "../motion/ScrollMotionEffect";
+import { FaInstagram } from "react-icons/fa";
+import { PiPhoneCallFill } from "react-icons/pi";
+import { IoMdHome } from "react-icons/io";
+
+import {
+  FaFacebookF,
+  FaLinkedinIn,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa6";
 
 const LatedAndGretest = () => {
   const [emailForm, setEmailForm] = useState({
@@ -144,46 +155,48 @@ const LatedAndGretest = () => {
                     954-529-0695
                   </h6>
                 </div>
-                <div className="flex items-center gap-x-2 mt-2 mb-4">
-                  <TiHome className="text-secondary size-4" />
+                <div className="flex items-center gap-x-2 mt-2 mb-4 ">
+                  <FaHome className="text-secondary size-5" />
                   <h6 className="text-white font-normal text-sm md:text-lg">
                     {` 20200 West Dixie Highway, Suite 902 Aventura, FL 33180`}
                   </h6>
                 </div>
               </div>
-              <div className="flex justify-center md:justify-start gap-3 mt-6 md:mt-6 ">
+              <div className="text-white flex justify-center md:justify-start gap-2 mt-8">
                 <Link
-                  href="https://www.facebook.com/TripLawPA"
+                  href="https://www.facebook.com/CarterInjuryLaw/"
                   target="_blank"
-                  className="hover:animate-pulse "
+                  className="inline-block p-2 rounded bg-secondary hover:bg-white hover:text-secondary  duration-300"
                 >
-                  <ImFacebook2 className="text-white size-8" />
-                  <span className="sr-only">Facebook page</span>
-                </Link>
-
-                <Link
-                  href="https://www.instagram.com/trip_law_/"
-                  target="_blank"
-                  className="hover:animate-pulse "
-                >
-                  <BsLinkedin className="text-white size-8" />
-                  <span className="sr-only">Facebook page</span>
+                  <FaFacebookF className="size-5" />
                 </Link>
                 <Link
-                  href="https://www.youtube.com/@triplawpa"
+                  href="https://www.linkedin.com/company/carter-injury-law/"
                   target="_blank"
-                  className="hover:animate-pulse"
+                  className="inline-block p-2 rounded bg-secondary hover:bg-white hover:text-secondary  duration-300"
                 >
-                  <FaSquareXTwitter className="text-white size-9 mt-[-2px]" />
-                  <span className="sr-only">Youtube</span>
+                  <FaLinkedinIn className="size-5" />
                 </Link>
                 <Link
-                  href="https://www.youtube.com/@triplawpa"
+                  href="https://x.com/CarterInjuryLaw"
                   target="_blank"
-                  className="hover:animate-pulse"
+                  className="inline-block p-2 rounded bg-secondary hover:bg-white hover:text-secondary  duration-300"
                 >
-                  <FaInstagramSquare className="text-white size-9 mt-[-2px]" />
-                  <span className="sr-only">Instagram</span>
+                  <FaTwitter className="size-5" />
+                </Link>
+                <Link
+                  href="https://www.instagram.com/carterinjurylaw/"
+                  target="_blank"
+                  className="inline-block p-2 rounded bg-secondary hover:bg-white hover:text-secondary  duration-300"
+                >
+                  <FaInstagram className="size-5" />
+                </Link>
+                <Link
+                  href="https://www.youtube.com/@CarterInjuryLaw"
+                  target="_blank"
+                  className="inline-block p-2 rounded bg-secondary hover:bg-white hover:text-secondary duration-300"
+                >
+                  <FaYoutube className="size-5" />
                 </Link>
               </div>
             </div>

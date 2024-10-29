@@ -18,8 +18,6 @@ const page = () => {
       </Head>
       <ContactHeroSection />
       <GoogleMapSection />
-      <AchievementSection />
-      <TestimonialSlideSection className={" d my-0 md:my-0 shadow-none"} />
       <CallToAction />
     </>
   );

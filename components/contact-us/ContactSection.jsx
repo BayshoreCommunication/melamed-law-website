@@ -69,12 +69,7 @@ const ContactSection = () => {
 
     // Check if there are any errors
     if (Object.keys(errors).length === 0) {
-      send(
-        "service_du7590l",
-        "template_9ql7ubi",
-        emailForm,
-        "igJ5_f7vinFq47loI"
-      )
+      send("service_du7590l", "template_9ql7ubi", emailForm, "igJ5_f7vinFq47")
         .then((response) => {
           setLoading(false); // Stop loading
           Swal.fire({
@@ -334,7 +329,7 @@ const ContactSection = () => {
                 id="helper-checkbox-text"
                 className="text-base font-normal text-white mt-3"
               >
-                By submitting this form, you agree to our Terms & acknowledge
+                By submitting this form, you agree to our Terms & Aacknowledge
                 our Privacy Policy.
               </p>
             </div>
@@ -346,7 +341,7 @@ const ContactSection = () => {
         {loading ? (
           <button
             type="submit"
-            className="text-white bg-[#EC1D21]    font-medium  text-base w-full rounded  cursor-pointer px-5 py-2 xl:py-5  text-center uppercase   "
+            className="text-white bg-secondary     font-medium  text-base w-full rounded  cursor-pointer px-5 py-2 xl:py-5  text-center uppercase   "
           >
             Sending
           </button>
@@ -354,7 +349,7 @@ const ContactSection = () => {
           <button
             type="submit"
             onClick={handleSubmit}
-            className="text-white bg-[#EC1D21]    font-medium  text-base w-full rounded  cursor-pointer px-5 py-2 xl:py-5 text-center uppercase   "
+            className="text-white bg-secondary   font-medium  text-base w-full rounded  cursor-pointer px-5 py-2 xl:py-5 text-center uppercase   "
           >
             <div className=" flex items-center justify-center">
               <div>
