@@ -170,10 +170,10 @@ const Footer = () => {
                       </h3>
                     </div>
                     <Link
-                      href="mailto:info@melamedlaw.com"
+                      href="mailto:aaron@melamedlawpllc.com"
                       className="hover:underline duration-300"
                     >
-                      info@melamedlaw.com
+                      aaron@melamedlawpllc.com
                     </Link>
                   </li>
                 </ul>

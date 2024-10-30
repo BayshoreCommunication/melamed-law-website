@@ -85,7 +85,7 @@ const MainNavbar = () => {
   return (
     <section className={"relative z-50"}>
       <div className="bg-primary">
-        <div className="hidden lg:block">
+        {/* <div className="hidden lg:block">
           <div className="container flex justify-between">
             <div className="bg-secondary  py-2 px-5">
               <p className="text-white text-[10px]  xl:text-lg">
@@ -113,17 +113,17 @@ const MainNavbar = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="bg-white py-3 hidden md:block">
+        </div> */}
+        <div className="bg-white hidden md:block">
           <div className="flex items-center container  justify-between">
-            <div className="flex items-center gap-x-10 2xl:gap-x-16">
+            <div className=" flex items-center gap-x-10 2xl:gap-x-16">
               <Link href={"/"}>
                 <Image
                   src="/assets/site-logo/logo.png"
                   alt="footer logo"
                   width={500}
                   height={500}
-                  className="cursor-pointer w-[180px] xl:w-[300px]  h-auto"
+                  className="cursor-pointer w-[180px] xl:w-[300px]  h-auto mt-2 mb-2"
                 />
               </Link>
             </div>
@@ -161,7 +161,7 @@ const MainNavbar = () => {
                             </span>
                           </Link>
                         </div>
-                        <div className="absolute hidden group-hover:block bg-white shadow-lg rounded p-6  overflow-y-scroll w-[300px] max-h-[400px]">
+                        {/* <div className="absolute hidden group-hover:block bg-white shadow-lg rounded p-6  overflow-y-scroll w-[300px] max-h-[400px]">
                           <ul className="py-2 list-none ml-0">
                             {areaspracticeData?.map((el, index) => (
                               <li key={index}>
@@ -174,7 +174,7 @@ const MainNavbar = () => {
                               </li>
                             ))}
                           </ul>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   ) : (
@@ -191,12 +191,25 @@ const MainNavbar = () => {
             </div>
 
             <div className="">
-              <Link
+              {/* <Link
                 href={"/contact"}
                 className="text-white font-normal text-lg bg-secondary px-2 xl:px-16 py-2 xl:py-4 rounded-full hover:bg-orange-400"
               >
                 Contact Us
-              </Link>
+              </Link> */}
+              <div className="bg-secondary  py-4 px-5">
+                <Link href="tel:954-529-0695">
+                  <p className="text-white text-[10px]  xl:text-lg">
+                    Call For A Free Consultation
+                  </p>
+                  <div className="flex items-center gap-x-2">
+                    <BsTelephoneForwardFill className="text-white size-4 xl:size-5" />
+                    <h6 className="text-white font-bold text-base  xl:text-2xl">
+                      954-529-0695
+                    </h6>
+                  </div>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

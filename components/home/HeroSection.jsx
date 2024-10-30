@@ -25,8 +25,8 @@ const HeroSection = () => {
           </h1>
         </ScrollMotionEffect>
         <ScrollMotionEffect effect="fade-up" duration="2000">
-          <h2 className="mt-4 md:mt-6 text-[20px] md:text-[30px] font-semibold text-white text-center leading-tight">
-            Our Team Is Here To Help
+          <h2 className="mt-4 md:mt-6 text-[20px] md:text-[25px] font-semibold text-white text-center leading-tight">
+            Let Us Help You Get The Compensation You Deserve
           </h2>
         </ScrollMotionEffect>
         <ScrollMotionEffect effect="fade-up" duration="2000">
