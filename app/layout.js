@@ -30,9 +30,9 @@ export default function RootLayout({ children }) {
       <body className={open_sans.className}>
         <Providers>
           <div className="overflow-x-hidden text-black bg-white">
-            <MainNavbar />
+            {/* <MainNavbar /> */}
             {children}
-            <Footer />
+            {/* <Footer /> */}
           </div>
         </Providers>
       </body>
