@@ -68,35 +68,35 @@ const ContactHeroSection = () => {
                     </ul>
                     <div className="text-white flex gap-2 mt-6">
                       <Link
-                        href="https://www.facebook.com/CarterInjuryLaw/"
+                        href="https://www.facebook.com/MelamedLawPLLC"
                         target="_blank"
                         className="inline-block p-2 rounded bg-secondary hover:bg-white hover:text-secondary  duration-300"
                       >
                         <FaFacebookF />
                       </Link>
                       <Link
-                        href="https://www.linkedin.com/company/carter-injury-law/"
+                        href="https://www.linkedin.com/company/melamedlawpllc"
                         target="_blank"
                         className="inline-block p-2 rounded bg-secondary hover:bg-white hover:text-secondary  duration-300"
                       >
                         <FaLinkedinIn />
                       </Link>
                       <Link
-                        href="https://x.com/CarterInjuryLaw"
+                        href="https://x.com/Melamedlawpllc"
                         target="_blank"
                         className="inline-block p-2 rounded bg-secondary hover:bg-white hover:text-secondary  duration-300"
                       >
                         <FaTwitter />
                       </Link>
                       <Link
-                        href="https://www.instagram.com/carterinjurylaw/"
+                        href="https://www.instagram.com/melamedlaw_pllc"
                         target="_blank"
                         className="inline-block p-2 rounded bg-secondary hover:bg-white hover:text-secondary  duration-300"
                       >
                         <FaInstagram />
                       </Link>
                       <Link
-                        href="https://www.youtube.com/@CarterInjuryLaw"
+                        href="https://www.youtube.com/@melamedlawpllc"
                         target="_blank"
                         className="inline-block p-2 rounded bg-secondary hover:bg-white hover:text-secondary duration-300"
                       >
