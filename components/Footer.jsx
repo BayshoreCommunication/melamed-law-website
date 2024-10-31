@@ -49,35 +49,35 @@ const Footer = () => {
 
                 <div className="text-white flex justify-center md:justify-start gap-3 mt-4 md:mt-6 ">
                   <Link
-                    href="https://www.facebook.com/CarterInjuryLaw/"
+                    href="https://www.facebook.com/MelamedLawPLLC"
                     target="_blank"
                     className="inline-block p-2 rounded bg-secondary hover:bg-primary   duration-300"
                   >
                     <FaFacebookF className="size-5" />
                   </Link>
                   <Link
-                    href="https://www.linkedin.com/company/carter-injury-law/"
+                    href="https://www.linkedin.com/company/melamedlawpllc"
                     target="_blank"
                     className="inline-block p-2 rounded bg-secondary hover:bg-primary   duration-300"
                   >
                     <FaLinkedinIn className="size-5" />
                   </Link>
                   <Link
-                    href="https://x.com/CarterInjuryLaw"
+                    href="https://x.com/Melamedlawpllc"
                     target="_blank"
                     className="inline-block p-2 rounded bg-secondary hover:bg-primary   duration-300"
                   >
                     <FaTwitter className="size-5" />
                   </Link>
                   <Link
-                    href="https://www.instagram.com/carterinjurylaw/"
+                    href="https://www.instagram.com/melamedlaw_pllc"
                     target="_blank"
                     className="inline-block p-2 rounded bg-secondary hover:bg-primary   duration-300"
                   >
                     <FaInstagram className="size-5" />
                   </Link>
                   <Link
-                    href="https://www.youtube.com/@CarterInjuryLaw"
+                    href="https://www.youtube.com/@melamedlawpllc"
                     target="_blank"
                     className="inline-block p-2 rounded bg-secondary hover:bg-primary duration-300"
                   >
