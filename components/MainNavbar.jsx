@@ -203,7 +203,7 @@ const MainNavbar = () => {
                   className="flex flex-col justify-center"
                 >
                   <p className="text-white text-[8px]  xl:text-[16px] text-center">
-                    CONTACT US TODAY FOR A FREE CONSULTATION
+                    CONTACT US FOR A FREE CONSULTATION
                   </p>
                   <div className="flex items-center justify-center gap-x-2">
                     <BsTelephoneForwardFill className="text-white size-4 xl:size-5" />
