@@ -197,17 +197,17 @@ const MainNavbar = () => {
               >
                 Contact Us
               </Link> */}
-              <div className="bg-secondary  py-4  md:px-1 lg:px-2 xl:px-4">
+              <div className="bg-secondary  py-4  md:px-1 lg:px-1 xl:px-2">
                 <Link
                   href="tel:954-529-0695"
                   className="flex flex-col justify-center"
                 >
-                  <p className="text-white text-[8px]  xl:text-[16px] text-center">
+                  <p className="text-white text-[6px]  xl:text-[12px] text-center">
                     CONTACT US FOR A FREE CONSULTATION
                   </p>
-                  <div className="flex items-center justify-center gap-x-2">
-                    <BsTelephoneForwardFill className="text-white size-4 xl:size-5" />
-                    <h6 className="text-white font-bold text-base  xl:text-2xl">
+                  <div className="flex items-center justify-center gap-x-0 xl:gap-x-2">
+                    <BsTelephoneForwardFill className="text-white size-4  xl:size-5" />
+                    <h6 className="text-white font-bold text-sm lg:text-base xl:text-xl">
                       954-529-0695
                     </h6>
                   </div>
