@@ -45,10 +45,10 @@ const MainNavbar = () => {
   const menuItems = useMemo(
     () => [
       { title: "Home", slug: "/" },
-      { title: "About Us", slug: "/about" },
-      { title: "Practice Areas", slug: "/practice-areas" },
-      { title: "Testimonials", slug: "/testimonials" },
-      { title: "Blog", slug: "/blog" },
+      { title: "About Us", slug: "" },
+      { title: "Practice Areas", slug: "" },
+      { title: "Testimonials", slug: "" },
+      { title: "Blog", slug: "" },
     ],
     []
   );
@@ -56,10 +56,10 @@ const MainNavbar = () => {
   const navLogoList = useMemo(
     () => [
       { title: "Home", slug: "/" },
-      { title: "About Us", slug: "/about" },
-      { title: "Practice Areas", slug: "/practice-areas" },
-      { title: "Testimonials", slug: "/testimonials" },
-      { title: "Blog", slug: "/blog" },
+      { title: "About Us", slug: "" },
+      { title: "Practice Areas", slug: "" },
+      { title: "Testimonials", slug: "" },
+      { title: "Blog", slug: "" },
     ],
     []
   );

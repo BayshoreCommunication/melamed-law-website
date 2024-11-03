@@ -30,6 +30,8 @@ import {
 import { areaspracticeData } from "@/config/data";
 
 const LatedAndGretest = () => {
+  const addAreaspracticeData = [...areaspracticeData, { title: "others" }];
+
   const [emailForm, setEmailForm] = useState({
     firstName: "",
     lastName: "",
@@ -40,6 +42,8 @@ const LatedAndGretest = () => {
     message: "",
     flag: "",
   });
+
+  const [othersValue, setOthersValue] = useState("");
 
   const [loading, setLoading] = useState(false);
   const [formErrors, setFormErrors] = useState({});
@@ -88,6 +92,10 @@ const LatedAndGretest = () => {
     // Validate the form and set errors
     const errors = validate(emailForm);
     setFormErrors(errors);
+
+    if (emailForm.caseType === "others") {
+      emailForm.caseType = othersValue;
+    }
 
     // Check if there are any errors
     if (Object.keys(errors).length === 0) {
@@ -143,17 +151,19 @@ const LatedAndGretest = () => {
   return (
     <section className="bg-primary">
       <div className="container py-10  md:py-20">
-        <div className="max-w-[800px] mx-auto mb-10">
+        <div className=" mx-auto mb-10">
           <ScrollMotionEffect effect="fade-right" duration="2000">
             <h1 className="font-black text-2xl md:text-5xl text-white text-center">
-              SEE OUR LATEST AND GREATEST
+              contact us today for a free case review
             </h1>
           </ScrollMotionEffect>
 
           <ScrollMotionEffect effect="fade-left" duration="2000">
-            <p className="text-base md:text-lg text-white text-center mt-5">
-              {`Professionally handling Property Damage Claims, we’re committed to protecting both your space and your peace of mind in times of need.`}
-            </p>
+            <div className="flex justify-center">
+              <p className="text-base md:text-lg text-white text-center mt-5 max-w-[800px]">
+                {`Professionally handling Property Damage Claims, we're committed to protecting both your Property and your Peace of Mind in times of need.`}
+              </p>
+            </div>
           </ScrollMotionEffect>
         </div>
         <CardMotion
@@ -352,12 +362,29 @@ const LatedAndGretest = () => {
                     <option className="text-base" value="" disabled selected>
                       - Case Type -
                     </option>
-                    {areaspracticeData?.map((el, index) => (
+                    {addAreaspracticeData?.map((el, index) => (
                       <option className="text-base" value={el?.title}>
                         {el?.title}
                       </option>
                     ))}
                   </select>
+                  {emailForm.caseType === "others" ? (
+                    <div className="mt-5">
+                      <input
+                        className="bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-md focus:ring-black focus:border-black block w-full p-2.5 py-2.5 placeholder:text-base pl-5"
+                        placeholder="Type..."
+                        required
+                        type="Case Type"
+                        name="caseType"
+                        value={othersValue}
+                        onChange={(event) => {
+                          setOthersValue(event.target.value);
+                        }}
+                      />
+                    </div>
+                  ) : (
+                    ""
+                  )}
                   <span className="text-red-500">{formErrors.caseType}</span>
                 </div>
 

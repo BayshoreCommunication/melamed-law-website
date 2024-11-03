@@ -42,9 +42,9 @@ const Footer = () => {
                   />
                 </Link>
                 <p className="py-5 text-[18px] font-normal text-center text-black md:text-left max-w-[450px] leading-8">
-                  The firm offers a free consultation and will gladly discuss
-                  your case with you at your convenience. Contact Melamed Law,
-                  PLLC today to schedule an appointment.
+                  If your insurance claim has been denied, underpaid, delayed,
+                  or you just have questions about how to start the process,
+                  give us a call at Melamed Law today.
                 </p>
 
                 <div className="text-white flex justify-center md:justify-start gap-3 mt-4 md:mt-6 ">

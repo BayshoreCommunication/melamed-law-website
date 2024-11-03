@@ -16,7 +16,7 @@ const LegalPracticeAreas = () => {
           </ScrollMotionEffect>
           <ScrollMotionEffect effect="fade-left" duration="2000">
             <p className="text-base md:text-lg text-white text-center mt-5">
-              {`Professionally handling Property Damage Claims, we’re committed to protecting both your space and your peace of mind in times of need.`}
+              {`Professionally handling Property Damage Claims, we're committed to protecting both your Property and your Peace of Mind in times of need.`}
             </p>
           </ScrollMotionEffect>
         </div>

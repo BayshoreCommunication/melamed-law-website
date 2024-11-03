@@ -9,6 +9,8 @@ import { MdArrowOutward } from "react-icons/md";
 import { areaspracticeData } from "@/config/data";
 
 const ContactSection = () => {
+  const addAreaspracticeData = [...areaspracticeData, { title: "others" }];
+
   const [emailForm, setEmailForm] = useState({
     firstName: "",
     lastName: "",
@@ -19,6 +21,8 @@ const ContactSection = () => {
     message: "",
     flag: "",
   });
+
+  const [othersValue, setOthersValue] = useState("");
 
   const [loading, setLoading] = useState(false);
   const [formErrors, setFormErrors] = useState({});
@@ -67,6 +71,10 @@ const ContactSection = () => {
     // Validate the form and set errors
     const errors = validate(emailForm);
     setFormErrors(errors);
+
+    if (emailForm.caseType === "others") {
+      emailForm.caseType = othersValue;
+    }
 
     // Check if there are any errors
     if (Object.keys(errors).length === 0) {
@@ -217,6 +225,7 @@ const ContactSection = () => {
           <span className="text-red-500">{formErrors.email}</span>
         </div>
         {/* Case Type */}
+        {/* Case Type */}
 
         <div className="mb-5">
           <select
@@ -236,12 +245,29 @@ const ContactSection = () => {
             <option className="text-base" value="" disabled selected>
               - Case Type -
             </option>
-            {areaspracticeData?.map((el, index) => (
+            {addAreaspracticeData?.map((el, index) => (
               <option className="text-base" value={el?.title}>
                 {el?.title}
               </option>
             ))}
           </select>
+          {emailForm.caseType === "others" ? (
+            <div className="mt-5">
+              <input
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-md focus:ring-black focus:border-black block w-full p-2.5 py-2.5 placeholder:text-base pl-5"
+                placeholder="Type..."
+                required
+                type="Case Type"
+                name="caseType"
+                value={othersValue}
+                onChange={(event) => {
+                  setOthersValue(event.target.value);
+                }}
+              />
+            </div>
+          ) : (
+            ""
+          )}
           <span className="text-red-500">{formErrors.caseType}</span>
         </div>
 

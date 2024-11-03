@@ -13,10 +13,11 @@ const AboutSection = () => {
               Welcome to Melamed Law
             </h1>
             <p className="text-md md:text-lg text-[#55545A] text-center">
-              {`Melamed Law, conveniently located in South Florida, provides professional legal representation for Residential and Commercial Property Damage as well as Insurance Claims. Contact us today to schedule an appointment.`}
+              {`Melamed Law represents homeowners and business owners throughout the state of Florida and provides professional legal services for Residential and Commercial Property Damage as well as other types of insurance claims.`}
             </p>
             <p className="text-md md:text-lg text-[#55545A] text-center">
-              {`Your legal matters are important to us. We can help you achieve the best possible outcome for your situation. The firm prides itself on being able to support clients with a diverse number of problems.`}
+              {`Contact us today to schedule an appointment.
+              Your legal matters are important to us. We can help you achieve the best possible outcome for your situation. The firm prides itself on being able to support clients with a diverse number of problems.`}
             </p>
 
             <div className="py-4 flex justify-center ">
