@@ -61,7 +61,8 @@ export const servicesData = [
     title: "Mold Damage",
     slug: "mold-damage",
     icon: "/assets/servicepage/icon/mold-damage.png",
-    sortTitle: "Get Help for Mold Infestation Claims in Tampa, Florida",
+    sortTitle:
+      "Get Professional Help for Mold Infestation Claims in Tampa, Florida",
     description:
       "At Melamed Law, PLLC, Our Team Provides A Range Of Legal Services Aligned With The Needs Of Our Clients.",
   },
