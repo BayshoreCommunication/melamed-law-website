@@ -52,12 +52,12 @@ const LegalPracticeAreas = () => {
         </div>
         <ScrollMotionEffect effect="fade-up" duration="2000">
           <div className="flex justify-center mx-auto items-center  my-5">
-            <Link
-              href={"/practice-areas"}
+            <button
+              // href={"/practice-areas"}
               className="text-white font-normal text-lg bg-secondary px-8 py-3 rounded-full hover:bg-orange-400"
             >
               View All Practice Areas
-            </Link>
+            </button>
           </div>
         </ScrollMotionEffect>
       </div>

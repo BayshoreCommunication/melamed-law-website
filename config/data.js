@@ -51,7 +51,7 @@ export const servicesData = [
     title: "Fire Damage",
     slug: "fire-damage",
     icon: "/assets/servicepage/icon/fire-damage.png",
-    sortTitle: "Legal Help for Fire Damage Insurance Claims in , Florida",
+    sortTitle: "Legal Help for Fire Damage Insurance Claims in Florida",
     description:
       "At Melamed Law, PLLC, Our Team Provides A Range Of Legal Services Aligned With The Needs Of Our Clients.",
   },
@@ -60,7 +60,7 @@ export const servicesData = [
     title: "Mold Damage",
     slug: "mold-damage",
     icon: "/assets/servicepage/icon/mold-damage.png",
-    sortTitle: "Get Professional Help for Mold Infestation Claims in , Florida",
+    sortTitle: "Get Professional Help for Mold Infestation Claims in Florida",
     description:
       "At Melamed Law, PLLC, Our Team Provides A Range Of Legal Services Aligned With The Needs Of Our Clients.",
   },
