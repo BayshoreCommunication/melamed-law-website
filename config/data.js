@@ -4,7 +4,7 @@ export const servicesData = [
     slug: "hurricane-damage",
     icon: "/assets/servicepage/icon/hurricane-damage.png",
     sortTitle:
-      "Tampa Hurricane Damage Claims Attorney – Helping You Recover Quickly and Fairly",
+      " Hurricane Damage Claims Attorney – Helping You Recover Quickly and Fairly",
     description:
       "At Melamed Law, PLLC, Our Team Provides A Range Of Legal Services Aligned With The Needs Of Our Clients.",
   },
@@ -13,7 +13,7 @@ export const servicesData = [
     slug: "windstorm-damage",
     icon: "/assets/servicepage/icon/windstrom-damage.png",
     sortTitle:
-      "Windstorm Damage Claims in Tampa – Secure Your Rights with Expert Help",
+      "Windstorm Damage Claims in  – Secure Your Rights with Expert Help",
     description:
       "At Melamed Law, PLLC, Our Team Provides A Range Of Legal Services Aligned With The Needs Of Our Clients.",
   },
@@ -22,8 +22,7 @@ export const servicesData = [
     title: "Roof Damage",
     slug: "roof-damage",
     icon: "/assets/servicepage/icon/roof-damage.png",
-    sortTitle:
-      "Protect Your Roof Damage Claim Rights with Tampa’s Trusted Attorney",
+    sortTitle: "Protect Your Roof Damage Claim Rights with ’s Trusted Attorney",
     description:
       "At Melamed Law, PLLC, Our Team Provides A Range Of Legal Services Aligned With The Needs Of Our Clients.",
   },
@@ -33,7 +32,7 @@ export const servicesData = [
     slug: "storm-damage",
     icon: "/assets/servicepage/icon/storm-damage.png",
     sortTitle:
-      "Tampa Storm Damage Attorney – Protect Your Insurance Rights and Claims",
+      " Storm Damage Attorney – Protect Your Insurance Rights and Claims",
     description:
       "At Melamed Law, PLLC, Our Team Provides A Range Of Legal Services Aligned With The Needs Of Our Clients.",
   },
@@ -43,7 +42,7 @@ export const servicesData = [
     slug: "water-damage",
     icon: "/assets/servicepage/icon/water-damage.png",
     sortTitle:
-      "Water Damage Restoration Claims in Tampa – Expert Legal Assistance Available",
+      "Water Damage Restoration Claims in  – Expert Legal Assistance Available",
     description:
       "At Melamed Law, PLLC, Our Team Provides A Range Of Legal Services Aligned With The Needs Of Our Clients.",
   },
@@ -52,7 +51,7 @@ export const servicesData = [
     title: "Fire Damage",
     slug: "fire-damage",
     icon: "/assets/servicepage/icon/fire-damage.png",
-    sortTitle: "Legal Help for Fire Damage Insurance Claims in Tampa, Florida",
+    sortTitle: "Legal Help for Fire Damage Insurance Claims in , Florida",
     description:
       "At Melamed Law, PLLC, Our Team Provides A Range Of Legal Services Aligned With The Needs Of Our Clients.",
   },
@@ -61,8 +60,7 @@ export const servicesData = [
     title: "Mold Damage",
     slug: "mold-damage",
     icon: "/assets/servicepage/icon/mold-damage.png",
-    sortTitle:
-      "Get Professional Help for Mold Infestation Claims in Tampa, Florida",
+    sortTitle: "Get Professional Help for Mold Infestation Claims in , Florida",
     description:
       "At Melamed Law, PLLC, Our Team Provides A Range Of Legal Services Aligned With The Needs Of Our Clients.",
   },
@@ -71,8 +69,7 @@ export const servicesData = [
     title: "Hail Damage",
     slug: "hail-damage",
     icon: "/assets/servicepage/icon/hail-damage.png",
-    sortTitle:
-      "Skilled Tampa Lawyer for Hail-Related Property Repair and Recovery",
+    sortTitle: "Skilled  Lawyer for Hail-Related Property Repair and Recovery",
     description:
       "At Melamed Law, PLLC, Our Team Provides A Range Of Legal Services Aligned With The Needs Of Our Clients.",
   },
@@ -81,8 +78,7 @@ export const servicesData = [
     title: "Plumbing Damage",
     slug: "plumbing-damage",
     icon: "/assets/servicepage/icon/plumbing-damage.png",
-    sortTitle:
-      "Get Assistance for Plumbing Failure Insurance Claims in Tampa Today",
+    sortTitle: "Get Assistance for Plumbing Failure Insurance Claims in  Today",
     description:
       "At Melamed Law, PLLC, Our Team Provides A Range Of Legal Services Aligned With The Needs Of Our Clients.",
   },
@@ -91,8 +87,7 @@ export const servicesData = [
     title: "Smoke Damage",
     slug: "smoke-damage",
     icon: "/assets/servicepage/icon/smoke-damage.png",
-    sortTitle:
-      "Tampa Smoke Damage Claim Assistance – Restore Your Home After Fire",
+    sortTitle: " Smoke Damage Claim Assistance – Restore Your Home After Fire",
     description:
       "At Melamed Law, PLLC, Our Team Provides A Range Of Legal Services Aligned With The Needs Of Our Clients.",
   },
@@ -102,7 +97,7 @@ export const servicesData = [
     slug: "bad-faith-claims",
     icon: "/assets/servicepage/icon/bad-faith-claims.png",
     sortTitle:
-      "Legal Support for Bad Faith Claims in Tampa – Safeguard Your Interests",
+      "Legal Support for Bad Faith Claims in  – Safeguard Your Interests",
     description:
       "At Melamed Law, PLLC, Our Team Provides A Range Of Legal Services Aligned With The Needs Of Our Clients.",
   },
@@ -112,7 +107,7 @@ export const servicesData = [
     slug: "vandalism-and-theft",
     icon: "/assets/servicepage/icon/vandalism-and-theft.png",
     sortTitle:
-      "Tampa Vandalism and Theft Claim Assistance – Safeguard Your Property",
+      " Vandalism and Theft Claim Assistance – Safeguard Your Property",
     description:
       "At Melamed Law, PLLC, Our Team Provides A Range Of Legal Services Aligned With The Needs Of Our Clients.",
   },

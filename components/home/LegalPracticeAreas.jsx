@@ -38,12 +38,13 @@ const LegalPracticeAreas = () => {
                   {el?.sortTitle}
                 </p>
                 <div className="flex justify-center mx-auto items-center  mt-5">
-                  <Link
-                    href={`/practice-areas/${el?.slug}`}
-                    className="text-secondary font-normal text-lg bg-none px-4 py-2 rounded-full hover:bg-secondary hover:text-white border-2 border-secondary  "
+                  <button
+                    // href={`/practice-areas/${el?.slug}`}
+
+                    className="text-secondary font-normal text-lg bg-none px-4 py-2 rounded-full hover:bg-secondary hover:text-white border-2 border-secondary"
                   >
                     Read More
-                  </Link>
+                  </button>
                 </div>
               </div>
             </ScrollMotionEffect>

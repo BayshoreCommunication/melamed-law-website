@@ -189,7 +189,7 @@ const LatedAndGretest = () => {
                 className="w-[500px] h-auto"
               />
               <p className="text-md text-white mt-5">
-                {`You may be able to reopen your claim up to five years from the date of loss, even if it has already been settled.`}
+                {`If your insurance claim has been denied, underpaid, delayed, or you just have questions about how to start the process, give us a call at Melamed Law today.`}
               </p>
               <div className="mt-4 mb-3">
                 <h2 className="text-white font-medium text-2xl md:text-3xl text-center md:text-left">
