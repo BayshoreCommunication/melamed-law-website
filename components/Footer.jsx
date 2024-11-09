@@ -30,7 +30,7 @@ const Footer = () => {
             <div className="grid justify-center grid-cols-2 gap-8 sm:gap-6 md:grid-cols-5 ">
               <div className="col-span-2 mx-auto mb-6 md:mb-0 md:mx-0">
                 <Link
-                  href="https://trip-law.com"
+                  href="/"
                   className="flex items-center justify-center cursor-pointer md:justify-start"
                 >
                   <Image
@@ -42,9 +42,8 @@ const Footer = () => {
                   />
                 </Link>
                 <p className="py-5 text-[18px] font-normal text-center text-black md:text-left max-w-[450px] leading-8">
-                  If your insurance claim has been denied, underpaid, delayed,
-                  or you just have questions about how to start the process,
-                  give us a call at Melamed Law today.
+                  Contact Aaron Melamed, ESQ directly today to get your free
+                  case review. We answer calls and text 24/7
                 </p>
 
                 <div className="text-white flex justify-center md:justify-start gap-3 mt-4 md:mt-6 ">
@@ -93,9 +92,12 @@ const Footer = () => {
                 <ul className="ml-0 text-black list-none text-[18px] font-medium">
                   {SITECONFIG?.footer?.quick_links?.map((el, index) => (
                     <li className="mb-4" key={index}>
-                      <Link href={el.slug} className="hover:underline">
+                      {/* <Link href={el.slug} className="hover:underline">
                         {el.title}
-                      </Link>
+                      </Link> */}
+                      <p className="hover:underline cursor-pointer">
+                        {el.title}
+                      </p>
                     </li>
                   ))}
                 </ul>
@@ -134,7 +136,7 @@ const Footer = () => {
                       className=" hover:underline duration-300"
                       target="_blank"
                     >
-                      {`20200 West Dixie Highway, Suite 902 Aventura, FL 33180`}
+                      {`20200 West Dixie Highway, Suite 902Aventura, FL 33180`}
                     </Link>
                   </li>
                   <li className="mb-4">
@@ -169,12 +171,20 @@ const Footer = () => {
                         Email
                       </h3>
                     </div>
-                    <Link
-                      href="mailto:aaron@melamedlawpllc.com"
-                      className="hover:underline duration-300"
-                    >
-                      aaron@melamedlawpllc.com
-                    </Link>
+                    <div className="flex flex-col gap-px">
+                      <Link
+                        href="mailto:Info@melamedlawpllc.com"
+                        className="hover:underline duration-300 "
+                      >
+                        Info@melamedlawpllc.com
+                      </Link>
+                      {/* <Link
+                        href="mailto:myra@melamedlawpllc.com"
+                        className="hover:underline duration-300"
+                      >
+                        myra@melamedlawpllc.com
+                      </Link> */}
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -185,7 +195,7 @@ const Footer = () => {
             <div className="text-[18px] font-medium text-center text-black">
               © 2024{" "}
               <a
-                href="https://trip-law.com/"
+                href="https://www.melamedlawpllc.com/"
                 className="hover:underline text-secondary"
               >
                 Melamed Law

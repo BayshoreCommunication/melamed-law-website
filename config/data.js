@@ -12,8 +12,7 @@ export const servicesData = [
     title: "Windstorm Damage",
     slug: "windstorm-damage",
     icon: "/assets/servicepage/icon/windstrom-damage.png",
-    sortTitle:
-      "Windstorm Damage Claims in  – Secure Your Rights with Expert Help",
+    sortTitle: "Windstorm Damage Claims – Secure Your Rights with Expert Help",
     description:
       "At Melamed Law, PLLC, Our Team Provides A Range Of Legal Services Aligned With The Needs Of Our Clients.",
   },
@@ -22,7 +21,8 @@ export const servicesData = [
     title: "Roof Damage",
     slug: "roof-damage",
     icon: "/assets/servicepage/icon/roof-damage.png",
-    sortTitle: "Protect Your Roof Damage Claim Rights with ’s Trusted Attorney",
+    sortTitle:
+      "Protect Your Roof Damage Claim Rights With The Attorney You Trust",
     description:
       "At Melamed Law, PLLC, Our Team Provides A Range Of Legal Services Aligned With The Needs Of Our Clients.",
   },
@@ -42,7 +42,7 @@ export const servicesData = [
     slug: "water-damage",
     icon: "/assets/servicepage/icon/water-damage.png",
     sortTitle:
-      "Water Damage Restoration Claims in  – Expert Legal Assistance Available",
+      "Water Damage Restoration Claims – Expert Legal Assistance Available",
     description:
       "At Melamed Law, PLLC, Our Team Provides A Range Of Legal Services Aligned With The Needs Of Our Clients.",
   },
@@ -78,7 +78,7 @@ export const servicesData = [
     title: "Plumbing Damage",
     slug: "plumbing-damage",
     icon: "/assets/servicepage/icon/plumbing-damage.png",
-    sortTitle: "Get Assistance for Plumbing Failure Insurance Claims in  Today",
+    sortTitle: "Get Assistance for Plumbing Failure Insurance Claims Today",
     description:
       "At Melamed Law, PLLC, Our Team Provides A Range Of Legal Services Aligned With The Needs Of Our Clients.",
   },
@@ -96,8 +96,7 @@ export const servicesData = [
     title: "Bad Faith Claims",
     slug: "bad-faith-claims",
     icon: "/assets/servicepage/icon/bad-faith-claims.png",
-    sortTitle:
-      "Legal Support for Bad Faith Claims in  – Safeguard Your Interests",
+    sortTitle: "Legal Support for Bad Faith Claims – Safeguard Your Interests",
     description:
       "At Melamed Law, PLLC, Our Team Provides A Range Of Legal Services Aligned With The Needs Of Our Clients.",
   },
