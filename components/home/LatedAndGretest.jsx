@@ -30,7 +30,7 @@ import {
 import { areaspracticeData } from "@/config/data";
 
 const LatedAndGretest = () => {
-  const addAreaspracticeData = [...areaspracticeData, { title: "others" }];
+  const addAreaspracticeData = [...areaspracticeData, { title: "Others" }];
 
   const [emailForm, setEmailForm] = useState({
     firstName: "",
@@ -154,7 +154,7 @@ const LatedAndGretest = () => {
         <div className=" mx-auto mb-10">
           <ScrollMotionEffect effect="fade-right" duration="2000">
             <h1 className="font-black text-2xl md:text-5xl text-white text-center">
-              contact us today for a free case review
+              Contact us today for a free case review
             </h1>
           </ScrollMotionEffect>
 
