@@ -210,7 +210,7 @@ const Footer = () => {
             <div className="text-[18px] font-medium text-center text-black">
               Design & Developed by{" "}
               <a
-                href="https://www.bayshorecommunication.com//"
+                href="https://www.bayshorecommunication.com/"
                 target="_blank"
                 className="font-medium hover:underline text-secondary"
               >
