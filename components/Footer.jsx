@@ -42,8 +42,8 @@ const Footer = () => {
                   />
                 </Link>
                 <p className="py-5 text-[18px] font-normal text-center text-black md:text-left max-w-[450px] leading-8">
-                  Contact Aaron Melamed, ESQ directly today to get your free
-                  case review. We answer calls and text 24/7
+                  Contact us today to get your free case review. We answer calls
+                  & texts 24/7.
                 </p>
 
                 <div className="text-white flex justify-center md:justify-start gap-3 mt-4 md:mt-6 ">
@@ -95,7 +95,7 @@ const Footer = () => {
                       {/* <Link href={el.slug} className="hover:underline">
                         {el.title}
                       </Link> */}
-                      <p className="hover:underline cursor-pointer">
+                      <p className="hover:underline cursor-pointer text-base">
                         {el.title}
                       </p>
                     </li>
@@ -113,7 +113,7 @@ const Footer = () => {
                       {/* <Link href={el.slug} className="hover:underline">
                         {el.title}
                       </Link> */}
-                      <p className="hover:underline cursor-pointer">
+                      <p className="hover:underline cursor-pointer text-base">
                         {" "}
                         {el.title}
                       </p>
@@ -137,10 +137,15 @@ const Footer = () => {
                     </div>
                     <Link
                       href="https://maps.app.goo.gl/BxuNRwy3CHg2ykCd7"
-                      className=" hover:underline duration-300"
+                      className=" hover:underline duration-300 "
                       target="_blank"
                     >
-                      {`20200 West Dixie Highway, Suite 902Aventura, FL 33180`}
+                      <div className="flex flex-col items-center justify-center w-full text-center">
+                        <p className="text-base">
+                          20200 West Dixie Highway, Suite 902
+                        </p>
+                        <p className="text-base">Aventura, FL 33180</p>
+                      </div>
                     </Link>
                   </li>
                   <li className="mb-4">
@@ -154,7 +159,7 @@ const Footer = () => {
                     <div className="flex flex-wrap gap-x-3 gap-y-1">
                       <Link
                         href="tel:954-529-0695"
-                        className="hover:underline duration-300"
+                        className="hover:underline duration-300 text-base"
                       >
                         {`954-529-0695`}
                       </Link>
@@ -177,10 +182,10 @@ const Footer = () => {
                     </div>
                     <div className="flex flex-col gap-px">
                       <Link
-                        href="mailto:Info@melamedlawpllc.com"
-                        className="hover:underline duration-300 "
+                        href="mailto: info@melamedlawpllc.com"
+                        className="hover:underline duration-300 text-base"
                       >
-                        Info@melamedlawpllc.com
+                        info@melamedlawpllc.com
                       </Link>
                       {/* <Link
                         href="mailto:myra@melamedlawpllc.com"

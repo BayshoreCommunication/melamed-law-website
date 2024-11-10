@@ -201,11 +201,17 @@ const LatedAndGretest = () => {
                     954-529-0695
                   </h6>
                 </div>
-                <div className="flex items-center gap-x-2 mt-2 mb-4 ">
-                  <FaHome className="text-secondary size-5" />
-                  <h6 className="text-white font-normal text-sm md:text-lg">
-                    {` 20200 West Dixie Highway, Suite 902 Aventura, FL 33180`}
-                  </h6>
+                <div className="flex items-start gap-x-2 mt-2 mb-4 ">
+                  <FaHome className="text-secondary size-5 mt-1" />
+
+                  <div className="flex flex-col items-center justify-start  text-center">
+                    <p className="text-white font-normal text-sm md:text-lg">
+                      20200 West Dixie Highway, Suite 902
+                    </p>
+                    <p className="text-white font-normal text-sm md:text-lg">
+                      Aventura, FL 33180
+                    </p>
+                  </div>
                 </div>
               </div>
               <div className="text-white flex justify-center md:justify-start gap-2 mt-8 mb-8">
