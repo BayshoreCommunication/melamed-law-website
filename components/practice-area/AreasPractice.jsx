@@ -34,12 +34,12 @@ const AreasPractice = () => {
                     {el?.shortTitle}
                   </p>
                   <div className="mt-8">
-                    <button
-                      // href={`/practice-areas/${el?.slug}`}
+                    <Link
+                      href={`/practice-areas/${el?.slug}`}
                       className="text-secondary font-normal text-lg bg-none px-4 py-2 rounded-full hover:bg-secondary hover:text-white border-2 border-secondary  "
                     >
                       Read More
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>

@@ -5,7 +5,7 @@ import SectionLayout from "@/components/shared/SectionLayout";
 import Head from "next/head";
 import { notFound } from "next/navigation";
 import PracticeAreaSidebarCard from "@/components/practice-area/PracticeAreaSidebarCard";
-import { areaspracticeData, servicesData } from "@/config/data";
+import { servicesData } from "@/config/data";
 import CallToAction from "@/components/shared/CallToAction";
 import PageHeroSectionforBlog from "@/components/shared/PageHeroSectionforBlog";
 
@@ -44,14 +44,14 @@ nav{
 `;
 
 const page = async ({ params }) => {
-  const servicesDetails = areaspracticeData?.filter(
+  const servicesDetails = servicesData?.filter(
     (service) => service.slug === params.slug
   );
 
   if (!servicesDetails || servicesDetails.length === 0) {
     notFound();
   }
-
+  // console.log("services", areaspracticeData);
   return (
     <>
       <Head>
@@ -73,104 +73,11 @@ const page = async ({ params }) => {
       <section className="bg-white">
         <div className="container py-10 md:py-20">
           {servicesDetails?.map((services, index) => (
-            <div className="">
-              {/* <div className="mt-5 text-base">{parse(services?.details)}</div> */}
-              {/* <div className="mt-5 text-base">{services?.description}</div> */}
-              <div className="">
-                <div className="md:flex md:space-x-6">
-                  {/* Left Content Section */}
-                  <div className="md:w-2/3">
-                    <p className="text-gray-700 mb-4 leading-relaxed">
-                      The US H-1B visa is a non-immigrant visa that allows US
-                      companies to employ graduate-level workers in specialty
-                      occupations that require theoretical or technical
-                      expertise in specialized fields such as IT, finance,
-                      accounting, architecture, engineering, mathematics,
-                      science, medicine, etc. Any professional level job
-                      requires you to have a bachelor’s degree or higher. If you
-                      do not have a bachelor’s degree or higher you may be able
-                      to show degree equivalence through work experience and/or
-                      other qualifications.
-                    </p>
-                    <p className="text-gray-700 mb-4 leading-relaxed">
-                      However, because of the visa cap it is unlikely that an
-                      H-1B visa petition will be successful. The US employer
-                      petitions for the H-1B Visa in the US which has a duration
-                      of up to 6 years.
-                    </p>
-                    <p className="text-gray-700 mb-4 leading-relaxed">
-                      Applying for a non-immigrant visa is generally quicker
-                      than applying for a US Green Card; therefore, the H-1B
-                      visa is popular for companies wishing to bring in staff
-                      for long-term assignment in the US.
-                    </p>
-                    <p className="text-gray-700 mb-4 leading-relaxed">
-                      Please note that individuals cannot apply directly for an
-                      H-1B visa. Instead the employer must petition for entry of
-                      the employee.
-                    </p>
-                  </div>
-
-                  {/* Right Image Section */}
-                  <div className="md:w-1/3 mt-6 md:mt-0">
-                    <img
-                      className="rounded-lg shadow-md"
-                      src="/assets/areaspractice/Frame 4.jpg"
-                      alt="Overview"
-                    />
-                  </div>
-                </div>
-                <div className="">
-                  <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
-                    Eligibility: Specialty Occupation
-                  </h2>
-                  <p className="text-gray-700 mb-4 leading-relaxed">
-                    The US H-1B visa is designed to be used for staff in
-                    specialty occupations. The job must meet one of the
-                    following criteria to qualify as a specialty occupation:
-                  </p>
-                  <ul className="list-disc list-inside text-gray-700 mb-4 leading-relaxed space-y-2">
-                    <li>
-                      Have a minimum entry requirement of a Bachelor’s or higher
-                      degree or its equivalent.
-                    </li>
-                    <li>
-                      The degree requirement for the job is common to the
-                      industry or the job is so complex or unique that it can be
-                      performed only by an individual with a degree.
-                    </li>
-                    <li>
-                      The employer normally requires a degree or its equivalent
-                      for the position.
-                    </li>
-                    <li>
-                      The nature of the specific duties is so specialized and
-                      complex that the knowledge required to perform the duties
-                      is usually associated with the attainment of a bachelor’s
-                      or higher degree.
-                    </li>
-                  </ul>
-                  <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
-                    Length of stay
-                  </h2>
-                  <p className="text-gray-700 mb-4 leading-relaxed">
-                    The H-1B visa is initially granted for up to three years,
-                    but may then be extended to a maximum of six years.
-                  </p>
-                  <p className="text-gray-700 leading-relaxed">
-                    Even though the H-1B visa is a non-immigrant visa, it is one
-                    of the few US visa categories recognized as dual intent,
-                    meaning the H-1B visa holder can apply for and obtain a US
-                    Green Card while in the US on an H-1B visa. If you are in
-                    the US on an H-1B visa and wish to remain in the US for more
-                    than six years, you can apply for permanent residency in the
-                    US to receive a Green Card. If you do not gain permanent
-                    residency prior to the expiration of your H-1B visa, then
-                    you must live outside the US for at least one year before
-                    reapplying for another H-1B visa.
-                  </p>
-                </div>
+            <div key={index} className="">
+              <div className="mt-5 text-base">
+                {parse(services?.description)}
               </div>
+              {/* <div className="mt-5 text-base">{services?.description}</div> */}
             </div>
           ))}
         </div>
