@@ -75,7 +75,7 @@ const page = async ({ params }) => {
           {servicesDetails?.map((services, index) => (
             <div key={index} className="">
               <div className="mt-5 text-base">
-                {parse(services?.description)}
+                {/* {parse(services?.description)} */}
               </div>
               {/* <div className="mt-5 text-base">{services?.description}</div> */}
             </div>
