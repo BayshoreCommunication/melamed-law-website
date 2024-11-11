@@ -204,7 +204,7 @@ const LatedAndGretest = () => {
                 <div className="flex items-start gap-x-2 mt-2 mb-4 ">
                   <FaHome className="text-secondary size-5 mt-1" />
 
-                  <div className="flex flex-col items-center justify-start  text-center">
+                  <div className="">
                     <p className="text-white font-normal text-sm md:text-lg">
                       20200 West Dixie Highway, Suite 902
                     </p>

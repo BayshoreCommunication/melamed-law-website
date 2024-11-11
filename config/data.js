@@ -5,7 +5,7 @@ export const servicesData = [
     slug: "hurricane-damage",
     icon: "/assets/servicepage/icon/hurricane-damage.png",
     sortTitle:
-      " Hurricane Damage Claims Attorney – Helping You Recover Quickly and Fairly",
+      " Hurricane Damage Claims Attorney – Helping You Recover Confidently and Fairly",
     description: ` <div>
                 <div className="md:flex md:space-x-6">
                  

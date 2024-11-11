@@ -140,7 +140,7 @@ const Footer = () => {
                       className=" hover:underline duration-300 "
                       target="_blank"
                     >
-                      <div className="flex flex-col items-center justify-center w-full text-center">
+                      <div className="w-full">
                         <p className="text-base">
                           20200 West Dixie Highway, Suite 902
                         </p>
