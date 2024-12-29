@@ -58,12 +58,9 @@ const BlogMainSection = async () => {
                             {parse(blogs?.body)}
                           </div>
                           <div className="mt-6 flex justify-center md:justify-start">
-                            <Link
-                              href={`/blog/${blogs?.slug}`}
-                              className="text-secondary font-normal text-lg bg-none px-4 py-2 rounded-full hover:bg-secondary hover:text-white border-2 border-secondary  "
-                            >
+                            <div className="text-secondary font-normal text-lg bg-none px-4 py-2 rounded-full hover:bg-secondary hover:text-white border-2 border-secondary  cursor-pointer">
                               Read More
-                            </Link>
+                            </div>
                           </div>
                         </div>
                       </div>
