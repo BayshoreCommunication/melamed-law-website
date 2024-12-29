@@ -48,7 +48,7 @@ const MainNavbar = () => {
       { title: "About Us", slug: "" },
       { title: "Practice Areas", slug: "" },
       { title: "Testimonials", slug: "" },
-      { title: "Blog", slug: "" },
+      { title: "Blog", slug: "/blog" },
     ],
     []
   );
@@ -59,7 +59,7 @@ const MainNavbar = () => {
       { title: "About Us", slug: "" },
       { title: "Practice Areas", slug: "" },
       { title: "Testimonials", slug: "" },
-      { title: "Blog", slug: "" },
+      { title: "Blog", slug: "/blog" },
     ],
     []
   );
