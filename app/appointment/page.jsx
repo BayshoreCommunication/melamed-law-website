@@ -1,15 +1,24 @@
 import Calendly from "@/components/appointment/Calendly";
-import PageHeroSection from "@/components/shared/PageHeroSection";
-import Head from "next/head";
+// import PageHeroSection from "@/components/shared/PageHeroSection";
+
+export const metadata = {
+  title: "Melamed Law",
+  description:
+    "At Melamed Law, you’re family. We offer open lines of communication to foster personal relationships and optimize case outcomes for our clients. Every client gets the personal cell phone number of the attorney.",
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-US": "/en-USA",
+    },
+  },
+  openGraph: {
+    images: "/opengraph-image.jpg",
+  },
+};
 
 const page = () => {
   return (
     <>
-      <Head>
-        <title>Appointment - Attorney Hardam Tripathi, Esq.</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="" />
-      </Head>
       {/* <PageHeroSection
         image={"/assets/shared/aboutpage.jpg"}
         title={"Appointment"}

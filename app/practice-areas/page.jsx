@@ -4,21 +4,24 @@ import PageHeroSection from "@/components/shared/PageHeroSection";
 import Head from "next/head";
 import React from "react";
 
+export const metadata = {
+  title: "Melamed Law",
+  description:
+    "At Melamed Law, you’re family. We offer open lines of communication to foster personal relationships and optimize case outcomes for our clients. Every client gets the personal cell phone number of the attorney.",
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-US": "/en-USA",
+    },
+  },
+  openGraph: {
+    images: "/opengraph-image.jpg",
+  },
+};
+
 const page = () => {
   return (
     <div>
-      <Head>
-        <title>About The Firm - Carter Injury Law - </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta
-          name="description"
-          content={`At Carter Injury Law, you’re family. We offer open lines of communication to foster personal relationships and optimize case outcomes for our clients. `}
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400;700&display=swap"
-          rel="stylesheet"
-        />
-      </Head>
       <PageHeroSection
         image={"/assets/shared/practicesareapage.jpg"}
         title={"Practice Areas"}

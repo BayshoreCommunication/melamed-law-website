@@ -1,10 +1,24 @@
 import React from "react";
 
 import GetAllPostData from "@/lib/GetAllPostData";
-import Head from "next/head";
 import CallToAction from "@/components/shared/CallToAction";
 import PageHeroSection from "@/components/shared/PageHeroSection";
 import BlogMainSection from "@/components/blog/BlogMainSection";
+
+export const metadata = {
+  title: "Melamed Law",
+  description:
+    "At Melamed Law, you’re family. We offer open lines of communication to foster personal relationships and optimize case outcomes for our clients. Every client gets the personal cell phone number of the attorney.",
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-US": "/en-USA",
+    },
+  },
+  openGraph: {
+    images: "/opengraph-image.jpg",
+  },
+};
 
 const page = async () => {
   const blogPostData = await GetAllPostData();
@@ -20,14 +34,6 @@ const page = async () => {
 
   return (
     <>
-      <Head>
-        <title>Blog - Carter Injury Law</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta
-          name="description"
-          content={`At Carter Injury Law, you’re family. We offer open lines of communication to foster personal relationships and optimize case outcomes for our clients. `}
-        />
-      </Head>
       <PageHeroSection
         image={"/assets/shared/blogs.jpg"}
         title={"Blogs"}
