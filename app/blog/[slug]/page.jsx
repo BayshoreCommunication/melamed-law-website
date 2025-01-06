@@ -78,9 +78,9 @@ export async function generateMetadata({ params }) {
       title: blogDetails?.title,
       description: shortDescription,
       images: blogDetails?.featuredImage?.image?.url,
-      url: `https://backend-melamed-law-website-sigma.vercel.app/site/blog/${blogDetails?.slug}`,
+      url: `https://www.melamedlawpllc.com/blog/${blogDetails?.slug}`,
       type: "article",
-      site_name: "milwaukeelegalpros.com",
+      site_name: "melamedlawpllc.com",
     },
   };
 }
