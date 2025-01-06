@@ -130,7 +130,7 @@ const MainNavbar = () => {
 
             <div className="">
               <div className="flex items-center justify-stretch gap-x-2  xl:gap-x-8">
-                {menuItems.map((el) =>
+                {menuItems.map((el, index) =>
                   el?.title === "Practice Areas" ? (
                     <div
                       className="relative inline-block"

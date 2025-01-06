@@ -70,7 +70,7 @@ export async function generateMetadata({ params }) {
   const rawDescription = blogDetails?.body || "";
   const plainTextDescription = extractTextFromHtml(rawDescription);
   const shortDescription = truncateText(plainTextDescription, 120);
-
+  console.log(blogDetails?.featuredImage?.image?.url);
   return {
     title: blogDetails?.title,
     description: shortDescription,
@@ -132,7 +132,7 @@ const page = async ({ params }) => {
         >
           <div className="grid gap-12 mb-10 gird-col-1 sm:grid-cols-3">
             {blogDetails?.map((blogs, index) => (
-              <div className="col-span-2">
+              <div className="col-span-2" key={index}>
                 <div className="flex items-center justify-between">
                   <p className="text-[.9rem] md:text-[1rem] text-black text-left italic mt-4 ">
                     {blogs?.category || "Blog Post"}
