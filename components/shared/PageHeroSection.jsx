@@ -22,17 +22,17 @@ const PageHeroSection = ({ image, title, description }) => {
       <div className="relative flex flex-col items-center justify-center w-full h-full">
         <div className="container py-10 md:py-14">
           <ScrollMotionEffect {...animationProps}>
-            <h1 className="text-[30px] md:text-[60px] font-bold text-white text-center leading-snug md:leading-tight">
+            <h1 className="text-[30px] md:text-[60px] font-bold text-white text-center leading-snug md:leading-tight line-clamp-2 max-w-[1024px] mx-auto">
               {title}
             </h1>
           </ScrollMotionEffect>
           <ScrollMotionEffect {...animationProps}>
-            <h2 className="mt-4 md:mt-6 text-base md:text-[20px] font-normal text-white text-center leading-tight max-w-[800px] mx-auto">
+            <h2 className=" text-base md:text-[20px] font-normal text-white text-center leading-tight max-w-[800px] mx-auto">
               {description}
             </h2>
           </ScrollMotionEffect>
           <ScrollMotionEffect {...animationProps}>
-            <div className="mt-8 md:mt-12 flex justify-center">
+            <div className="mt-4 2xl:mt-8 flex justify-center">
               <Link
                 href={"/appointment"}
                 className="text-white font-normal text-base md:text-lg bg-secondary px-4 md:px-16 py-4 rounded-full hover:bg-orange-400"
