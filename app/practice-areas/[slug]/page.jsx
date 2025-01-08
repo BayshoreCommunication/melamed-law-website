@@ -89,6 +89,7 @@ const page = async ({ params }) => {
         description={
           "When the unexpected happens, we help individuals and businesses collect the money they deserve for their insurance claims."
         }
+        calanderOff={true}
       />
 
       <section className="bg-white">
