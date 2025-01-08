@@ -85,7 +85,7 @@ const HeroSection = () => {
           <div className="mt-12">
             <Link
               href={"/appointment"}
-              className="text-white font-normal text-md md:text-lg bg-secondary px-8 md:px-16 py-4 rounded-full hover:bg-orange-400"
+              className="text-white font-normal text-md md:text-lg bg-secondary px-8 md:px-16 py-4 rounded-full hover:bg-orange-400 pointer-events-none"
             >
               Schedule A Free Case Review
             </Link>

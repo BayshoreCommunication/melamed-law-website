@@ -31,7 +31,31 @@ const debounce = (func, wait) => {
   };
 };
 
+
+
+
+
+
+
+
 const MainNavbar = () => {
+
+
+var prevScrollpos = window.scrollY;
+window.onscroll = function() {
+var currentScrollPos = window.scrollY;
+
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector(".navbar").style.top = "0";
+  } else {
+    document.querySelector(".navbar").style.top = "-200px";
+  }
+  prevScrollpos = currentScrollPos;
+
+}
+
+
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
   const [navbarColor, setNavbarColor] = useState(false);
@@ -82,9 +106,12 @@ const MainNavbar = () => {
     (el) => pathname === `/practice-areas/${el?.slug}`
   );
 
+
+ 
+
   return (
-    <section className={"relative z-50"}>
-      <div className="bg-primary">
+    <section className={"relative z-50 "}>
+      <div className="bg-primary w-full navbar ">
         {/* <div className="hidden lg:block">
           <div className="container flex justify-between">
             <div className="bg-secondary  py-2 px-5">
