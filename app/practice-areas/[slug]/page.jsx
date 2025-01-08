@@ -5,7 +5,8 @@ import SectionLayout from "@/components/shared/SectionLayout";
 import Head from "next/head";
 import { notFound } from "next/navigation";
 import PracticeAreaSidebarCard from "@/components/practice-area/PracticeAreaSidebarCard";
-import { servicesData } from "@/config/data";
+import { servicesData,areaspracticeData } from "@/config/data";
+
 import CallToAction from "@/components/shared/CallToAction";
 import PageHeroSectionforBlog from "@/components/shared/PageHeroSectionforBlog";
 
@@ -42,20 +43,26 @@ nav{
 }
 
 `;
-export const metadata = {
-  title: "Melamed Law",
-  description:
-    "At Melamed Law, you’re family. We offer open lines of communication to foster personal relationships and optimize case outcomes for our clients. Every client gets the personal cell phone number of the attorney.",
-  alternates: {
-    canonical: "/",
-    languages: {
-      "en-US": "/en-USA",
+
+
+export async function generateMetadata({ params }) {
+  const metaData = servicesData?.filter(
+    (service) => service.slug === params.slug
+  );
+  console.log(metaData[0])
+  return{
+    title: metaData[0].title,
+  description: metaData[0].shortDescription,
+    openGraph: {
+      title: metaData[0].title,
+  description: metaData[0].shortDescription,
+      images: [metaData[0].url],
+      url: `https://www.melamedlawpllc.com/practice-areas/${metaData[0]?.slug}`,
+      type: "article",
+      site_name: "Melamed Law",
     },
-  },
-  openGraph: {
-    images: "/opengraph-image.jpg",
-  },
-};
+  }
+}
 
 const page = async ({ params }) => {
   const servicesDetails = servicesData?.filter(
@@ -89,9 +96,9 @@ const page = async ({ params }) => {
           {servicesDetails?.map((services, index) => (
             <div key={index} className="">
               <div className="mt-5 text-base">
-                {/* {parse(services?.description)} */}
+                {parse(services?.description)} 
               </div>
-              {/* <div className="mt-5 text-base">{services?.description}</div> */}
+              
             </div>
           ))}
         </div>

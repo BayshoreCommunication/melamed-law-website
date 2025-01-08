@@ -46,7 +46,7 @@ const MainNavbar = () => {
     () => [
       { title: "Home", slug: "/" },
       { title: "About Us", slug: "" },
-      { title: "Practice Areas", slug: "" },
+      { title: "Practice Areas", slug: "/practice-areas" },
       { title: "Testimonials", slug: "" },
       { title: "Blog", slug: "/blog" },
     ],
@@ -57,7 +57,7 @@ const MainNavbar = () => {
     () => [
       { title: "Home", slug: "/" },
       { title: "About Us", slug: "" },
-      { title: "Practice Areas", slug: "" },
+      { title: "Practice Areas", slug: "/practice-areas" },
       { title: "Testimonials", slug: "" },
       { title: "Blog", slug: "/blog" },
     ],
@@ -132,7 +132,7 @@ const MainNavbar = () => {
               <div className="flex items-center justify-stretch gap-x-2  xl:gap-x-8">
                 {menuItems.map((el, index) =>
                   el?.title === "Practice Areas" ? (
-                    <div
+                    <div key={index}
                       className="relative inline-block"
                       onMouseEnter={toggleDropdown}
                       onMouseLeave={toggleDropdown}
