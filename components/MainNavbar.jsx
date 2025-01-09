@@ -31,30 +31,20 @@ const debounce = (func, wait) => {
   };
 };
 
-
-
-
-
-
-
-
 const MainNavbar = () => {
+  useEffect(() => {
+    var prevScrollpos = window.scrollY;
+    window.onscroll = function () {
+      var currentScrollPos = window.scrollY;
 
-
-// var prevScrollpos = window.scrollY;
-// const nav=window.onscroll = function() {
-// var currentScrollPos = window.scrollY;
-
-//   if (prevScrollpos > currentScrollPos) {
-//     document.querySelector(".navbar").style.top = "0";
-//   } else {
-//     document.querySelector(".navbar").style.top = "-200px";
-//   }
-//   prevScrollpos = currentScrollPos;
-
-// }
-
-
+      if (prevScrollpos > currentScrollPos) {
+        document.querySelector(".navbar").style.top = "0";
+      } else {
+        document.querySelector(".navbar").style.top = "-200px";
+      }
+      prevScrollpos = currentScrollPos;
+    };
+  });
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
@@ -74,7 +64,7 @@ const MainNavbar = () => {
       { title: "Testimonials", slug: "" },
       { title: "Blog", slug: "/blog" },
     ],
-    []
+    [],
   );
 
   const navLogoList = useMemo(
@@ -85,14 +75,14 @@ const MainNavbar = () => {
       { title: "Testimonials", slug: "" },
       { title: "Blog", slug: "/blog" },
     ],
-    []
+    [],
   );
 
   const handleScroll = useCallback(
     debounce(() => {
       setNavbarColor(window.scrollY >= 100);
     }, 100),
-    []
+    [],
   );
 
   useEffect(() => {
@@ -103,11 +93,8 @@ const MainNavbar = () => {
   }, [handleScroll]);
 
   const setPathSlug = areaspracticeData?.some(
-    (el) => pathname === `/practice-areas/${el?.slug}`
+    (el) => pathname === `/practice-areas/${el?.slug}`,
   );
-
-
- 
 
   return (
     <section className={"relative z-50 "}>
@@ -159,7 +146,8 @@ const MainNavbar = () => {
               <div className="flex items-center justify-stretch gap-x-2  xl:gap-x-8">
                 {menuItems.map((el, index) =>
                   el?.title === "Practice Areas" ? (
-                    <div key={index}
+                    <div
+                      key={index}
                       className="relative inline-block"
                       onMouseEnter={toggleDropdown}
                       onMouseLeave={toggleDropdown}
@@ -212,7 +200,7 @@ const MainNavbar = () => {
                     >
                       {el.title}
                     </Link>
-                  )
+                  ),
                 )}
               </div>
             </div>
@@ -287,4 +275,4 @@ const MainNavbar = () => {
   );
 };
 
-export default React.memo(MainNavbar);
+export default MainNavbar;
