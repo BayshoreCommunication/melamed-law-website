@@ -32,6 +32,20 @@ const debounce = (func, wait) => {
 };
 
 const MainNavbar = () => {
+  useEffect(() => {
+    var prevScrollpos = window.scrollY;
+    window.onscroll = function () {
+      var currentScrollPos = window.scrollY;
+
+      if (prevScrollpos > currentScrollPos) {
+        document.querySelector(".navbar").style.top = "0";
+      } else {
+        document.querySelector(".navbar").style.top = "-200px";
+      }
+      prevScrollpos = currentScrollPos;
+    };
+  });
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
   const [navbarColor, setNavbarColor] = useState(false);
@@ -46,29 +60,29 @@ const MainNavbar = () => {
     () => [
       { title: "Home", slug: "/" },
       { title: "About Us", slug: "" },
-      { title: "Practice Areas", slug: "" },
+      { title: "Practice Areas", slug: "/practice-areas" },
       { title: "Testimonials", slug: "" },
       { title: "Blog", slug: "/blog" },
     ],
-    []
+    [],
   );
 
   const navLogoList = useMemo(
     () => [
       { title: "Home", slug: "/" },
       { title: "About Us", slug: "" },
-      { title: "Practice Areas", slug: "" },
+      { title: "Practice Areas", slug: "/practice-areas" },
       { title: "Testimonials", slug: "" },
       { title: "Blog", slug: "/blog" },
     ],
-    []
+    [],
   );
 
   const handleScroll = useCallback(
     debounce(() => {
       setNavbarColor(window.scrollY >= 100);
     }, 100),
-    []
+    [],
   );
 
   useEffect(() => {
@@ -79,12 +93,12 @@ const MainNavbar = () => {
   }, [handleScroll]);
 
   const setPathSlug = areaspracticeData?.some(
-    (el) => pathname === `/practice-areas/${el?.slug}`
+    (el) => pathname === `/practice-areas/${el?.slug}`,
   );
 
   return (
-    <section className={"relative z-50"}>
-      <div className="bg-primary">
+    <section className={"relative z-50 "}>
+      <div className="bg-primary w-full navbar ">
         {/* <div className="hidden lg:block">
           <div className="container flex justify-between">
             <div className="bg-secondary  py-2 px-5">
@@ -133,6 +147,7 @@ const MainNavbar = () => {
                 {menuItems.map((el, index) =>
                   el?.title === "Practice Areas" ? (
                     <div
+                      key={index}
                       className="relative inline-block"
                       onMouseEnter={toggleDropdown}
                       onMouseLeave={toggleDropdown}
@@ -185,7 +200,7 @@ const MainNavbar = () => {
                     >
                       {el.title}
                     </Link>
-                  )
+                  ),
                 )}
               </div>
             </div>
@@ -260,4 +275,4 @@ const MainNavbar = () => {
   );
 };
 
-export default React.memo(MainNavbar);
+export default MainNavbar;

@@ -35,7 +35,7 @@ const PageHeroSection = ({ image, title, description }) => {
             <div className="mt-4 2xl:mt-8 flex justify-center">
               <Link
                 href={"/appointment"}
-                className="text-white font-normal text-base md:text-lg bg-secondary px-4 md:px-16 py-4 rounded-full hover:bg-orange-400"
+                className="text-white font-normal text-base md:text-lg bg-secondary px-4 md:px-16 py-4 rounded-full hover:bg-orange-400 pointer-events-none"
               >
                 Schedule A Free Case Review
               </Link>

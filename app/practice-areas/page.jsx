@@ -28,6 +28,7 @@ const page = () => {
         description={
           "When the unexpected happens, we help individuals and businesses collect the money they deserve for their insurance claims."
         }
+        
       />
       <AreasPractice />
       <LatedAndGretest />
