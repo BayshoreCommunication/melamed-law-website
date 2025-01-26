@@ -82,10 +82,11 @@ const HeroSection = () => {
           </h2>
         </ScrollMotionEffect>
         <ScrollMotionEffect effect="fade-up" duration="2000">
-          <div className="mt-12">
+          <div className="mt-12 flex justify-center z-50">
             <Link
-              href={"/appointment"}
-              className="text-white font-normal text-md md:text-lg bg-secondary px-8 md:px-16 py-4 rounded-full hover:bg-orange-400 pointer-events-none"
+              href={"/contact"}
+              // href={"/appointment"}
+              className="text-white font-normal text-md md:text-lg bg-secondary px-8 md:px-16 py-4 rounded-full hover:bg-orange-400  cursor-pointer"
             >
               Schedule A Free Case Review
             </Link>

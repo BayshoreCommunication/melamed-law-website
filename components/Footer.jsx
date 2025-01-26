@@ -92,12 +92,12 @@ const Footer = () => {
                 <ul className="ml-0 text-black list-none text-[18px] font-medium">
                   {SITECONFIG?.footer?.quick_links?.map((el, index) => (
                     <li className="mb-4" key={index}>
-                      {/* <Link href={el.slug} className="hover:underline">
+                      <Link href={el.slug} className="hover:underline">
                         {el.title}
-                      </Link> */}
-                      <p className="hover:underline cursor-pointer text-base">
+                      </Link>
+                      {/* <p className="hover:underline cursor-pointer text-base">
                         {el.title}
-                      </p>
+                      </p> */}
                     </li>
                   ))}
                 </ul>

@@ -5,7 +5,7 @@ import ScrollMotionEffect from "../motion/ScrollMotionEffect";
 
 const AboutDetails = () => {
   return (
-    <div className="relative w-full h-auto min-h-svh">
+    <div className="relative w-full h-auto min-h-svh flex items-center justify-center">
       <Image
         className="absolute inset-0 object-cover bg-bottom w-full h-full"
         width={1920}

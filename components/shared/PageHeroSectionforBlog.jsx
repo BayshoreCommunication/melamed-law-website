@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ScrollMotionEffect from "../motion/ScrollMotionEffect";
 
-const PageHeroSectionforBlog = ({ image, title, description,calanderOff }) => {
+const PageHeroSectionforBlog = ({ image, title, description, calanderOff }) => {
   const animationProps = {
     effect: "fade-up",
     duration: "2000",
@@ -37,8 +37,9 @@ const PageHeroSectionforBlog = ({ image, title, description,calanderOff }) => {
           <ScrollMotionEffect {...animationProps}>
             <div className="mt-8 md:mt-12 flex justify-center ">
               <Link
-                href={"/appointment"}
-                className={`text-white font-normal text-base md:text-lg bg-secondary px-4 md:px-16 py-4 rounded-full hover:bg-orange-400  ${calanderOff?" pointer-events-none ":" pointer-events-none"}`}
+                href={"/contact"}
+                // href={"/appointment"}
+                className={`text-white font-normal text-base md:text-lg bg-secondary px-4 md:px-16 py-4 rounded-full hover:bg-orange-400  ${calanderOff ? " pointer-events-none " : " pointer-events-none"}`}
               >
                 Schedule A Free Case Review
               </Link>
