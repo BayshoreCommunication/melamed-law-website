@@ -136,19 +136,12 @@ const Footer = () => {
                       </h3>
                     </div>
                     <Link
-                      href="https://maps.app.goo.gl/BxuNRwy3CHg2ykCd7"
+                      href="https://maps.app.goo.gl/gPaF4mQkx4wGQjaK8"
                       className=" hover:underline duration-300 "
                       target="_blank"
                     >
-                      <div className="w-full">
-                        <Link
-                          href={"https://maps.app.goo.gl/gPaF4mQkx4wGQjaK8"}
-                          className="text-base"
-                        >
-                          3040 NE 190th St APT 303, Aventura, FL 33180,
-                          United States
-                        </Link>
-                      </div>
+                      3040 NE 190th St APT 303, Aventura, FL 33180,
+                      United States
                     </Link>
                   </li>
                   <li className="mb-4">
