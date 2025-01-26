@@ -59,12 +59,12 @@ const MainNavbar = () => {
   const menuItems = useMemo(
     () => [
       { title: "Home", slug: "/" },
-      { title: "About Us", slug: "" },
+      { title: "About Us", slug: "/about" },
       { title: "Practice Areas", slug: "/practice-areas" },
       { title: "Testimonials", slug: "" },
       { title: "Blog", slug: "/blog" },
     ],
-    [],
+    []
   );
 
   const navLogoList = useMemo(
@@ -75,14 +75,14 @@ const MainNavbar = () => {
       { title: "Testimonials", slug: "" },
       { title: "Blog", slug: "/blog" },
     ],
-    [],
+    []
   );
 
   const handleScroll = useCallback(
     debounce(() => {
       setNavbarColor(window.scrollY >= 100);
     }, 100),
-    [],
+    []
   );
 
   useEffect(() => {
@@ -93,7 +93,7 @@ const MainNavbar = () => {
   }, [handleScroll]);
 
   const setPathSlug = areaspracticeData?.some(
-    (el) => pathname === `/practice-areas/${el?.slug}`,
+    (el) => pathname === `/practice-areas/${el?.slug}`
   );
 
   return (
@@ -200,7 +200,7 @@ const MainNavbar = () => {
                     >
                       {el.title}
                     </Link>
-                  ),
+                  )
                 )}
               </div>
             </div>

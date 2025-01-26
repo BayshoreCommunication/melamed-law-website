@@ -6,8 +6,8 @@ export const servicesData = [
     icon: "/assets/servicepage/icon/hurricane-damage.png",
     sortTitle:
       " Hurricane Damage Claims Attorney – Helping You Recover Confidently and Fairly",
-    
-      shortDescription:`Hurricanes can seriously impact properties across Florida, leaving homeowners, business owners, and tenants needing quick support. When wind, flood, or structural damage occurs, getting legal help ensures you receive fair compensation. However, Florida’s hurricane damage laws limit your time to file a claim—typically to just one year after the hurricane.`,
+
+    shortDescription: `Hurricanes can seriously impact properties across Florida, leaving homeowners, business owners, and tenants needing quick support. When wind, flood, or structural damage occurs, getting legal help ensures you receive fair compensation. However, Florida’s hurricane damage laws limit your time to file a claim—typically to just one year after the hurricane.`,
     description: ` <div>
                 <div className="md:flex md:space-x-6">
                  
@@ -108,8 +108,8 @@ export const servicesData = [
     slug: "windstorm-damage",
     icon: "/assets/servicepage/icon/windstrom-damage.png",
     sortTitle: "Windstorm Damage Claims – Secure Your Rights with Expert Help",
-    
-    shortDescription:`Windstorm damage in Florida can leave homeowners with expensive repairs and frustration. Florida’s windstorm damage laws are complex and confusing. With strict rules and deadlines, it can be hard to fully recover the costs of repairs.`,
+
+    shortDescription: `Windstorm damage in Florida can leave homeowners with expensive repairs and frustration. Florida’s windstorm damage laws are complex and confusing. With strict rules and deadlines, it can be hard to fully recover the costs of repairs.`,
     description: ` <div>
                 <div className="md:flex md:space-x-6">
                  
@@ -213,8 +213,8 @@ export const servicesData = [
     icon: "/assets/servicepage/icon/roof-damage.png",
     sortTitle:
       "Protect Your Roof Damage Claim Rights With The Attorney You Trust",
-    
-      shortDescription:`Roof damage can lead to costly repairs, temporary living arrangements, and serious disruptions. However, the state's laws regarding roof damage claims have recently changed, creating new limitations that can affect homeowners' ability to get fair compensation.`,
+
+    shortDescription: `Roof damage can lead to costly repairs, temporary living arrangements, and serious disruptions. However, the state's laws regarding roof damage claims have recently changed, creating new limitations that can affect homeowners' ability to get fair compensation.`,
     description: `   <div>
                 <div className="md:flex md:space-x-6">
                  
@@ -334,8 +334,8 @@ export const servicesData = [
     icon: "/assets/servicepage/icon/storm-damage.png",
     sortTitle:
       " Storm Damage Attorney – Protect Your Insurance Rights and Claims",
-    
-      shortDescription:`Storm damage can be frustrating for homeowners and
+
+    shortDescription: `Storm damage can be frustrating for homeowners and
                       business owners in Florida, especially after hurricanes,
                       tropical storms, or high winds. A recent change in Florida
                       law now gives homeowners just one year to file a claim
@@ -450,8 +450,8 @@ export const servicesData = [
     icon: "/assets/servicepage/icon/water-damage.png",
     sortTitle:
       "Water Damage Restoration Claims – Expert Legal Assistance Available",
-    
-      shortDescription:`Water damage can strike from countless sources—raging storms, sudden floods, burst pipes, and even plumbing mishaps. Insurance companies are increasingly restricting water damage coverage by imposing strict limitations in their policies.`,
+
+    shortDescription: `Water damage can strike from countless sources—raging storms, sudden floods, burst pipes, and even plumbing mishaps. Insurance companies are increasingly restricting water damage coverage by imposing strict limitations in their policies.`,
     description: ` <div>
                 <div className="md:flex md:space-x-6">
                  
@@ -568,8 +568,8 @@ export const servicesData = [
     slug: "fire-damage",
     icon: "/assets/servicepage/icon/fire-damage.png",
     sortTitle: "Legal Help for Fire Damage Insurance Claims in Florida",
-    
-    shortDescription:`Fire damage can leave you with more than just physical destruction—it brings emotional distress and financial burdens that can feel overwhelming. Insurance should ease this burden, but policyholders often face frustrating challenges like delayed payments, undervalued claims, or even complete denials.`,
+
+    shortDescription: `Fire damage can leave you with more than just physical destruction—it brings emotional distress and financial burdens that can feel overwhelming. Insurance should ease this burden, but policyholders often face frustrating challenges like delayed payments, undervalued claims, or even complete denials.`,
     description: `  <div>
                 <div className="md:flex md:space-x-6">
                  
@@ -691,8 +691,8 @@ export const servicesData = [
     slug: "mold-damage",
     icon: "/assets/servicepage/icon/mold-damage.png",
     sortTitle: "Get Professional Help for Mold Infestation Claims in Florida",
-    shortDescription:`Mold damage is a serious concern that can affect both your property and your health. Often a result of water damage or poor ventilation, mold growth can lead to expensive repairs.`,
-  
+    shortDescription: `Mold damage is a serious concern that can affect both your property and your health. Often a result of water damage or poor ventilation, mold growth can lead to expensive repairs.`,
+
     description: ` <div>
                 <div className="md:flex md:space-x-6">
                  
@@ -807,8 +807,8 @@ export const servicesData = [
     slug: "hail-damage",
     icon: "/assets/servicepage/icon/hail-damage.png",
     sortTitle: "Skilled  Lawyer for Hail-Related Property Repair and Recovery",
-    shortDescription:`Hail storms can strike without warning, leaving behind significant damage to homes, vehicles, and commercial properties. Broken windows, dented roofs, and other costly repairs are common results of such storms.`,
-  
+    shortDescription: `Hail storms can strike without warning, leaving behind significant damage to homes, vehicles, and commercial properties. Broken windows, dented roofs, and other costly repairs are common results of such storms.`,
+
     description: `<div>
                 <div className="md:flex md:space-x-6">
                  
@@ -929,8 +929,8 @@ export const servicesData = [
     slug: "plumbing-damage",
     icon: "/assets/servicepage/icon/plumbing-damage.png",
     sortTitle: "Get Assistance for Plumbing Failure Insurance Claims Today",
-    
-    shortDescription:`In Florida, plumbing damage is a significant concern for homeowners and property owners alike, especially given the state's unique climate and frequent storms. With heavy rainfall, humidity, and the potential for hurricanes, plumbing systems can cause leaks, burst pipes, and other water-related issues.`,
+
+    shortDescription: `In Florida, plumbing damage is a significant concern for homeowners and property owners alike, especially given the state's unique climate and frequent storms. With heavy rainfall, humidity, and the potential for hurricanes, plumbing systems can cause leaks, burst pipes, and other water-related issues.`,
     description: `  <div>
                 <div className="md:flex md:space-x-6">
                  
@@ -1042,8 +1042,8 @@ export const servicesData = [
     slug: "smoke-damage",
     icon: "/assets/servicepage/icon/smoke-damage.png",
     sortTitle: " Smoke Damage Claim Assistance – Restore Your Home After Fire",
-    shortDescription:`Smoke damage in Florida is a serious concern that can arise from even the smallest of fires, and its effects can be far-reaching and long-lasting. Speaking of health, the risks associated with smoke exposure are significant. Breathing in smoke particles can irritate your lungs and cause conditions like asthma or allergies.`,
-  
+    shortDescription: `Smoke damage in Florida is a serious concern that can arise from even the smallest of fires, and its effects can be far-reaching and long-lasting. Speaking of health, the risks associated with smoke exposure are significant. Breathing in smoke particles can irritate your lungs and cause conditions like asthma or allergies.`,
+
     description: `  <div>
                 <div className="md:flex md:space-x-6">
                  
@@ -1149,8 +1149,8 @@ export const servicesData = [
     slug: "bad-faith-claims",
     icon: "/assets/servicepage/icon/bad-faith-claims.png",
     sortTitle: "Legal Support for Bad Faith Claims – Safeguard Your Interests",
-    shortDescription:`We know that dealing with bad faith insurance claims can leave you feeling frustrated, confused, and powerless, especially when you're already dealing with a loss or hardship. Under Florida law, policyholders can file a Civil Remedy Notice if their insurance company acts in bad faith`,
-  
+    shortDescription: `We know that dealing with bad faith insurance claims can leave you feeling frustrated, confused, and powerless, especially when you're already dealing with a loss or hardship. Under Florida law, policyholders can file a Civil Remedy Notice if their insurance company acts in bad faith`,
+
     description: `  <div>
                 <div className="md:flex md:space-x-6">
                  
@@ -1260,7 +1260,7 @@ export const servicesData = [
     icon: "/assets/servicepage/icon/vandalism-and-theft.png",
     sortTitle:
       " Vandalism and Theft Claim Assistance – Safeguard Your Property",
-      shortDescription:`Damages from vandalism, also known as criminal mischief, are typically covered under property insurance policies. If you've experienced theft or vandalism at your home or business, the emotional and financial toll can be devastating.`,
+    shortDescription: `Damages from vandalism, also known as criminal mischief, are typically covered under property insurance policies. If you've experienced theft or vandalism at your home or business, the emotional and financial toll can be devastating.`,
     description: `      <div>
                 <div className="md:flex md:space-x-6">
                  
@@ -1491,51 +1491,51 @@ export const areaspracticeData = [
 
 export const testimonialsData = [
   {
-    name: "Diane F.",
+    name: "Lisa LStrum",
     review:
-      "Words can not express the gratitude I have for you and your team. As soon as you took over my case, you and your team worked diligently on a resolution. Thank you so much for treating me as a person and showing so much care. You definitely made me feel at ease that my case great hands. Thank you so much!!",
+      "Aaron Melamed’s negotiating/legal skills in dealing with my very difficult mitigation/rebuild condo situation saved the day! He is industry knowledgeable, conscientious, thorough, professional, trustworthy, caring and diligent. Should I ever need his services again, I would not hesitate to reach out. His network of colleagues are as dependable as he is. Aaron guides his client with the human touch, a rarity in today’s legal world. Aaron is a lawyer who goes the extra mile in every aspect, from listening & explaining, to planning and proceeding. Highly recommended!",
     rating: 5,
   },
-  {
-    name: "Arlene McCoy",
-    review:
-      "Words can not express the gratitude I have for you and your team. As soon as you took over my case, you and your team worked diligently on a resolution. Thank you so much for treating me as a person and showing so much care. You definitely made me feel at ease that my case was in great hands. Thank you",
-    rating: 5,
-  },
-  {
-    name: "Robert Fox",
-    review:
-      "Words can not express the gratitude I have for you and your team. As soon as you took over my case, you and your team worked diligently on a resolution. Thank you so much for treating me as a person and showing so much care. You definitely made me feel at ease that my case was in great hands. Thank you so much!!",
-    rating: 5,
-  },
-  {
-    name: "Devon Lane",
-    review:
-      "Words can not express the gratitude I have for you and your team. As soon as you took over my case, you and your team worked diligently on a resolution. Thank you so much for treating me as a person and showing so much care. You definitely made me feel at ease that my case was in great hands. Thank you so much!!",
-    rating: 5,
-  },
-  {
-    name: "Jane Cooper",
-    review:
-      "Words can not express the gratitude I have for you and your team. As soon as you took over my case, you and your team worked diligently on a resolution. Thank you so much for treating me as a person and showing so much care. You definitely made me feel at ease that my case was in great hands. Thank you so much!!",
-    rating: 5,
-  },
-  {
-    name: "Theresa Webb",
-    review:
-      "Words can not express the gratitude I have for you and your team. As soon as you took over my case, you and your team worked diligently on a resolution. Thank you so much for treating me as a person and showing so much care. You definitely made me feel at ease that my case was in great hands. Thank you so much!!",
-    rating: 5,
-  },
-  {
-    name: "Wade Warren",
-    review:
-      "Words can not express the gratitude I have for you and your team. As soon as you took over my case, you and your team worked diligently on a resolution. Thank you so much for treating me as a person and showing so much care. You definitely made me feel at ease that my case was in great hands. Thank you so much!!",
-    rating: 5,
-  },
-  {
-    name: "Albert Flores",
-    review:
-      "Words can not express the gratitude I have for you and your team. As soon as you took over my case, you and your team worked diligently on a resolution. Thank you so much for treating me as a person and showing so much care. You definitely made me feel at ease that my case was in great hands. Thank you so much!!",
-    rating: 5,
-  },
+  // {
+  //   name: "Arlene McCoy",
+  //   review:
+  //     "Words can not express the gratitude I have for you and your team. As soon as you took over my case, you and your team worked diligently on a resolution. Thank you so much for treating me as a person and showing so much care. You definitely made me feel at ease that my case was in great hands. Thank you",
+  //   rating: 5,
+  // },
+  // {
+  //   name: "Robert Fox",
+  //   review:
+  //     "Words can not express the gratitude I have for you and your team. As soon as you took over my case, you and your team worked diligently on a resolution. Thank you so much for treating me as a person and showing so much care. You definitely made me feel at ease that my case was in great hands. Thank you so much!!",
+  //   rating: 5,
+  // },
+  // {
+  //   name: "Devon Lane",
+  //   review:
+  //     "Words can not express the gratitude I have for you and your team. As soon as you took over my case, you and your team worked diligently on a resolution. Thank you so much for treating me as a person and showing so much care. You definitely made me feel at ease that my case was in great hands. Thank you so much!!",
+  //   rating: 5,
+  // },
+  // {
+  //   name: "Jane Cooper",
+  //   review:
+  //     "Words can not express the gratitude I have for you and your team. As soon as you took over my case, you and your team worked diligently on a resolution. Thank you so much for treating me as a person and showing so much care. You definitely made me feel at ease that my case was in great hands. Thank you so much!!",
+  //   rating: 5,
+  // },
+  // {
+  //   name: "Theresa Webb",
+  //   review:
+  //     "Words can not express the gratitude I have for you and your team. As soon as you took over my case, you and your team worked diligently on a resolution. Thank you so much for treating me as a person and showing so much care. You definitely made me feel at ease that my case was in great hands. Thank you so much!!",
+  //   rating: 5,
+  // },
+  // {
+  //   name: "Wade Warren",
+  //   review:
+  //     "Words can not express the gratitude I have for you and your team. As soon as you took over my case, you and your team worked diligently on a resolution. Thank you so much for treating me as a person and showing so much care. You definitely made me feel at ease that my case was in great hands. Thank you so much!!",
+  //   rating: 5,
+  // },
+  // {
+  //   name: "Albert Flores",
+  //   review:
+  //     "Words can not express the gratitude I have for you and your team. As soon as you took over my case, you and your team worked diligently on a resolution. Thank you so much for treating me as a person and showing so much care. You definitely made me feel at ease that my case was in great hands. Thank you so much!!",
+  //   rating: 5,
+  // },
 ];

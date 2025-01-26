@@ -22,12 +22,12 @@ const TestimonialSlideSection = ({ className }) => {
   return (
     <div className={`my-6 md:my-8  ${className}`}>
       <div className="flex items-center">
-        <button
+        {/* <button
           ref={prevButtonRef}
           className=" text-white hover:text-gray-100 p-3 border-1 border-white rounded-full"
         >
           <FaArrowLeft size={14} />
-        </button>
+        </button> */}
         <Swiper
           cssMode={true}
           mousewheel={true}
@@ -62,13 +62,20 @@ const TestimonialSlideSection = ({ className }) => {
                     ))}
                 </div>
                 <p className="text-sm md:text-md font-normal italic text-white">
-                  "Words cannot express the gratitude I have for you and your
-                  team. As soon as you took over my case, you and your team
-                  worked diligently on a resolution."
+                  Aaron Melamed’s negotiating/legal skills in dealing with my
+                  very difficult mitigation/rebuild condo situation saved the
+                  day! He is industry knowledgeable, conscientious, thorough,
+                  professional, trustworthy, caring and diligent. Should I ever
+                  need his services again, I would not hesitate to reach out.
+                  His network of colleagues are as dependable as he is. Aaron
+                  guides his client with the human touch, a rarity in today’s
+                  legal world. Aaron is a lawyer who goes the extra mile in
+                  every aspect, from listening & explaining, to planning and
+                  proceeding. Highly recommended!
                 </p>
                 <div className="">
                   <h4 className="font-bold text-white text-center text-lg">
-                    Diane F.
+                    Lisa LStrum
                   </h4>
                   <p className="text-sm md:text-md  text-white mt-1">
                     Words cannot express
@@ -78,12 +85,12 @@ const TestimonialSlideSection = ({ className }) => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <button
+        {/* <button
           className=" text-white hover:text-gray-100 p-3 border-1 border-white rounded-full"
           ref={nextButtonRef}
         >
           <FaArrowRight size={14} />
-        </button>
+        </button> */}
       </div>
     </div>
   );

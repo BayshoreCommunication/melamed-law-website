@@ -22,17 +22,19 @@ export const metadata = {
 const page = () => {
   return (
     <>
-      <PageHeroSection
+      {/* <PageHeroSection
         image={"/assets/shared/aboutpage.jpg"}
         title={"About Us"}
         description={
           "When the unexpected happens, we help individuals and businesses collect the money they deserve for their insurance claims."
         }
-      />
-      <ProfessionalLawGroup />
-      <AboutDetails />
-      <LatedAndGretest />
-      <GoogleMapSection />
+      /> */}
+      {/* <ProfessionalLawGroup /> */}
+      <div className="mt-10 lg:mt-12">
+        <AboutDetails />
+      </div>
+      {/* <LatedAndGretest />
+      <GoogleMapSection /> */}
     </>
   );
 };

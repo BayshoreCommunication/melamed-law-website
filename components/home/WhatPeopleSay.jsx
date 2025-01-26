@@ -6,7 +6,7 @@ import ScrollMotionEffect from "../motion/ScrollMotionEffect";
 
 const WhatPeopleSay = () => {
   return (
-    <div className="relative w-full w[400px] md:h-[700px]">
+    <div className="relative w-full h-[400px] md:h-[700px] lg:h-[800px]">
       <Image
         className="absolute inset-0 object-cover bg-center w-full h-full"
         width={1920}
