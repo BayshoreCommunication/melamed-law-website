@@ -145,9 +145,9 @@ const Footer = () => {
                           href={"https://maps.app.goo.gl/gPaF4mQkx4wGQjaK8"}
                           className="text-base"
                         >
-                          20200 West Dixie Highway, Suite 902
+                          3040 NE 190th St APT 303, Aventura, FL 33180,
+                          United States
                         </Link>
-                        <p className="text-base">Aventura, FL 33180</p>
                       </div>
                     </Link>
                   </li>
