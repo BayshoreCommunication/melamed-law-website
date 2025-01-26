@@ -141,9 +141,12 @@ const Footer = () => {
                       target="_blank"
                     >
                       <div className="w-full">
-                        <p className="text-base">
+                        <Link
+                          href={"https://maps.app.goo.gl/gPaF4mQkx4wGQjaK8"}
+                          className="text-base"
+                        >
                           20200 West Dixie Highway, Suite 902
-                        </p>
+                        </Link>
                         <p className="text-base">Aventura, FL 33180</p>
                       </div>
                     </Link>
