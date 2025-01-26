@@ -39,7 +39,7 @@ const PageHeroSectionforBlog = ({ image, title, description, calanderOff }) => {
               <Link
                 href={"/contact"}
                 // href={"/appointment"}
-                className={`text-white font-normal text-base md:text-lg bg-secondary px-4 md:px-16 py-4 rounded-full hover:bg-orange-400  ${calanderOff ? " pointer-events-none " : " pointer-events-none"}`}
+                className={`text-white font-normal text-base md:text-lg bg-secondary px-4 md:px-16 py-4 rounded-full hover:bg-orange-400  ${calanderOff ? "   " : "  "}`}
               >
                 Schedule A Free Case Review
               </Link>
