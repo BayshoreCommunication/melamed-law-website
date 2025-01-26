@@ -70,7 +70,7 @@ const MainNavbar = () => {
   const navLogoList = useMemo(
     () => [
       { title: "Home", slug: "/" },
-      { title: "About Us", slug: "" },
+      { title: "About Us", slug: "/about" },
       { title: "Practice Areas", slug: "/practice-areas" },
       { title: "Testimonials", slug: "" },
       { title: "Blog", slug: "/blog" },

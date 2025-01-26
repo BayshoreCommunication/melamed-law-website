@@ -1491,7 +1491,7 @@ export const areaspracticeData = [
 
 export const testimonialsData = [
   {
-    name: "Lisa LStrum",
+    name: "Lisa S.",
     review:
       "Aaron Melamed’s negotiating/legal skills in dealing with my very difficult mitigation/rebuild condo situation saved the day! He is industry knowledgeable, conscientious, thorough, professional, trustworthy, caring and diligent. Should I ever need his services again, I would not hesitate to reach out. His network of colleagues are as dependable as he is. Aaron guides his client with the human touch, a rarity in today’s legal world. Aaron is a lawyer who goes the extra mile in every aspect, from listening & explaining, to planning and proceeding. Highly recommended!",
     rating: 5,

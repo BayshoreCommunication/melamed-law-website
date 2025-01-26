@@ -75,7 +75,7 @@ const TestimonialSlideSection = ({ className }) => {
                 </p>
                 <div className="">
                   <h4 className="font-bold text-white text-center text-lg">
-                    Lisa LStrum
+                    Lisa S.
                   </h4>
                   <p className="text-sm md:text-md  text-white mt-1">
                     Words cannot express
