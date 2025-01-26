@@ -61,7 +61,7 @@ const MainNavbar = () => {
       { title: "Home", slug: "/" },
       { title: "About Us", slug: "/about" },
       { title: "Practice Areas", slug: "/practice-areas" },
-      { title: "Testimonials", slug: "" },
+      { title: "Testimonials", slug: "/testimonials" },
       { title: "Blog", slug: "/blog" },
     ],
     []

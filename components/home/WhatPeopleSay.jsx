@@ -6,7 +6,7 @@ import ScrollMotionEffect from "../motion/ScrollMotionEffect";
 
 const WhatPeopleSay = () => {
   return (
-    <div className="relative w-full h-[400px] md:h-[700px] lg:h-[800px]">
+    <div className="relative w-full h-[400px] md:h-[700px] lg:h-[800px] min-h-fit">
       <Image
         className="absolute inset-0 object-cover bg-center w-full h-full"
         width={1920}
@@ -31,7 +31,7 @@ const WhatPeopleSay = () => {
 
           <ScrollMotionEffect effect="fade-up" duration="2000">
             <div className="mx-0 flex justify-center items-center my-10 px-2 sm:px-6 lg:px-8">
-              <div className="bg-primary w-full max-w-[400px] md:max-w-[800px] lg:max-w-[1000px] xl:max-w-[1200px] rounded-lg p-4 md:p-6 lg:p-8">
+              <div className="bg-primary w-full max-w-[360px] md:max-w-[800px] lg:max-w-[1000px] xl:max-w-[1200px] rounded-lg p-4 md:px-6 lg:px-8">
                 <TestimonialSlideSection />
               </div>
             </div>
