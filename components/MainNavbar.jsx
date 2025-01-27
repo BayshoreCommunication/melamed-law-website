@@ -122,7 +122,7 @@ const MainNavbar = () => {
               <div className="flex items-center gap-x-1">
                 <IoLocationSharp className="text-white size-4 xl:size-6" />
                 <h6 className="text-white font-normal text-base xl:text-lg">
-                  {` 20200 West Dixie Highway, Suite 902 Aventura, FL 33180`}
+                  {` 3040 NE 190th St APT 303, Aventura, FL 33180, United States`}
                 </h6>
               </div>
             </div>
