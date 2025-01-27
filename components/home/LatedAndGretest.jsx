@@ -206,10 +206,8 @@ const LatedAndGretest = () => {
 
                   <div className="">
                     <p className="text-white font-normal text-sm md:text-lg">
-                      20200 West Dixie Highway, Suite 902
-                    </p>
-                    <p className="text-white font-normal text-sm md:text-lg">
-                      Aventura, FL 33180
+                      3040 NE 190th St APT 303, Aventura, FL
+                      33180, United States
                     </p>
                   </div>
                 </div>
