@@ -74,12 +74,12 @@ const TestimonialSlideSection = ({ className }) => {
                   proceeding. Highly recommended!
                 </p>
                 <div className="">
-                  <h4 className="font-bold text-white text-center text-lg">
+                  <h4 className="font-bold text-white text-center text-lg lg:text-xl">
                     Lisa S.
                   </h4>
-                  <p className="text-sm md:text-md  text-white mt-1">
+                  {/* <p className="text-sm md:text-md  text-white mt-1">
                     Words cannot express
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </SwiperSlide>
