@@ -110,13 +110,13 @@ const Footer = () => {
                 <ul className="ml-0 text-[18px] font-medium text-black list-none">
                   {SITECONFIG?.footer?.company?.map((el, index) => (
                     <li className="mb-4" key={index}>
-                      {/* <Link href={el.slug} className="hover:underline">
+                      <Link href={el.slug} className="hover:underline">
                         {el.title}
-                      </Link> */}
-                      <p className="hover:underline cursor-pointer text-base">
-                        {" "}
-                        {el.title}
-                      </p>
+                      </Link>{" "}
+                      {/* <p className="hover:underline cursor-pointer text-base"> */}
+                      {/*   {" "} */}
+                      {/*   {el.title} */}
+                      {/* </p> */}
                     </li>
                   ))}
                 </ul>
