@@ -70,7 +70,7 @@ const PrivacyPolicy = () => {
               you do not agree with this Privacy Policy, please refrain from
               using our services or website.
             </p>
-            <p className="text-lg md:text-3xl text-stone-950 text-center md:text-left font-semibold">
+            <p className="text-lg md:text-2xl text-stone-950 text-center md:text-left font-semibold">
               What Information We Collect?
             </p>
             <p className="text-lg text-stone-950 text-center md:text-left">
@@ -115,7 +115,7 @@ const PrivacyPolicy = () => {
                 used and to improve our online services.
               </li>
             </ol>
-            <p className="text-lg md:text-3xl text-stone-950 text-center md:text-left font-semibold">
+            <p className="text-lg md:text-2xl text-stone-950 text-center md:text-left font-semibold">
               How We Use Your Information?
             </p>
             <p className="text-lg text-stone-950 text-center md:text-left">
@@ -172,14 +172,15 @@ const PrivacyPolicy = () => {
                 ensuring that we meet our legal obligations.
               </li>
             </ol>
-            <p className="text-lg md:text-3xl text-stone-950 text-center md:text-left font-semibold">
+            <p className="text-lg md:text-2xl text-stone-950 text-center md:text-left font-semibold">
               How Can We Share Your Information?
             </p>
-            <p className="text-lg text-stone-950 text-center md:text-left"></p>
-            We take your privacy seriously, and we will never sell, rent, or
-            share your personal information with third parties for marketing
-            purposes without your explicit consent. However, we may disclose
-            your information in the following circumstances:
+            <p className="text-lg text-stone-950 text-center md:text-left">
+              We take your privacy seriously, and we will never sell, rent, or
+              share your personal information with third parties for marketing
+              purposes without your explicit consent. However, we may disclose
+              your information in the following circumstances:
+            </p>
             <ol className="pl-14 list-decimal">
               <li className="pb-4">
                 <span className="font-semibold">Service Providers: </span>We may
@@ -215,7 +216,7 @@ const PrivacyPolicy = () => {
                 your case.
               </li>
             </ol>
-            <p className="text-lg md:text-3xl text-stone-950 text-center md:text-left font-semibold">
+            <p className="text-lg md:text-2xl text-stone-950 text-center md:text-left font-semibold">
               How Do We Provide Data Security?
             </p>
             <p className="text-lg text-stone-950 text-center md:text-left">
@@ -224,11 +225,12 @@ const PrivacyPolicy = () => {
               disclosure. These measures include physical, technical, and
               administrative safeguards to protect your data in our custody.
             </p>
-            <p className="text-lg text-stone-950 text-center md:text-left"></p>
-            However, please note that no system is entirely secure, and while we
-            strive to protect your information, we cannot guarantee absolute
-            security.
-            <p className="text-lg md:text-3xl text-stone-950 text-center md:text-left font-semibold">
+            <p className="text-lg text-stone-950 text-center md:text-left">
+              However, please note that no system is entirely secure, and while
+              we strive to protect your information, we cannot guarantee
+              absolute security.
+            </p>
+            <p className="text-lg md:text-2xl text-stone-950 text-center md:text-left font-semibold">
               Your Rights and Choices
             </p>
             <p className="text-lg text-stone-950 text-center md:text-left">
@@ -272,7 +274,7 @@ const PrivacyPolicy = () => {
               your information is being handled, please contact us at the
               contact information provided below.
             </p>
-            <p className="text-lg md:text-3xl text-stone-950 text-center md:text-left font-semibold">
+            <p className="text-lg md:text-2xl text-stone-950 text-center md:text-left font-semibold">
               Retention of Personal Information{" "}
             </p>
             <p className="text-lg text-stone-950 text-center md:text-left">
@@ -282,7 +284,7 @@ const PrivacyPolicy = () => {
               retention period expires, we will securely delete or anonymize
               your personal information.
             </p>
-            <p className="text-lg md:text-3xl text-stone-950 text-center md:text-left font-semibold">
+            <p className="text-lg md:text-2xl text-stone-950 text-center md:text-left font-semibold">
               Our Policies for Children's Privacy
             </p>
             <p className="text-lg text-stone-950 text-center md:text-left">
@@ -294,7 +296,7 @@ const PrivacyPolicy = () => {
               us know by emailing us at info@melamedlawpllc.com; we’ll take care
               of it!
             </p>
-            <p className="text-lg md:text-3xl text-stone-950 text-center md:text-left font-semibold">
+            <p className="text-lg md:text-2xl text-stone-950 text-center md:text-left font-semibold">
               What about International Transfers?{" "}
             </p>
             <p className="text-lg text-stone-950 text-center md:text-left">
@@ -305,7 +307,7 @@ const PrivacyPolicy = () => {
               with our services, you consent to the transfer of your personal
               information to the United States.
             </p>
-            <p className="text-lg md:text-3xl text-stone-950 text-center md:text-left font-semibold">
+            <p className="text-lg md:text-2xl text-stone-950 text-center md:text-left font-semibold">
               Changes to This Privacy Policy{" "}
             </p>
             <p className="text-lg text-stone-950 text-center md:text-left">
@@ -316,7 +318,7 @@ const PrivacyPolicy = () => {
               checking this Privacy Policy regularly to stay updated on how we
               protect your personal information.
             </p>
-            <p className="text-lg md:text-3xl text-stone-950 text-center md:text-left font-semibold">
+            <p className="text-lg md:text-2xl text-stone-950 text-center md:text-left font-semibold">
               Contact Us
             </p>
             <p className="text-lg text-stone-950 text-center md:text-left">
@@ -357,7 +359,7 @@ const PrivacyPolicy = () => {
             <p className="text-base text-stone-950 text-center md:text-left">
               © 2025 Melamed Law, PLLC. All Rights Reserved.{" "}
             </p>
-            <p className="text-lg md:text-3xl text-stone-950 text-center md:text-left font-semibold">
+            <p className="text-lg md:text-2xl text-stone-950 text-center md:text-left font-semibold">
               Consent
             </p>
             <p className="text-lg text-stone-950 text-center md:text-left">
