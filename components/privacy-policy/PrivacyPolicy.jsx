@@ -45,200 +45,325 @@ const PrivacyPolicy = () => {
             >
               Privacy Policy
             </h2>
+            <p className="text-lg text-stone-950 text-center md:text-left font-semibold pb-2 italic">
+              Effective Date: 26 January, 2025
+            </p>
           </div>
           <div className="flex flex-col gap-4">
             <p className="text-lg text-stone-950 text-center md:text-left">
-              Your privacy is important to us. It is Carter Injury Law, PA's
-              policy to respect your privacy and comply with any applicable law
-              and regulation regarding any personal information we may collect
-              about you, including across our website,{" "}
-              <Link
-                className="text-primary"
-                href="https://www.carterinjurylaw.com"
+              At Melamed Law PLLC ("we," "our," and "the Firm"), your privacy is
+              important to us. This Privacy Policy explains how we collect, use,
+              disclose, and safeguard your personal information when you visit
+              our website, use our legal services, or engage with us in any way.
+              We are committed to protecting your privacy and ensuring that your
+              personal information is handled with care, by the applicable
+              privacy laws.
+            </p>
+            <p className="text-lg text-stone-950 text-center md:text-left">
+              The Website’s{" "}
+              <span className="text-blue-500 underline">
+                <Link href="/terms-of-service">Terms of Service</Link>
+              </span>{" "}
+              (‘TOS’) are included as part of this policy. By accessing or using
+              our website or services, you consent to the collection and use of
+              your personal information as described in this Privacy Policy. If
+              you do not agree with this Privacy Policy, please refrain from
+              using our services or website.
+            </p>
+            <p className="text-lg md:text-3xl text-stone-950 text-center md:text-left font-semibold">
+              What Information We Collect?
+            </p>
+            <p className="text-lg text-stone-950 text-center md:text-left">
+              We collect different types of personal information based on how
+              you interact with us, including:
+            </p>
+            <ol className="pl-14 list-decimal">
+              <li className="pb-4">
+                <span className="font-semibold">
+                  Personal Identification Information:{" "}
+                </span>
+                This includes your name, address, email address, phone number,
+                and other contact details you provide to us during our
+                communication, such as when you request legal services or
+                inquire about our practice.
+              </li>
+              <li className="pb-4">
+                <span className="font-semibold">
+                  Professional Information:{" "}
+                </span>
+                If you are a business owner or homeowner seeking legal advice,
+                we may collect information about your business or property,
+                including employment details, insurance policy information,
+                property ownership details, and other related professional or
+                legal information relevant to your case.
+              </li>
+              <li className="pb-4">
+                <span className="font-semibold">
+                  Transactional Information:{" "}
+                </span>
+                This includes details related to the services we provide to you,
+                such as billing and payment information, client records, and
+                case-related data. We collect and maintain this information to
+                ensure we provide you with accurate legal services.
+              </li>
+              <li className="pb-4">
+                <span className="font-semibold">Website Usage Data: </span>We
+                collect information on how you interact with our website,
+                including IP addresses, browser types, referring URLs, and other
+                usage data. This may include cookies and other tracking
+                technologies used to gather information about how our website is
+                used and to improve our online services.
+              </li>
+            </ol>
+            <p className="text-lg md:text-3xl text-stone-950 text-center md:text-left font-semibold">
+              How We Use Your Information?
+            </p>
+            <p className="text-lg text-stone-950 text-center md:text-left">
+              We collect and use information for several purposes, such as:
+            </p>
+            <ol className="pl-14 list-disc">
+              <li className="pb-4">
+                <span className="font-semibold">
+                  To Provide Legal Services:{" "}
+                </span>
+                We use your personal and professional information to represent
+                you effectively, manage your legal matters, and provide legal
+                advice. This includes information related to property damage
+                claims, insurance disputes, and other related legal issues.
+              </li>
+              <li className="pb-4">
+                <span className="font-semibold">To Communicate with You: </span>
+                We use your contact information to respond to inquiries,
+                schedule consultations, send important updates about your legal
+                case, and provide you with information about our services. We
+                may also send you newsletters or informational emails if you
+                have opted to receive them.
+              </li>
+              <li className="pb-4">
+                <span className="font-semibold">
+                  To Improve Our Website and Services:{" "}
+                </span>
+                We analyze usage data to improve the functionality of our
+                website, personalize it to better meet the needs of our clients,
+                and enhance the overall user experience. We also use this
+                information to troubleshoot and resolve technical issues.{" "}
+                <span className="block">
+                  In addition, This Privacy Policy doesn’t cover third-party
+                  websites, resources, or any linked sites you might visit from
+                  ours. Those sites have their own privacy policies, so we
+                  recommend checking those out directly
+                </span>
+              </li>
+              <li className="pb-4">
+                <span className="font-semibold">
+                  To Comply with Legal and Regulatory Requirements:{" "}
+                </span>
+                We may use your information to comply with applicable laws,
+                regulations, and court orders, and to protect the Firm’s rights
+                and interests. This includes responding to legal requests or
+                cooperating with law enforcement when necessary.
+              </li>
+              <li className="pb-4">
+                <span className="font-semibold">
+                  To Maintain Internal Records:{" "}
+                </span>
+                We may use your personal information for internal administrative
+                purposes, such as tracking case progress, managing billing, and
+                ensuring that we meet our legal obligations.
+              </li>
+            </ol>
+            <p className="text-lg md:text-3xl text-stone-950 text-center md:text-left font-semibold">
+              How Can We Share Your Information?
+            </p>
+            <p className="text-lg text-stone-950 text-center md:text-left"></p>
+            We take your privacy seriously, and we will never sell, rent, or
+            share your personal information with third parties for marketing
+            purposes without your explicit consent. However, we may disclose
+            your information in the following circumstances:
+            <ol className="pl-14 list-decimal">
+              <li className="pb-4">
+                <span className="font-semibold">Service Providers: </span>We may
+                share your information with trusted third-party service
+                providers who help us deliver our legal services. These
+                providers may include IT support, billing, and cloud storage
+                companies. We require these providers to protect your data and
+                use it only for the purposes for which it was shared.
+              </li>
+              <li className="pb-4">
+                <span className="font-semibold">
+                  Legal and Regulatory Disclosures:{" "}
+                </span>
+                In certain circumstances, we may be required to disclose your
+                information to comply with legal obligations, such as in
+                response to subpoenas, court orders, or other legal processes.
+                We may also disclose your information to prevent fraud or
+                protect our rights or the rights of others.
+              </li>
+              <li className="pb-4">
+                <span className="font-semibold">Business Transfers: </span>If
+                our business undergoes a merger, acquisition, or sale, we may
+                transfer your personal information as part of the process to
+                ensure a smooth transition. We will take appropriate steps to
+                ensure that your information is protected during such transfers
+                and inform you of any changes to this Privacy Policy.
+              </li>
+              <li className="pb-4">
+                <span className="font-semibold">With Your Consent: </span> We
+                may share your personal information with third parties when you
+                provide us with your consent, such as when you ask us to share
+                information with other professionals or partners involved in
+                your case.
+              </li>
+            </ol>
+            <p className="text-lg md:text-3xl text-stone-950 text-center md:text-left font-semibold">
+              How Do We Provide Data Security?
+            </p>
+            <p className="text-lg text-stone-950 text-center md:text-left">
+              We use trusted, industry-standard security measures to safeguard
+              your personal information from unauthorized access, misuse, or
+              disclosure. These measures include physical, technical, and
+              administrative safeguards to protect your data in our custody.
+            </p>
+            <p className="text-lg text-stone-950 text-center md:text-left"></p>
+            However, please note that no system is entirely secure, and while we
+            strive to protect your information, we cannot guarantee absolute
+            security.
+            <p className="text-lg md:text-3xl text-stone-950 text-center md:text-left font-semibold">
+              Your Rights and Choices
+            </p>
+            <p className="text-lg text-stone-950 text-center md:text-left">
+              As a client or visitor to our website, you have certain rights
+              with respect to your personal information, including:
+            </p>
+            <ol className="pl-14 list-decimal">
+              <li className="pb-4">
+                <span className="font-semibold">Right to Access: </span>You may
+                request access to the personal information we hold about you and
+                inquire how it is used.
+              </li>
+              <li className="pb-4">
+                <span className="font-semibold">
+                  Right to Correct Information:{" "}
+                </span>
+                If any of the information we hold about you is inaccurate or
+                incomplete, you have the right to request that we correct or
+                update it.
+              </li>
+              <li className="pb-4">
+                <span className="font-semibold">
+                  Right to Delete Information:{" "}
+                </span>
+                You may request that we delete your personal information,
+                subject to certain legal obligations that may require us to
+                retain certain data (such as legal records related to your
+                case).
+              </li>
+              <li className="pb-4">
+                <span className="font-semibold">
+                  Right to Opt-Out of Marketing Communications:{" "}
+                </span>
+                If you no longer wish to receive marketing emails or other
+                communications from us, you can unsubscribe by following the
+                instructions in the communication or contacting us directly.
+              </li>
+            </ol>{" "}
+            <p className="text-lg text-stone-950 text-center md:text-left">
+              To exercise these rights or if you have any concerns about how
+              your information is being handled, please contact us at the
+              contact information provided below.
+            </p>
+            <p className="text-lg md:text-3xl text-stone-950 text-center md:text-left font-semibold">
+              Retention of Personal Information{" "}
+            </p>
+            <p className="text-lg text-stone-950 text-center md:text-left">
+              We retain your personal information only for as long as necessary
+              to fulfill the purposes outlined in this Privacy Policy and to
+              comply with our legal and professional obligations. After the
+              retention period expires, we will securely delete or anonymize
+              your personal information.
+            </p>
+            <p className="text-lg md:text-3xl text-stone-950 text-center md:text-left font-semibold">
+              Our Policies for Children's Privacy
+            </p>
+            <p className="text-lg text-stone-950 text-center md:text-left">
+              Our services and website are not intended for individuals under
+              the age of 13, and we do not knowingly collect personal
+              information from children. If we find out that we’ve accidentally
+              gathered info from someone under 13, we’ll delete it right away.
+              If you think we might have info about a child under 13, please let
+              us know by emailing us at info@melamedlawpllc.com; we’ll take care
+              of it!
+            </p>
+            <p className="text-lg md:text-3xl text-stone-950 text-center md:text-left font-semibold">
+              What about International Transfers?{" "}
+            </p>
+            <p className="text-lg text-stone-950 text-center md:text-left">
+              If you are located outside of the United States, please be aware
+              that any personal information you provide to us may be transferred
+              to and processed in the United States, where our servers and
+              service providers are located. By using our website or engaging
+              with our services, you consent to the transfer of your personal
+              information to the United States.
+            </p>
+            <p className="text-lg md:text-3xl text-stone-950 text-center md:text-left font-semibold">
+              Changes to This Privacy Policy{" "}
+            </p>
+            <p className="text-lg text-stone-950 text-center md:text-left">
+              We may revise this Privacy Policy occasionally to align with
+              updates to our practices or to meet legal obligations. When we
+              make updates, we will post the revised policy on our website and
+              update the "Effective Date" at the top of the page. We recommend
+              checking this Privacy Policy regularly to stay updated on how we
+              protect your personal information.
+            </p>
+            <p className="text-lg md:text-3xl text-stone-950 text-center md:text-left font-semibold">
+              Contact Us
+            </p>
+            <p className="text-lg text-stone-950 text-center md:text-left">
+              If you have any questions or concerns about this Privacy Policy or
+              our data practices, or if you wish to exercise your rights
+              regarding your personal information, please contact us using the
+              following contact details:
+            </p>
+            <p className="text-lg text-stone-950 text-center md:text-left font-semibold">
+              Melamed Law PLLC
+            </p>
+            <p className="font-semibold text-base text-stone-950 text-center md:text-left">
+              Location{" "}
+              <span className="font-normal text-blue-500 underline block">
+                <Link href="https://maps.app.goo.gl/gPaF4mQkx4wGQjaK8">
+                  3040 NE 190th St APT 303, Aventura, FL 33180, United States
+                </Link>
+              </span>{" "}
+            </p>
+            <p className="text-base font-semibold text-stone-950 text-center md:text-left">
+              Contact{" "}
+              <span
+                className="text-blue-500 font-normal underline block"
+                tel="tel:+9545290695"
               >
-                https://www.carterinjurylaw.com
-              </Link>{" "}
-              , and other sites we own and operate. Personal information is any
-              information about you which can be used to identify you. This
-              includes information about you as a person (such as name, address,
-              and date of birth), your devices, payment details, and even
-              information about how you use a website or online service. In the
-              event our site contains links to third-party sites and services,
-              please be aware that those sites and services have their own
-              privacy policies. After following a link to any third-party
-              content, you should read their posted privacy policy information
-              about how they collect and use personal information. This Privacy
-              Policy does not apply to any of your activities after you leave
-              our site. This policy is effective as of 22 June 2022.
+                954-529-0695
+              </span>{" "}
             </p>
-            <p className="text-lg text-stone-950 text-center md:text-left font-semibold">
-              Last updated: 9 December 2022
+            <p className="text-base text-stone-950 font-semibold text-center md:text-left">
+              Email{" "}
+              <span
+                className="text-blue-500 underline block font-normal"
+                mailto="mailto:info@melamedlawpllc.com"
+              >
+                info@melamedlawpllc.com
+              </span>{" "}
             </p>
-            <p className="text-lg text-stone-950 text-center md:text-left">
-              Information We Collect: Information we collect falls into one of
-              two categories: “voluntarily provided” information and
-              “automatically collected” information. “Voluntarily provided”
-              information refers to any information you knowingly and actively
-              provide us when using or participating in any of our services and
-              promotions. “Automatically collected” information refers to any
-              information automatically sent by your devices in the course of
-              accessing our products and services.
+            <p className="text-base text-stone-950 text-center md:text-left">
+              © 2025 Melamed Law, PLLC. All Rights Reserved.{" "}
             </p>
-            <p className="text-lg text-stone-950 text-center md:text-left font-semibold">
-              Log Data
+            <p className="text-lg md:text-3xl text-stone-950 text-center md:text-left font-semibold">
+              Consent
             </p>
             <p className="text-lg text-stone-950 text-center md:text-left">
-              When you visit our website, our servers may automatically log the
-              standard data provided by your web browser. It may include your
-              device’s Internet Protocol (IP) address, your browser type and
-              version, the pages you visit, the time and date of your visit, the
-              time spent on each page, and other details about your visit.
-            </p>
-            <p className="text-lg text-stone-950 text-center md:text-left">
-              Additionally, if you encounter certain errors while using the
-              site, we may automatically collect data about the error and the
-              circumstances surrounding its occurrence. This data may include
-              technical details about your device, what you were trying to do
-              when the error happened, and other technical information relating
-              to the problem. You may or may not receive notice of such errors,
-              even in the moment they occur, that they have occurred, or what
-              the nature of the error is. Please be aware that while this
-              information may not be personally identifying by itself, it may be
-              possible to combine it with other data to personally identify
-              individual persons.
-            </p>
-            <p className="text-lg text-stone-950 text-center md:text-left">
-              Collection and Use of Information: We may collect personal
-              information from you when you do any of the following on our
-              website: Use a mobile device or web browser to access our content,
-              Contact us via email, social media, or on any similar
-              technologies, When you mention us on social media, We may combine
-              voluntarily provided and automatically collected personal
-              information with general information or research data we receive
-              from other trusted sources. For example, our marketing and market
-              research activities may uncover data and insights, which we may
-              combine with information about how visitors use our site to
-              improve our site and your experience on it.
-            </p>
-            <p className="text-lg text-stone-950 text-center md:text-left">
-              Security of Your Personal Information: When we collect and process
-              personal information, and while we retain this information, we
-              will protect it within commercially acceptable means to prevent
-              loss and theft, as well as unauthorized access, disclosure,
-              copying, use, or modification. Although we will do our best to
-              protect the personal information you provide to us, we advise that
-              no method of electronic transmission or storage is 100% secure,
-              and no one can guarantee absolute data security. You are
-              responsible for selecting any password and its overall security
-              strength, ensuring the security of your own information within the
-              bounds of our services. For example, ensuring you do not make your
-              personal information publicly available via our platform.
-            </p>
-            <p className="text-lg text-stone-950 text-center md:text-left">
-              How Long We Keep Your Personal Information: We keep your personal
-              information only for as long as we need to. This time period may
-              depend on what we are using your information for, in accordance
-              with this privacy policy. For example, if you have provided us
-              with personal information such as an email address when contacting
-              us about a specific enquiry, we may retain this information for
-              the duration of your enquiry remaining open as well as for our own
-              records so we may effectively address similar enquiries in future.
-              If your personal information is no longer required for this
-              purpose, we will delete it or make it anonymous by removing all
-              details that identify you. However, if necessary, we may retain
-              your personal information for our compliance with a legal,
-              accounting, or reporting obligation or for archiving purposes in
-              the public interest, scientific, or historical research purposes
-              or statistical purposes.
-            </p>
-            <p className="text-lg text-stone-950 text-center md:text-left">
-              Children’s Privacy: We do not aim any of our products or services
-              directly at children under the age of 13, and we do not knowingly
-              collect personal information about children under 13. Your Rights
-              and Controlling Your Personal Information Your choice: By
-              providing personal information to us, you understand we will
-              collect, hold, use, and disclose your personal information in
-              accordance with this privacy policy. You do not have to provide
-              personal information to us, however, if you do not, it may affect
-              your use of our website or the products and/or services offered on
-              or through it. Information from third parties: If we receive
-              personal information about you from a third party, we will protect
-              it as set out in this privacy policy. If you are a third party
-              providing personal information about somebody else, you represent
-              and warrant that you have such person’s consent to provide the
-              personal information to us. Marketing permission: If you have
-              previously agreed to us using your personal information for direct
-              marketing purposes, you may change your mind at any time by
-              contacting us using the details below. Access: You may request
-              details of the personal information that we hold about you.
-              Correction: If you believe that any information we hold about you
-              is inaccurate, out of date, incomplete, irrelevant, or misleading,
-              please contact us using the details provided in this privacy
-              policy. We will take reasonable steps to correct any information
-              found to be inaccurate, incomplete, misleading, or out of date.
-              Non-discrimination: We will not discriminate against you for
-              exercising any of your rights over your personal information.
-              Unless your personal information is required to provide you with a
-              particular service or offer (for example providing user support),
-              we will not deny you goods or services and/or charge you different
-              prices or rates for goods or services, including through granting
-              discounts or other benefits, or imposing penalties, or provide you
-              with a different level or quality of goods or services.
-              Notification of data breaches: We will comply with laws applicable
-              to us in respect of any data breach. Complaints: If you believe
-              that we have breached a relevant data protection law and wish to
-              make a complaint, please contact us using the details below and
-              provide us with full details of the alleged breach. We will
-              promptly investigate your complaint and respond to you, in
-              writing, setting out the outcome of our investigation and the
-              steps we will take to deal with your complaint. You also have the
-              right to contact a regulatory body or data protection authority in
-              relation to your complaint. Unsubscribe: To unsubscribe from our
-              email database or opt-out of communications (including marketing
-              communications), please contact us using the details provided in
-              this privacy policy, or opt-out using the opt-out facilities
-              provided in the communication. We may need to request specific
-              information from you to help us confirm your identity.
-            </p>
-            <p className="text-lg text-stone-950 text-center md:text-left">
-              Use of Cookies: We use “cookies” to collect information about you
-              and your activity across our site. A cookie is a small piece of
-              data that our website stores on your computer, and accesses each
-              time you visit, so we can understand how you use our site. This
-              helps us serve you content based on preferences you have
-              specified. Please refer to our Cookie Policy for more information.
-            </p>
-            <p className="text-lg text-stone-950 text-center md:text-left">
-              Business Transfers: If we or our assets are acquired, or in the
-              unlikely event that we go out of business or enter bankruptcy, we
-              would include data, including your personal information, among the
-              assets transferred to any parties who acquire us. You acknowledge
-              that such transfers may occur, and that any parties who acquire us
-              may, to the extent permitted by applicable law, continue to use
-              your personal information according to this policy, which they
-              will be required to assume as it is the basis for any ownership or
-              use rights we have over such information.
-            </p>
-            <p className="text-lg text-stone-950 text-center md:text-left">
-              Limits of Our Policy: Our website may link to external sites that
-              are not operated by us. Please be aware that we have no control
-              over the content and policies of those sites, and cannot accept
-              responsibility or liability for their respective privacy
-              practices.
-            </p>
-            <p className="text-lg text-stone-950 text-center md:text-left">
-              Changes to This Policy: At our discretion, we may change our
-              privacy policy to reflect updates to our business processes,
-              current acceptable practices, or legislative or regulatory
-              changes. If we decide to change this privacy policy, we will post
-              the changes here at the same link by which you are accessing this
-              privacy policy. If required by law, we will get your permission or
-              give you the opportunity to opt in to or opt out of, as
-              applicable, any new uses of your personal information.
-            </p>
-            <p className="text-lg text-stone-950 text-center md:text-left">
-              Contact Us: For any questions or concerns regarding your privacy,
-              you may contact us via the contact form on this website.
+              By using our website or engaging our legal services, you consent
+              to the collection, use, and sharing of your personal information
+              as described in this Privacy Policy.
             </p>
           </div>
         </div>
