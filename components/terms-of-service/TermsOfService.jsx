@@ -223,7 +223,12 @@ const TermsOfService = () => {
                 className="text-blue-500 font-normal underline block"
                 tel="tel:+9545290695"
               >
-                954-529-0695
+                <Link
+                  href="tel:954-529-0695"
+                  className="hover:underline duration-300 text-base"
+                >
+                  {`954-529-0695`}
+                </Link>
               </span>{" "}
             </p>
             <p className="text-base text-stone-950 font-semibold text-center md:text-left">
@@ -232,7 +237,12 @@ const TermsOfService = () => {
                 className="text-blue-500 underline block font-normal"
                 mailto="mailto:info@melamedlawpllc.com"
               >
-                info@melamedlawpllc.com
+                <Link
+                  href="mailto: info@melamedlawpllc.com"
+                  className="hover:underline duration-300 text-base"
+                >
+                  info@melamedlawpllc.com
+                </Link>
               </span>{" "}
             </p>
             <p className="text-base text-stone-950 font-semibold text-center md:text-left">
