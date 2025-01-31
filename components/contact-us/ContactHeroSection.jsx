@@ -62,7 +62,8 @@ const ContactHeroSection = () => {
                       <li className="flex items-center gap-1">
                         <IoMdHome className="text-secondary size-6" />
                         <span>
-                          {` 3040 NE 190th St APT 303, Aventura, FL 33180, United States`}
+                          {` 20200 West Dixie Highway, Suite 902 
+Aventura, Florida 33180`}
                         </span>
                       </li>
                     </ul>
