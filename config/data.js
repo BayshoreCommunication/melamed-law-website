@@ -4,10 +4,9 @@ export const servicesData = [
     url: "/assets/areaspractice/hurricane-damage.jpg",
     slug: "hurricane-damage",
     icon: "/assets/servicepage/icon/hurricane-damage.png",
-    sortTitle:
-      " Hurricane Damage Claims Attorney – Helping You Recover Confidently and Fairly",
+    sortTitle: `Florida’s hurricane damage lawyer | Best hurricane claim attorney florida | Experieneced Florida hurricane claims insurance attorney | Expert Hurricane Damage Claim law firm in Florida | Melamed Law`,
 
-    shortDescription: `Hurricanes can seriously impact properties across Florida, leaving homeowners, business owners, and tenants needing quick support. When wind, flood, or structural damage occurs, getting legal help ensures you receive fair compensation. However, Florida’s hurricane damage laws limit your time to file a claim—typically to just one year after the hurricane.`,
+    shortDescription: `Looking for Florida’s hurricane damage lawyer? Our Best hurricane claim attorney in Florida offers experienced legal representation for hurricane-related claims. As an Experienced Florida hurricane claims insurance attorney, we provide expert guidance to help you get the compensation you deserve. Contact our Expert Hurricane Damage Claim law firm in Florida today.  Melamed Law`,
     description: ` <div>
                 <div className="md:flex md:space-x-6">
                  
@@ -107,9 +106,9 @@ export const servicesData = [
     url: "/assets/areaspractice/windstorm-damage.jpg",
     slug: "windstorm-damage",
     icon: "/assets/servicepage/icon/windstrom-damage.png",
-    sortTitle: "Windstorm Damage Claims – Secure Your Rights with Expert Help",
+    sortTitle: `Florida’s windstorm damage lawyer | Expert insurance claims​ for windstorm damages near me | Best windstorm damage insurance attorney florida |  Experienced windstorm damage claim attoreny florida |  Melamed Law`,
 
-    shortDescription: `Windstorm damage in Florida can leave homeowners with expensive repairs and frustration. Florida’s windstorm damage laws are complex and confusing. With strict rules and deadlines, it can be hard to fully recover the costs of repairs.`,
+    shortDescription: `Searching for Florida’s windstorm damage lawyer? Our Expert insurance claims for windstorm damages near you are handled by the Best windstorm damage insurance attorney in Florida. With an Experienced windstorm damage claim attorney in Florida, we offer dedicated legal support to ensure you receive fair compensation. Contact us for a consultation today.  Melamed Law`,
     description: ` <div>
                 <div className="md:flex md:space-x-6">
                  
@@ -211,10 +210,8 @@ export const servicesData = [
     url: "/assets/areaspractice/roof-damage.jpg",
     slug: "roof-damage",
     icon: "/assets/servicepage/icon/roof-damage.png",
-    sortTitle:
-      "Protect Your Roof Damage Claim Rights With The Attorney You Trust",
-
-    shortDescription: `Roof damage can lead to costly repairs, temporary living arrangements, and serious disruptions. However, the state's laws regarding roof damage claims have recently changed, creating new limitations that can affect homeowners' ability to get fair compensation.`,
+    sortTitle: `Roof damage claims | Expert roofing claim lawyer in Florida | Best Roof Damage Attorneys florida | Best insurance claim lawyer for roof damage |  Melamed Law`,
+    shortDescription: `Need help with roof damage claims? Our Expert roofing claim lawyer in Florida is here to assist you. As one of the Best Roof Damage Attorneys in Florida, we specialize in handling insurance claims for roof damage. Trust the Best insurance claim lawyer for roof damage to fight for your rightful compensation. Contact  Melamed Law, today for expert legal assistance.`,
     description: `   <div>
                 <div className="md:flex md:space-x-6">
                  
@@ -332,14 +329,8 @@ export const servicesData = [
     url: "/assets/areaspractice/strom-damage.jpg",
     slug: "storm-damage",
     icon: "/assets/servicepage/icon/storm-damage.png",
-    sortTitle:
-      " Storm Damage Attorney – Protect Your Insurance Rights and Claims",
-
-    shortDescription: `Storm damage can be frustrating for homeowners and
-                      business owners in Florida, especially after hurricanes,
-                      tropical storms, or high winds. A recent change in Florida
-                      law now gives homeowners just one year to file a claim
-                      after storm damage happens.`,
+    sortTitle: `Storm damage attorney for homeowners and business owners in Florida | Top Storm Damage Insurance Claims Lawyer Florida | experienced storm damage insurance attorney florida | best storm damage lawyer service florida | Melamed Law PLLC`,
+    shortDescription: `Looking for a Storm damage attorney for homeowners and business owners in Florida? Melamed Law PLLC offers top-notch legal services as a Top Storm Damage Insurance Claims Lawyer in Florida. Our Experienced storm damage insurance attorney in Florida is dedicated to securing your rightful compensation. Trust the Best storm damage lawyer service in Florida for expert representation. Contact us today!`,
     description: `  <div>
                 <div className="md:flex md:space-x-6">
                  
@@ -448,10 +439,8 @@ export const servicesData = [
     url: "/assets/areaspractice/water-damage.jpg",
     slug: "water-damage",
     icon: "/assets/servicepage/icon/water-damage.png",
-    sortTitle:
-      "Water Damage Restoration Claims – Expert Legal Assistance Available",
-
-    shortDescription: `Water damage can strike from countless sources—raging storms, sudden floods, burst pipes, and even plumbing mishaps. Insurance companies are increasingly restricting water damage coverage by imposing strict limitations in their policies.`,
+    sortTitle: `Water damage coverage | Top florida water damage insurance attorneys | Best Law firm for water damage claim florida | Best water damage lawyer service florida |   Melamed Law`,
+    shortDescription: `Need help with water damage coverage? Melamed Law offers expert legal services as one of the Top Florida water damage insurance attorneys. As the Best Law firm for water damage claims in Florida, we provide dedicated support to ensure you receive fair compensation. Trust the Best water damage lawyer service in Florida for professional legal assistance. Contact Melamed Law today!`,
     description: ` <div>
                 <div className="md:flex md:space-x-6">
                  
@@ -567,9 +556,8 @@ export const servicesData = [
     url: "/assets/areaspractice/fire-damage.jpg",
     slug: "fire-damage",
     icon: "/assets/servicepage/icon/fire-damage.png",
-    sortTitle: "Legal Help for Fire Damage Insurance Claims in Florida",
-
-    shortDescription: `Fire damage can leave you with more than just physical destruction—it brings emotional distress and financial burdens that can feel overwhelming. Insurance should ease this burden, but policyholders often face frustrating challenges like delayed payments, undervalued claims, or even complete denials.`,
+    sortTitle: `Fire damage experienced attorneys | Melamed Law | Best insurance attorney for fire damage florida | top law firm for fire damage claim florida | best fire damage lawyer service florida |`,
+    shortDescription: `Looking for Fire damage experienced attorneys? Melamed Law is your trusted choice for the Best insurance attorney for fire damage in Florida. As the Top law firm for fire damage claims in Florida, we specialize in securing fair compensation for your losses. Trust the Best fire damage lawyer service in Florida. Contact Melamed Law today for expert legal assistance.`,
     description: `  <div>
                 <div className="md:flex md:space-x-6">
                  
@@ -690,8 +678,8 @@ export const servicesData = [
     url: "/assets/areaspractice/mold-damage.jpg",
     slug: "mold-damage",
     icon: "/assets/servicepage/icon/mold-damage.png",
-    sortTitle: "Get Professional Help for Mold Infestation Claims in Florida",
-    shortDescription: `Mold damage is a serious concern that can affect both your property and your health. Often a result of water damage or poor ventilation, mold growth can lead to expensive repairs.`,
+    sortTitle: `Legal Help After Mold Damage florida  |  Melamed Law | experienced mold damage insurance attorney florida| Expert Mold lawyers Florida | Florida's Mold Experts lawyer`,
+    shortDescription: `Need Legal Help After Mold Damage in Florida? Melamed Law offers experienced mold damage insurance attorneys in Florida. As Expert Mold lawyers in Florida, we specialize in mold-related claims to ensure you receive fair compensation. Trust Florida's Mold Experts lawyer to handle your case with care and expertise. Contact Melamed Law today for professional legal support.`,
 
     description: ` <div>
                 <div className="md:flex md:space-x-6">
@@ -806,8 +794,8 @@ export const servicesData = [
     url: "/assets/areaspractice/hail-damage.jpg",
     slug: "hail-damage",
     icon: "/assets/servicepage/icon/hail-damage.png",
-    sortTitle: "Skilled  Lawyer for Hail-Related Property Repair and Recovery",
-    shortDescription: `Hail storms can strike without warning, leaving behind significant damage to homes, vehicles, and commercial properties. Broken windows, dented roofs, and other costly repairs are common results of such storms.`,
+    sortTitle: `Legal Help After Hail Damage |  Melamed Law | Top rated Hail damage attorney florida | Experienced hail damage lawyers florida | Best Hail Insurance attoreny florida | `,
+    shortDescription: `Seeking Legal Help After Hail Damage? Melamed Law offers expert representation from a Top rated hail damage attorney in Florida. Our Experienced hail damage lawyers in Florida are committed to securing your rightful compensation. Trust the Best Hail Insurance attorney in Florida to handle your case with precision. Contact Melamed Law today for professional legal assistance.`,
 
     description: `<div>
                 <div className="md:flex md:space-x-6">
@@ -928,9 +916,9 @@ export const servicesData = [
     url: "/assets/areaspractice/plumbing-damage.jpg",
     slug: "plumbing-damage",
     icon: "/assets/servicepage/icon/plumbing-damage.png",
-    sortTitle: "Get Assistance for Plumbing Failure Insurance Claims Today",
+    sortTitle: `Florida, plumbing damage | homeowners and property owners |  Melamed Law |  Expert Plumbing Damage Claim Lawyer florida | Best Insurance Attorney for plumbing damage florida | `,
 
-    shortDescription: `In Florida, plumbing damage is a significant concern for homeowners and property owners alike, especially given the state's unique climate and frequent storms. With heavy rainfall, humidity, and the potential for hurricanes, plumbing systems can cause leaks, burst pipes, and other water-related issues.`,
+    shortDescription: `Dealing with plumbing damage in Florida? Melamed Law offers expert legal services for homeowners and property owners. As an Expert Plumbing Damage Claim Lawyer in Florida, we specialize in securing compensation for plumbing-related damages. Trust the Best Insurance Attorney for plumbing damage in Florida to handle your claim. Contact Melamed Law today for expert legal representation.`,
     description: `  <div>
                 <div className="md:flex md:space-x-6">
                  
@@ -1041,8 +1029,8 @@ export const servicesData = [
     url: "/assets/areaspractice/smoke-damage.jpg",
     slug: "smoke-damage",
     icon: "/assets/servicepage/icon/smoke-damage.png",
-    sortTitle: " Smoke Damage Claim Assistance – Restore Your Home After Fire",
-    shortDescription: `Smoke damage in Florida is a serious concern that can arise from even the smallest of fires, and its effects can be far-reaching and long-lasting. Speaking of health, the risks associated with smoke exposure are significant. Breathing in smoke particles can irritate your lungs and cause conditions like asthma or allergies.`,
+    sortTitle: `Smoke damage in Florida |   Melamed Law | Top Florida Smoke and Fire Damage Attorneys | Trusted smoke damage insurance attorney florida | Best Law firm for somke damagae claim |`,
+    shortDescription: `Experiencing smoke damage in Florida? Melamed Law is home to the Top Florida Smoke and Fire Damage Attorneys. Our Trusted smoke damage insurance attorney in Florida specializes in securing fair compensation for your losses. As the Best Law firm for smoke damage claims, we provide expert legal representation. Contact Melamed Law today for professional support.`,
 
     description: `  <div>
                 <div className="md:flex md:space-x-6">
@@ -1148,8 +1136,8 @@ export const servicesData = [
     url: "/assets/areaspractice/bad-faith-claims.jpg",
     slug: "bad-faith-claims",
     icon: "/assets/servicepage/icon/bad-faith-claims.png",
-    sortTitle: "Legal Support for Bad Faith Claims – Safeguard Your Interests",
-    shortDescription: `We know that dealing with bad faith insurance claims can leave you feeling frustrated, confused, and powerless, especially when you're already dealing with a loss or hardship. Under Florida law, policyholders can file a Civil Remedy Notice if their insurance company acts in bad faith`,
+    sortTitle: `Bad faith insurance claim attorney |  Melamed Law |  Expert bad faith insurance claim lawyers florida | Best florida lawyer service for bad faith | Top bad faith attorney florida | `,
+    shortDescription: `Need a bad faith insurance claim attorney? Melamed Law offers expert legal services with experienced bad faith insurance claim lawyers in Florida. As the Best Florida lawyer service for bad faith claims, we specialize in holding insurers accountable. Trust our Top bad faith attorney in Florida to fight for your rights. Contact Melamed Law today for professional legal assistance.`,
 
     description: `  <div>
                 <div className="md:flex md:space-x-6">
@@ -1258,9 +1246,9 @@ export const servicesData = [
     url: "/assets/areaspractice/vandalism-and-theft.jpg",
     slug: "vandalism-and-theft",
     icon: "/assets/servicepage/icon/vandalism-and-theft.png",
-    sortTitle:
-      " Vandalism and Theft Claim Assistance – Safeguard Your Property",
-    shortDescription: `Damages from vandalism, also known as criminal mischief, are typically covered under property insurance policies. If you've experienced theft or vandalism at your home or business, the emotional and financial toll can be devastating.`,
+    sortTitle: `Damages from vandalism lawyer in florida |  Melamed Law | Top Florida Vandalism Claims Attorney | Best Insurance attorney for Vandalism claim florida | Expert lawyer service for Vandalism and theft Florida | `,
+
+    shortDescription: `Looking for a Damages from vandalism lawyer in Florida? Melamed Law offers expert legal services as the Top Florida Vandalism Claims Attorney. As the Best Insurance attorney for vandalism claims in Florida, we specialize in securing compensation for vandalism and theft. Trust our Expert lawyer service for Vandalism and theft in Florida. Contact Melamed Law today for dedicated legal support.`,
     description: `      <div>
                 <div className="md:flex md:space-x-6">
                  
@@ -1377,6 +1365,7 @@ export const areaspracticeData = [
     slug: "hurricane-damage",
     shortTitle:
       "Was your home damaged by a flood? Do you have a pipe burst in your home during a freeze? Did the insurance company deny your claim?",
+
     description:
       "Was your home damaged by a flood? Do you have a pipe burst in your home during a freeze? Did the insurance company deny your claim?",
   },

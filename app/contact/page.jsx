@@ -4,9 +4,8 @@ import CallToAction from "@/components/shared/CallToAction";
 import Head from "next/head";
 
 export const metadata = {
-  title: "Melamed Law",
-  description:
-    "At Melamed Law, you’re family. We offer open lines of communication to foster personal relationships and optimize case outcomes for our clients. Every client gets the personal cell phone number of the attorney.",
+  title: `Contact Melamed Law PLLC | Florida Property Damage Lawyer |  Florida Insurance Claims Attorney | Insurance attorney in Aventura, Florida`,
+  description: `Contact Melamed Law PLLC, your trusted Florida Property Damage Lawyer, for expert legal representation. We specialize in property damage claims as a leading Florida Insurance Claims Attorney. If you need an experienced insurance attorney in Aventura, Florida, reach out to Melamed Law PLLC today for personalized guidance and a free consultation.`,
   alternates: {
     canonical: "/",
     languages: {
@@ -17,6 +16,7 @@ export const metadata = {
     images: "/opengraph-image.jpg",
   },
 };
+
 const page = () => {
   return (
     <>

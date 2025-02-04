@@ -4,9 +4,8 @@ import CallToAction from "@/components/shared/CallToAction";
 import Head from "next/head";
 
 export const metadata = {
-  title: "Melamed Law",
-  description:
-    "At Melamed Law, you’re family. We offer open lines of communication to foster personal relationships and optimize case outcomes for our clients. Every client gets the personal cell phone number of the attorney.",
+  title: `Florida Insurance Claims Attorney | Insurance attorney in Aventura, Florida | Best windstorm damage insurance attorney florida | Experienced windstorm damage claim attoreny florida |`,
+  description: `Looking for a Florida Insurance Claims Attorney? Our expert Insurance attorney in Aventura, Florida specializes in handling windstorm damage claims. As one of the Best windstorm damage insurance attorneys in Florida, we offer experienced legal support to ensure your claims are handled with care and precision. Contact us today to speak with an Experienced windstorm damage claim attorney in Florida.`,
   alternates: {
     canonical: "/",
     languages: {

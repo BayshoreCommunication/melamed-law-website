@@ -5,7 +5,7 @@ import SectionLayout from "@/components/shared/SectionLayout";
 import Head from "next/head";
 import { notFound } from "next/navigation";
 import PracticeAreaSidebarCard from "@/components/practice-area/PracticeAreaSidebarCard";
-import { servicesData,areaspracticeData } from "@/config/data";
+import { servicesData, areaspracticeData } from "@/config/data";
 
 import CallToAction from "@/components/shared/CallToAction";
 import PageHeroSectionforBlog from "@/components/shared/PageHeroSectionforBlog";
@@ -44,29 +44,27 @@ nav{
 
 `;
 
-
 export async function generateMetadata({ params }) {
   const metaData = servicesData?.filter(
-    (service) => service.slug === params.slug
+    (service) => service.slug === params.slug,
   );
-  console.log(metaData[0])
-  return{
-    title: metaData[0].title,
-  description: metaData[0].shortDescription,
+  return {
+    title: metaData[0].sortTitle,
+    description: metaData[0].shortDescription,
     openGraph: {
-      title: metaData[0].title,
-  description: metaData[0].shortDescription,
+      title: metaData[0].sortTitle,
+      description: metaData[0].shortDescription,
       images: [metaData[0].url],
       url: `https://www.melamedlawpllc.com/practice-areas/${metaData[0]?.slug}`,
       type: "article",
       site_name: "Melamed Law",
     },
-  }
+  };
 }
 
 const page = async ({ params }) => {
   const servicesDetails = servicesData?.filter(
-    (service) => service.slug === params.slug
+    (service) => service.slug === params.slug,
   );
 
   if (!servicesDetails || servicesDetails.length === 0) {
@@ -97,9 +95,8 @@ const page = async ({ params }) => {
           {servicesDetails?.map((services, index) => (
             <div key={index} className="">
               <div className="mt-5 text-base">
-                {parse(services?.description)} 
+                {parse(services?.description)}
               </div>
-              
             </div>
           ))}
         </div>

@@ -3,9 +3,8 @@ import DisclaimersTermsOfUse from "@/components/disclaimers-and-terms-of-use/pri
 import Head from "next/head";
 
 export const metadata = {
-  title: "Melamed Law",
-  description:
-    "At Melamed Law, you’re family. We offer open lines of communication to foster personal relationships and optimize case outcomes for our clients. Every client gets the personal cell phone number of the attorney.",
+  title: `Windstorm Damage Claims lawyer in florida | Hurricane and Storm Damage Insurance Claims Florida Lawyer  | |Experieneced Florida hurricane claims insurance attorney| Expert Hurricane Damage Claim law firm in Florida`,
+  description: `Need help with your storm damage claim? Our Windstorm Damage Claims lawyer in Florida is here to fight for your rights. As an Experienced Florida hurricane claims insurance attorney, we help homeowners and businesses recover from storm losses. Trust our Expert Hurricane Damage Claim law firm in Florida to handle your case. Contact us today for a free consultation with a Hurricane and Storm Damage Insurance Claims Florida Lawyer!`,
   alternates: {
     canonical: "/",
     languages: {

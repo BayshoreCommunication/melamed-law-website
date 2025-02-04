@@ -56,7 +56,7 @@ export async function generateMetadata({ params }) {
   const blogPostData = await GetAllPostData();
 
   const blogDetails = blogPostData?.data?.find(
-    (blogs) => blogs.slug === params.slug
+    (blogs) => blogs.slug === params.slug,
   );
 
   if (!blogDetails) {
@@ -88,7 +88,7 @@ const page = async ({ params }) => {
   const blogPostData = await GetAllPostData();
 
   const blogDetails = blogPostData?.data?.filter(
-    (blogs) => blogs.slug === params.slug
+    (blogs) => blogs.slug === params.slug,
   );
 
   const postDate = (date) => {
