@@ -1,96 +1,74 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import TestimonialSlider from "./TestimonialSlider";
-import { FaQuoteRight } from "react-icons/fa";
-import { FaArrowLeft } from "react-icons/fa6";
-import { FaArrowRight } from "react-icons/fa6";
-
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
+import { testimonialsData } from "@/config/data";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
-
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import SectionLayout from "./SectionLayout";
+import ScrollMotionEffect from "../motion/ScrollMotionEffect";
 
 const TestimonialSlideSection = ({ className }) => {
-  // Refs for navigation buttons
   const prevButtonRef = useRef(null);
   const nextButtonRef = useRef(null);
+  const swiperRef = useRef(null);
+
+  useEffect(() => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      const swiperInstance = swiperRef.current.swiper;
+      swiperInstance.params.navigation.prevEl = prevButtonRef.current;
+      swiperInstance.params.navigation.nextEl = nextButtonRef.current;
+      swiperInstance.navigation.init();
+      swiperInstance.navigation.update();
+    }
+  }, []);
 
   return (
-    <div className={`my-6 md:my-8  ${className}`}>
-      <div className="flex items-center">
-        {/* <button
+    <div className={`my-6 md:my-8 ${className}`}>
+      <div className="flex items-center gap-4">
+        <button
           ref={prevButtonRef}
-          className=" text-white hover:text-gray-100 p-3 border-1 border-white rounded-full"
+          className="text-white hover:text-gray-100 p-3 border border-white rounded-full"
         >
-          <FaArrowLeft size={14} />
-        </button> */}
+          <FaArrowLeft size={20} />
+        </button>
         <Swiper
-          cssMode={true}
-          mousewheel={true}
+          ref={swiperRef}
+          // cssMode={true}
+          // mousewheel={true}
           keyboard={true}
           modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-          navigation={{
-            prevEl: prevButtonRef.current,
-            nextEl: nextButtonRef.current,
-          }}
-          onBeforeInit={(swiper) => {
-            // Attach the navigation buttons to Swiper when it's initialized
-            swiper.params.navigation.prevEl = prevButtonRef.current;
-            swiper.params.navigation.nextEl = nextButtonRef.current;
-            swiper.navigation.init();
-            swiper.navigation.update();
-          }}
-          className="mySwiper"
+          // navigation
+          className="mySwiper w-full"
+          spaceBetween={20}
+          slidesPerView={1}
+          autoplay={true}
+          loop={true}
+          grabCursor={true}
         >
-          {[1, 2, 3, 4, 5].map((el, index) => (
+          {[...testimonialsData].reverse().map((testimonial, index) => (
             <SwiperSlide key={index}>
-              <div className="w-full lg:w-[80%] text-center mx-auto flex flex-col gap-2 lg:gap-5">
-                <div className=" flex items-center justify-center">
-                  <FaQuoteRight className="size-7  text-white mb-1" />
-                </div>
-                <div className="flex justify-center items-center mt-[-20px]">
-                  {Array(5)
-                    .fill()
-                    .map((_, index) => (
-                      <span key={index} className="text-yellow-500 text-2xl">
-                        &#9733;
-                      </span>
-                    ))}
-                </div>
-                <p className="text-sm md:text-md font-normal italic text-white">
-                  Aaron Melamed’s negotiating/legal skills in dealing with my
-                  very difficult mitigation/rebuild condo situation saved the
-                  day! He is industry knowledgeable, conscientious, thorough,
-                  professional, trustworthy, caring and diligent. Should I ever
-                  need his services again, I would not hesitate to reach out.
-                  His network of colleagues are as dependable as he is. Aaron
-                  guides his client with the human touch, a rarity in today’s
-                  legal world. Aaron is a lawyer who goes the extra mile in
-                  every aspect, from listening & explaining, to planning and
-                  proceeding. Highly recommended!
+              <div className="p-6 md:p-8 lg:p-10  text-center  ">
+                <p className="text-base md:text-lg font-semibold text-white mb-4">
+                  {testimonial.review}
                 </p>
-                <div className="">
-                  <h4 className="font-bold text-white text-center text-lg lg:text-xl">
-                    Lisa S.
-                  </h4>
-                  {/* <p className="text-sm md:text-md  text-white mt-1">
-                    Words cannot express
-                  </p> */}
+                <div className="text-yellow-500 mb-2 text-xl">
+                  {"★".repeat(testimonial.rating)}
                 </div>
+                <p className="font-semibold text-white text-lg md:text-xl">
+                  {testimonial.name}
+                </p>
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
-        {/* <button
-          className=" text-white hover:text-gray-100 p-3 border-1 border-white rounded-full"
+        <button
           ref={nextButtonRef}
+          className="text-white hover:text-gray-100 p-3 border border-white rounded-full"
         >
-          <FaArrowRight size={14} />
-        </button> */}
+          <FaArrowRight size={20} />
+        </button>
       </div>
     </div>
   );
