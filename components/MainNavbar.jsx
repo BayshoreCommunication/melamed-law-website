@@ -61,7 +61,7 @@ const MainNavbar = () => {
       { title: "Home", slug: "/" },
       { title: "About Us", slug: "/about" },
       { title: "Practice Areas", slug: "/practice-areas" },
-      { title: "Se Habla Español", slug: "" },
+      // { title: "Se Habla Español", slug: "" },
       { title: "Testimonials", slug: "/testimonials" },
       { title: "Blog", slug: "/blog" },
     ],
@@ -73,7 +73,7 @@ const MainNavbar = () => {
       { title: "Home", slug: "/" },
       { title: "About Us", slug: "/about" },
       { title: "Practice Areas", slug: "/practice-areas" },
-      { title: "Se Habla Español", slug: "" },
+      // { title: "Se Habla Español", slug: "" },
       { title: "Testimonials", slug: "" },
       { title: "Blog", slug: "/blog" },
     ],
@@ -214,13 +214,14 @@ const MainNavbar = () => {
               >
                 Contact Us
               </Link> */}
-              <div className="bg-secondary  py-4  md:px-1 lg:px-1 xl:px-2">
+              <div className="bg-secondary  py-2  md:px-1 lg:px-1 xl:px-2">
                 <Link
                   href="tel:954-529-0695"
                   className="flex flex-col justify-center"
                 >
                   <p className="text-white text-[6px]  xl:text-[12px] text-center">
-                    CONTACT US FOR A FREE CONSULTATION
+                    CONTACT US FOR A FREE CONSULTATION <br />
+                    (Se Habla Español)
                   </p>
                   <div className="flex items-center justify-center gap-x-0 xl:gap-x-2">
                     <BsTelephoneForwardFill className="text-white size-4  xl:size-5" />
