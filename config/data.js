@@ -1505,12 +1505,13 @@ export const testimonialsData = [
       "I was referred to Aaron by a mutual friend. My insurance company was giving me problems on my hurricane claims and even though I am an attorney I was unable to get through the hurdles arising from my carrier. I turned everything over to Aaron and he handled things as efficiently as possible in the circumstances and saved me months of stress and aggravation. He was able to settle my claims and recovered all my expenses. I am very pleased with the work Aaron did for me and recommend him to anyone dealing with an insurance issue.",
     rating: 5,
   },
-  // {
-  //   name: "Devon Lane",
-  //   review:
-  //     "Words can not express the gratitude I have for you and your team. As soon as you took over my case, you and your team worked diligently on a resolution. Thank you so much for treating me as a person and showing so much care. You definitely made me feel at ease that my case was in great hands. Thank you so much!!",
-  //   rating: 5,
-  // },
+  // 3/16/25
+  {
+    name: "Aida Requejo",
+    review:
+      "I have only good things to say about this firm. Aaron Melamed is a hardworking lawyer his meticulous attention to detail providing clear communication with human touch, he was able to settle my claim and recovered all my expenses, I’m very grateful with the work Aaron did for me. Highly recommend!!",
+    rating: 5,
+  },
   // {
   //   name: "Jane Cooper",
   //   review:
