@@ -198,7 +198,7 @@ const Footer = () => {
           <hr className="my-6 border-black sm:mx-auto lg:my-8" />
           <div className="md:flex :items-center sm:justify-between">
             <div className="text-[18px] font-medium text-center text-black">
-              © 2024{" "}
+              <span>© {new Date().getFullYear()}</span>{" "}
               <a
                 href="https://www.melamedlawpllc.com/"
                 className="hover:underline text-secondary"
