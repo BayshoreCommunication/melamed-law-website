@@ -108,11 +108,15 @@ const MainNavbar = () => {
 
   return (
     <section className={"relative z-50 "}>
+<<<<<<< HEAD
       <div
         className={`bg-primary w-full navbar sticky top-0 transition-transform duration-300 ${
           isNavHidden ? "-translate-y-full" : "translate-y-0"
         }`}
       >
+=======
+      <div className="bg-primary w-full navbar ">
+>>>>>>> 4647e4259c930f935d09a3ecf285985167785904
         <div className="bg-white hidden md:block">
           <div className="flex items-center container  justify-between">
             <div className=" flex items-center gap-x-10 2xl:gap-x-16">
@@ -181,13 +185,9 @@ const MainNavbar = () => {
                   href="tel:954-529-0695"
                   className="flex flex-col justify-center"
                 >
-                  <p className="text-white text-[6px]  xl:text-[12px] text-center">
-                    CONTACT US FOR A FREE CONSULTATION <br />
-                    (Se Habla Español)
-                  </p>
                   <div className="flex items-center justify-center gap-x-0 xl:gap-x-2">
                     <BsTelephoneForwardFill className="text-white size-4  xl:size-5" />
-                    <h6 className="text-white font-bold text-sm lg:text-base xl:text-xl">
+                    <h6 className="text-white font-bold text-sm lg:text-base ">
                       954-529-0695
                     </h6>
                   </div>
