@@ -1,8 +1,8 @@
 "use client";
-import React, { memo, useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { memo, useEffect, useState } from "react";
 import ScrollMotionEffect from "../motion/ScrollMotionEffect";
 
 const HeroSection = () => {
@@ -33,22 +33,22 @@ const HeroSection = () => {
           <h1 className="mt-4 md:mt-10 text-[40px] md:text-[85px] font-bold text-white text-center leading-snug md:leading-tight">
             Property <span className="bg-secondary px-2 py-0">Damaged</span> By
           </h1>
-          <div className="flex items-center justify-center ">
+          <div className="flex flex-wrap items-center justify-center gap-x-2 md:gap-x-3">
             <h1 className="text-[40px] md:text-[85px] font-bold text-white text-center leading-snug md:leading-tight">
               Hurricane
             </h1>
-            <div className="w-[150px] md:w-[300px] h-[50px] md:h-[100px] overflow-hidden">
-              <AnimatePresence>
+            <div className="relative w-[150px] md:w-[300px] h-[48px] md:h-[100px] overflow-hidden">
+              <AnimatePresence mode="wait" initial={false}>
                 {showTitleOne ? (
                   <motion.h1
                     key="titleOne"
-                    className="text-[40px] md:text-[85px] font-bold text-secondary text-left leading-snug md:leading-tight"
-                    initial={{ y: -30, opacity: 0 }} // Start slightly above
-                    animate={{ y: 0, opacity: 1 }} // Slide in and fade in
-                    exit={{ y: 30, opacity: 0 }} // Slide down and fade out
+                    className="absolute inset-0 flex items-center text-[40px] md:text-[85px] font-bold text-secondary leading-snug md:leading-tight"
+                    initial={{ y: -30, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    exit={{ y: 30, opacity: 0 }}
                     transition={{
-                      y: { type: "spring", stiffness: 70, damping: 15 }, // Smooth spring effect
-                      opacity: { duration: 0.5, ease: "easeInOut" }, // Fade effect
+                      y: { type: "spring", stiffness: 70, damping: 15 },
+                      opacity: { duration: 0.4, ease: "easeInOut" },
                     }}
                   >
                     Helene
@@ -56,13 +56,13 @@ const HeroSection = () => {
                 ) : (
                   <motion.h1
                     key="titleTwo"
-                    className="text-[40px] md:text-[85px] font-bold text-secondary text-left leading-snug md:leading-tight"
-                    initial={{ y: -30, opacity: 0 }} // Start slightly above
-                    animate={{ y: 0, opacity: 1 }} // Slide in and fade in
-                    exit={{ y: 30, opacity: 0 }} // Slide down and fade out
+                    className="absolute inset-0 flex items-center text-[40px] md:text-[85px] font-bold text-secondary leading-snug md:leading-tight"
+                    initial={{ y: -30, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    exit={{ y: 30, opacity: 0 }}
                     transition={{
-                      y: { type: "spring", stiffness: 70, damping: 15 }, // Smooth spring effect
-                      opacity: { duration: 0.5, ease: "easeInOut" }, // Fade effect
+                      y: { type: "spring", stiffness: 70, damping: 15 },
+                      opacity: { duration: 0.4, ease: "easeInOut" },
                     }}
                   >
                     Milton
